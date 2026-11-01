@@ -18,7 +18,12 @@ The initial prototype is a static website using the TCGdex public API for Englis
 
 - `index.html` — page structure
 - `styles.css` — responsive visual system
-- `app.js` — Card Finder interaction and catalogue loading
+- `app.js` — Card Finder interaction, set filtering and card detail loading
+- `tools/catalogue-audit.html` — browser-based 100-card catalogue structure audit
+
+## Catalogue validation
+
+Open `tools/catalogue-audit.html` in a browser (or via a static preview server) and run the 100-card validation. The audit samples 20 cards from one representative set in each of five eras and reports field coverage and failed requests. Review the selected set names in the JSON report; this is a structural sample, not a full audit of every set.
 
 ## Data and attribution
 
