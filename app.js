@@ -7,9 +7,6 @@ let visibleCount = PAGE_SIZE;
 let cataloguePromise = null;
 let searchSequence = 0;
 let detailSequence = 0;
-let cataloguePromise = null;
-let searchSequence = 0;
-let detailSequence = 0;
 
 const searchInput = document.querySelector("#card-search");
 const searchButton = document.querySelector("#search-button");
@@ -43,7 +40,6 @@ async function apiGet(path) {
 
 async function loadCatalogue() {
   if (catalogue) return catalogue;
-  if (cataloguePromise) return cataloguePromise;
   if (cataloguePromise) return cataloguePromise;
   setStatus("Loading English catalogue…");
   searchButton.disabled = true;
