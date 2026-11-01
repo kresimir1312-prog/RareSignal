@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2a">
+  <meta name="description" content="RareSignal prototype — exact Pokémon card identity and evidence-led European market research.">
+  <title>RareSignal — Research Desk Prototype</title>
+  <link rel="preconnect" href="https://api.tcgdex.net">
+  <link rel="preconnect" href="https://assets.tcgdex.net">
+  <link rel="stylesheet" href="./prototype.css">
+  <script src="./prototype.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./index.html"><span class="mark">R</span><span>Rare<span class="gold">Signal</span><small>RESEARCH DESK</small></span></a>
+    <nav><a class="selected" href="#finder">Card finder</a><a href="#research">Research desk</a><a href="#method">Methodology</a></nav>
+    <div class="top-actions"><span class="demo-tag">PROTOTYPE</span><span class="currency">EUR · EU</span></div>
+  </header>
+  <main>
+    <section class="welcome">
+      <div><div class="kicker"><i></i> INDEPENDENT POKÉMON TCG INTELLIGENCE</div>
+        <h1>Research the card.<br><em>Not just the price.</em></h1>
+        <p>RareSignal connects exact-printing identity with completed-sale evidence, European buying costs and transparent research decisions.</p>
+        <a class="primary" href="#finder">Explore the catalogue <span>↘</span></a>
+      </div>
+      <aside class="welcome-note"><span class="note-label">RESEARCH PRINCIPLE</span><strong>No verified evidence.<br>No buy signal.</strong><span class="note-foot">Asking prices are not completed sales.</span></aside>
+    </section>
+    <section class="metrics" aria-label="Prototype status">
+      <div><span>CATALOGUE</span><strong>TCGdex</strong><small>English card identity</small></div>
+      <div><span>MARKET COVERAGE</span><strong>In development</strong><small>No live price feed connected</small></div>
+      <div><span>DEFAULT MARKET</span><strong>Europe · EUR</strong><small>Delivered cost matters</small></div>
+      <div><span>RESEARCH STATUS</span><strong>Prototype</strong><small>Signals are not yet live</small></div>
+    </section>
+    <section class="workspace" id="finder">
+      <div class="section-title"><div><div class="kicker muted">01 / DISCOVERY</div><h2>Card finder</h2><p>Find a card record, then inspect its set and variant metadata.</p></div><span class="source">IDENTITY SOURCE · TCGDEX API</span></div>
+      <div class="searchbox">
+        <label for="query">SEARCH THE ENGLISH CATALOGUE</label>
+        <div class="searchline"><input id="query" type="search" placeholder="Search Charizard, Umbreon, 20/124…" autocomplete="off"><button id="search">Search cards <b>→</b></button></div>
+        <div class="quick"><span>QUICK SEARCH</span><button data-q="Charizard">Charizard</button><button data-q="Pikachu">Pikachu</button><button data-q="Umbreon">Umbreon</button><button data-q="Eevee">Eevee</button></div>
+      </div>
+      <div class="result-head"><span id="result-count">Search to explore card records</span><span>Exact card IDs · no price estimates</span></div>
+      <div id="results" class="cards"><div class="empty"><b>⌕</b><strong>Start with a Pokémon or card number.</strong><span>Results will show catalogue identity only. Market values are not inferred.</span></div></div>
+    </section>
+    <section class="research" id="research">
+      <div class="section-title"><div><div class="kicker muted">02 / RESEARCH DESK</div><h2>From discovery to decision.</h2><p>The research layer is deliberately separate from catalogue data.</p></div><span class="source">MARKET DATA · NOT CONNECTED</span></div>
+      <div class="research-grid">
+        <article><span class="number">01</span><div class="symbol">◈</div><h3>Exact printing</h3><p>Language, set, collector number, finish, stamp and condition must match before prices are compared.</p><span class="state">IDENTITY FIRST</span></article>
+        <article><span class="number">02</span><div class="symbol">↗</div><h3>Completed sales</h3><p>Use dated sold transactions, sample size and independent sources. Asking prices are kept separate.</p><span class="state">SOLD EVIDENCE REQUIRED</span></article>
+        <article><span class="number">03</span><div class="symbol">◎</div><h3>EU delivered cost</h3><p>Compare EUR costs including shipping and fees, with US sales used only as a consistency check.</p><span class="state">EU-FIRST ANALYSIS</span></article>
+        <article><span class="number">04</span><div class="symbol">◇</div><h3>Transparent signal</h3><p>BUY, WATCH, HOLD or AVOID only when evidence thresholds are met. Missing data means no signal.</p><span class="state">NO DATA · NO SIGNAL</span></article>
+      </div>
+      <div class="signal-panel"><div><span class="kicker muted">SIGNAL ENGINE</span><h3>Nothing is rated BUY yet.</h3><p>This prototype does not connect completed-sale feeds, verified EU offers or PSA population data. It will not invent a market value to make the dashboard look complete.</p></div><span class="pending">AWAITING VERIFIED MARKET DATA</span></div>
+    </section>
+    <section class="method" id="method"><div><div class="kicker">03 / METHODOLOGY</div><h2>Evidence before conviction.</h2></div><div class="method-copy"><p>RareSignal is designed around exact English printings, European delivered costs, completed sales from independent sources and separate raw-card / PSA 10 analysis.</p><p>Catalogue metadata helps identify a card. It does not establish current market value, authenticity, condition or investment merit.</p><a href="./index.html">Back to the RareSignal overview ↗</a></div></section>
+  </main>
+  <footer><a class="brand" href="./index.html"><span class="mark">R</span><span>Rare<span class="gold">Signal</span><small>RESEARCH</small></span></a><span>Independent project · Not affiliated with The Pokémon Company.</span><span>Catalogue data: <a href="https://www.tcgdex.net/" target="_blank" rel="noopener">TCGdex ↗</a></span></footer>
+  <dialog id="detail"><button class="close" id="close" aria-label="Close">×</button><div id="detail-body"></div></dialog>
+</body>
+</html>
