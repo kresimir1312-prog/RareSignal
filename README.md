@@ -14,7 +14,7 @@ RareSignal is an English-first, European-focused Pokémon TCG card discovery and
 
 ## Current prototype
 
-The initial prototype is a static website using the TCGdex public API for English card catalogue data.
+The initial overview is a static website using the TCGdex public API for English card catalogue data. A dedicated research desk prototype is available at `prototype.html` with responsive styling in `prototype.css` and live English catalogue search/card detail interactions in `prototype.js`. It clearly labels the market-data layer as not connected and does not fabricate prices or investment signals.
 
 - `index.html` — page structure
 - `styles.css` — responsive visual system
