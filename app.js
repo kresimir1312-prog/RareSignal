@@ -3,7 +3,7 @@ const PAGE_SIZE = 24;
 let catalogue = null;
 let sets = null;
 let filteredCards = [];
-let visibleCount = PAGE_SIZE;
+let visibleCount = PAGE_SIZE;\nlet cataloguePromise = null;\nlet searchSequence = 0;\nlet detailSequence = 0;
 
 const searchInput = document.querySelector("#card-search");
 const searchButton = document.querySelector("#search-button");
@@ -36,7 +36,7 @@ async function apiGet(path) {
 }
 
 async function loadCatalogue() {
-  if (catalogue) return catalogue;
+  if (catalogue) return catalogue;\n  if (cataloguePromise) return cataloguePromise;
   setStatus("Loading English catalogue…");
   searchButton.disabled = true;
   searchButton.textContent = "Loading…";
@@ -47,7 +47,7 @@ async function loadCatalogue() {
     setStatus(`${catalogue.length.toLocaleString()} English card records available`);
     return catalogue;
   } catch (error) {
-    setStatus("Catalogue unavailable");
+    cataloguePromise = null;\n    setStatus("Catalogue unavailable");
     results.innerHTML = `<div class="empty-state"><div class="empty-symbol">!</div><h3>We couldn't load the catalogue.</h3><p>${escapeHtml(error.message)}. Please try again shortly.</p></div>`;
     throw error;
   } finally {
@@ -153,7 +153,7 @@ async function showCard(cardId) {
   dialogContent.innerHTML = '<div class="dialog-info"><p>Loading card details…</p></div>';
   dialog.showModal();
   try {
-    const card = await apiGet(`/cards/${encodeURIComponent(cardId)}`);
+    const card = await apiGet(`/cards/${encodeURIComponent(cardId)}`);\n    if (sequence !== detailSequence) return;
     const image = card.image ? `${card.image}/high.png` : "";
     const setName = card.set?.name || "Set details unavailable";
     const rarity = card.rarity || "Not provided";
