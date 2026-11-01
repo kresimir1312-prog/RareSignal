@@ -31,3 +31,14 @@ async function show(id){
 $("#search").addEventListener("click",search);input.addEventListener("keydown",e=>{if(e.key==="Enter")search();});
 document.querySelectorAll("[data-q]").forEach(b=>b.addEventListener("click",()=>{input.value=b.dataset.q;search();}));
 $("#close").addEventListener("click",()=>dlg.close());dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close();});
+
+async function loadResearchSnapshot(){
+ const host=$("#research-candidates");
+ try{
+  const r=await fetch("./data/research-snapshot-v3.9.json");
+  if(!r.ok)throw new Error("Snapshot file unavailable");
+  const data=await r.json();
+  host.innerHTML=data.cards.map(c=>'<article class="candidate"><div class="candidate-top"><span>'+esc(c.set)+' · '+esc(c.number)+'</span><b>'+esc(c.status)+'</b></div><h4>'+esc(c.name)+'</h4><p class="candidate-print">'+esc(c.printing)+' · '+esc(c.finish)+'</p><div class="candidate-value">€'+Number(c.raw_reference_eur).toFixed(2)+' <small>indicative raw reference</small></div><div class="candidate-meta">'+esc(c.raw_sales_count)+' NM sales · '+esc(c.snapshot_date)+' · '+esc(c.confidence)+' confidence</div><p class="candidate-note">'+esc(c.notes)+'</p><div class="candidate-sources">'+c.sources.map(s=>'<span>'+esc(s)+'</span>').join('')+'</div><div class="candidate-links">'+c.source_urls.map((u,i)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener">Source '+(i+1)+' ↗</a>').join(' ')+'</div></article>').join("");
+ }catch(e){host.innerHTML='<div class="candidate-loading">Research snapshot could not be loaded: '+esc(e.message)+'</div>';}
+}
+loadResearchSnapshot();
