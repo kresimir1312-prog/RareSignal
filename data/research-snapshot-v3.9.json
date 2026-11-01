@@ -3,9 +3,9 @@
   "source_workbook": "Pokemon_All_Eras_Investment_Database_v3_9_Second_Pass_Review",
   "source_sheet": "Research Batch 1",
   "snapshot_date": "2026-11-01",
-  "source_scope": "Workbook research snapshot only; no live source refresh was performed. EUR values are indicative conversions/reference values, not verified EU delivered prices.",
+  "source_scope": "Workbook research snapshot only; no live source refresh was performed. Prototype displays each raw reference in its recorded source currency. Legacy EUR conversion fields are retained for reconciliation only and are not used as valuation inputs.",
   "identity_note": "These research records are not yet linked to exact TCGdex card/variant IDs in Card Master. Treat them as research candidates, not fully reconciled catalogue identities.",
-  "signal_policy": "No BUY/WATCH/HOLD/AVOID signals are issued from this snapshot. EU delivered costs are missing; several records contain source conflicts or variant/population caveats.",
+  "signal_policy": "No BUY/WATCH/HOLD/AVOID signals are issued from this historical snapshot. The live completed-sales data layer is not connected.",
   "cards": [
     {
       "id": "WOTC-JUNGLE-1E-054",
