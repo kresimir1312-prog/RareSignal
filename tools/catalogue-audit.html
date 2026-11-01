@@ -1,30 +1,36 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RareSignal — Catalogue Validation</title><style>
 body{font:14px system-ui,sans-serif;background:#101a2a;color:#edf0f4;margin:0;padding:30px}main{max-width:900px;margin:auto}h1{font:36px Georgia,serif;color:#e1ca91}p{color:#b9c1cb;line-height:1.6}button{background:#c5a45b;color:#101a2a;border:0;padding:12px 18px;font-weight:700;cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#17263a;border:1px solid #344258;padding:18px;color:#dce2e9;line-height:1.5}.small{font-size:11px;color:#aab4c1}</style></head>
-<body><main><h1>RareSignal Catalogue Audit</h1><p class="small">Audit code version: <strong>2026-11-01-v2</strong></p><p>Runs a 100-card structural sample across five eras using the public TCGdex English API. It checks whether the selected sets and cards return identity, set, rarity, illustrator, image and variant fields. It does not verify physical card authenticity or marketplace prices.</p><button id="run">Run 100-card validation</button> <button id="download" disabled>Download JSON report</button><p id="status">Ready.</p><pre id="output">No audit run yet.</pre><p class="small">Sample design: first 20 catalogue entries from one representative set in each era. Review the selected set names in the report before treating this as a complete era-wide validation.</p></main><script>
-const API="https://api.tcgdex.net/v2/en";const AUDIT_VERSION="2026-11-01-v2";let report=null;
+<body><main><h1>RareSignal Catalogue Audit</h1><p class="small">Audit code version: <strong>2026-11-01-v3</strong></p><p>Runs a 100-card structural sample across five eras using the public TCGdex English API. It checks whether the selected sets and cards return identity, set, rarity, illustrator, image and variant fields. It does not verify physical card authenticity or marketplace prices.</p><button id="run">Run 100-card validation</button> <button id="download" disabled>Download JSON report</button><p id="status">Ready.</p><pre id="output">No audit run yet.</pre><p class="small">Sample design: first 20 catalogue entries from one representative set in each era. Review the selected set names in the report before treating this as a complete era-wide validation.</p></main><script>
+const API="https://api.tcgdex.net/v2/en";const AUDIT_VERSION="2026-11-01-v3";let report=null;
 const statusEl=document.querySelector("#status"),out=document.querySelector("#output"),download=document.querySelector("#download");
 async function get(path){const r=await fetch(API+path);if(!r.ok)throw Error(path+" returned "+r.status);return r.json()}
-function chooseSet(sets,era){
-  const sorted=(items)=>items.filter(s=>!/(promo|deck|trainer kit)/i.test(s.name||"")).sort((a,b)=>(a.releaseDate||"").localeCompare(b.releaseDate||""));
-  if(era==="Base") return sets.find(s=>s.id==="base1")||null;
-  if(era==="EX") return sorted(sets.filter(s=>/^ex$/i.test(s.serie?.name||"")||/^ex\b/i.test(s.name||"")))[0]||null;
-  if(era==="Diamond & Pearl / Platinum") return sets.find(s=>s.id==="dp1")||sorted(sets.filter(s=>/diamond\s*&\s*pearl|platinum/i.test(s.serie?.name||"")))[0]||null;
-  if(era==="Black & White") return sorted(sets.filter(s=>/black\s*&\s*white/i.test(s.serie?.name||"")||/^black\s*&\s*white/i.test(s.name||"")))[0]||null;
-  if(era==="Scarlet & Violet") return sets.find(s=>s.id==="sv01")||sorted(sets.filter(s=>/scarlet\s*&\s*violet/i.test(s.serie?.name||"")))[0]||null;
-  return null;
-}
+const ERA_TARGETS=[
+  {era:"Base",setId:"base1",setName:"Base Set",seriesName:"Base"},
+  {era:"EX",setId:"ex1",setName:"Ruby & Sapphire",seriesName:"EX"},
+  {era:"Diamond & Pearl / Platinum",setId:"dp1",setName:"Diamond & Pearl",seriesName:"Diamond & Pearl"},
+  {era:"Black & White",setId:"bw1",setName:"Black & White",seriesName:"Black & White"},
+  {era:"Scarlet & Violet",setId:"sv01",setName:"Scarlet & Violet",seriesName:"Scarlet & Violet"}
+];
 async function run(){document.querySelector("#run").disabled=true;download.disabled=true;statusEl.textContent="Loading sets…";out.textContent="";try{
-const sets=await get("/sets");const wanted=["Base","EX","Diamond & Pearl / Platinum","Black & White","Scarlet & Violet"];
-const chosen=wanted.map(era=>({era,set:chooseSet(sets,era)}));
-const missing=chosen.filter(x=>!x.set).map(x=>x.era);
-if(missing.length)throw Error("Could not identify representative sets for: "+missing.join(", ")+". No partial audit was run. Please report this set catalogue issue.");
+const sets=await get("/sets");
+const missing=ERA_TARGETS.filter(target=>!sets.some(s=>s.id===target.setId));
+if(missing.length)throw Error("TCGdex set catalogue is missing required verified IDs: "+missing.map(x=>x.setId+" ("+x.era+")").join(", ")+". No partial audit was run.");
+const chosen=[];
 const samples=[];
-for(const entry of chosen){const full=await get("/sets/"+encodeURIComponent(entry.set.id));const cards=(full.cards||[]).slice(0,20);if(cards.length<20)throw Error(entry.era+" set "+entry.set.name+" contains only "+cards.length+" sample cards; expected 20.");for(const brief of cards)samples.push({era:entry.era,setId:entry.set.id,setName:entry.set.name,cardId:brief.id})}
+for(const target of ERA_TARGETS){
+  const full=await get("/sets/"+encodeURIComponent(target.setId));
+  if(full.name!==target.setName)throw Error("Set identity mismatch for "+target.era+": expected "+target.setName+" ("+target.setId+"), received "+(full.name||"unnamed")+". No partial audit was run.");
+  if((full.serie?.name||"")!==target.seriesName)throw Error("Series mismatch for "+target.era+": expected "+target.seriesName+", received "+(full.serie?.name||"missing")+". No partial audit was run.");
+  const cards=full.cards||[];
+  if(cards.length<20)throw Error(target.era+" set "+full.name+" contains only "+cards.length+" sample cards; expected 20.");
+  chosen.push({era:target.era,set:full});
+  for(const brief of cards.slice(0,20))samples.push({era:target.era,setId:full.id,setName:full.name,cardId:brief.id});
+}
 if(samples.length!==100)throw Error("Expected exactly 100 cards but selected "+samples.length+". No partial audit was accepted.");
 let done=0;const details=[];
 for(let i=0;i<samples.length;i+=5){const batch=samples.slice(i,i+5);const results=await Promise.all(batch.map(async item=>{try{const card=await get("/cards/"+encodeURIComponent(item.cardId));return {...item,ok:true,hasName:!!card.name,hasLocalId:card.localId!==undefined,hasSet:!!card.set,hasCategory:!!card.category,hasRarity:card.rarity!==undefined,hasIllustrator:card.illustrator!==undefined,hasImage:!!card.image,hasVariants:!!card.variants,variantKeys:Object.keys(card.variants||{}),hasDetailedVariants:Array.isArray(card.variants_detailed),detailedVariantCount:card.variants_detailed?.length||0}}catch(e){return {...item,ok:false,error:e.message}}}));details.push(...results);done+=batch.length;statusEl.textContent="Validated "+done+" / "+samples.length+" cards…"}
-const summary={auditVersion:AUDIT_VERSION,runAt:new Date().toISOString(),api:API,sampleCount:details.length,successful:details.filter(x=>x.ok).length,failed:details.filter(x=>!x.ok).length,eras:chosen.map(x=>({era:x.era,setId:x.set.id,setName:x.set.name,error:null})),fieldCoverage:{name:details.filter(x=>x.ok&&x.hasName).length,localId:details.filter(x=>x.ok&&x.hasLocalId).length,set:details.filter(x=>x.ok&&x.hasSet).length,category:details.filter(x=>x.ok&&x.hasCategory).length,rarity:details.filter(x=>x.ok&&x.hasRarity).length,illustrator:details.filter(x=>x.ok&&x.hasIllustrator).length,image:details.filter(x=>x.ok&&x.hasImage).length,variants:details.filter(x=>x.ok&&x.hasVariants).length,detailedVariants:details.filter(x=>x.ok&&x.hasDetailedVariants).length},cards:details};report=summary;out.textContent=JSON.stringify(summary,null,2);statusEl.textContent="Audit complete: "+summary.successful+" successful, "+summary.failed+" failed.";download.disabled=false;
+const summary={auditVersion:AUDIT_VERSION,selectionMethod:"explicit-verified-set-ids",runAt:new Date().toISOString(),api:API,sampleCount:details.length,successful:details.filter(x=>x.ok).length,failed:details.filter(x=>!x.ok).length,eras:chosen.map(x=>({era:x.era,setId:x.set.id,setName:x.set.name,error:null})),fieldCoverage:{name:details.filter(x=>x.ok&&x.hasName).length,localId:details.filter(x=>x.ok&&x.hasLocalId).length,set:details.filter(x=>x.ok&&x.hasSet).length,category:details.filter(x=>x.ok&&x.hasCategory).length,rarity:details.filter(x=>x.ok&&x.hasRarity).length,illustrator:details.filter(x=>x.ok&&x.hasIllustrator).length,image:details.filter(x=>x.ok&&x.hasImage).length,variants:details.filter(x=>x.ok&&x.hasVariants).length,detailedVariants:details.filter(x=>x.ok&&x.hasDetailedVariants).length},cards:details};report=summary;out.textContent=JSON.stringify(summary,null,2);statusEl.textContent="Audit complete: "+summary.successful+" successful, "+summary.failed+" failed.";download.disabled=false;
 }catch(e){statusEl.textContent="Audit stopped: "+e.message;out.textContent=e.stack||e.message}finally{document.querySelector("#run").disabled=false}}
 document.querySelector("#run").addEventListener("click",run);download.addEventListener("click",()=>{if(!report)return;const blob=new Blob([JSON.stringify(report,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="raresignal-tcgdex-100-card-audit.json";a.click();URL.revokeObjectURL(url)});
 </script></body></html>
