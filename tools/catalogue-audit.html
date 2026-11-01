@@ -9,15 +9,15 @@ body{font:14px system-ui,sans-serif;background:#101a2a;color:#edf0f4;margin:0;pa
 </head>
 <body><main>
 <h1>RareSignal Catalogue Audit</h1>
-<p class="small">Audit code version: <strong>2026-11-01-v5</strong></p>
-<p>Runs a strict 100-card structural sample across five TCGdex series. It discovers series and sets from the live catalogue, checks exact series/set names, and stops rather than silently substituting a different set. Raw basic and detailed variant payloads are included in the report. This does not verify physical card authenticity or marketplace prices.</p>
+<p class="small">Audit code version: <strong>2026-11-01-v6</strong></p>
+<p>Runs a strict 100-card structural sample across five TCGdex series. It discovers series and sets from the live catalogue, checks exact series/set names, and stops rather than silently substituting a different set. Actual card identity fields (name, local number, category, rarity, illustrator, image and set) plus raw basic and detailed variant payloads are exported and checked. This does not verify physical card authenticity or marketplace prices.</p>
 <button id="run">Run 100-card validation</button> <button id="download" disabled>Download JSON report</button>
 <p id="status">Ready.</p><pre id="output">No audit run yet.</pre>
 <p class="small">Sample design: first 20 catalogue entries from one representative expansion in each series. This is a structural sample, not a complete era-wide audit.</p>
 </main>
 <script>
 const API="https://api.tcgdex.net/v2/en";
-const AUDIT_VERSION="2026-11-01-v5";
+const AUDIT_VERSION="2026-11-01-v6";
 let report=null;
 const statusEl=document.querySelector("#status");
 const out=document.querySelector("#output");
@@ -81,14 +81,25 @@ async function run(){
       const results=await Promise.all(batch.map(async item=>{
         try{
           const card=await get("/cards/"+encodeURIComponent(item.cardId));
-          const identityOk=card.id===item.cardId&&card.set?.id===item.setId&&card.set?.name===item.setName;
-          if(!identityOk) return {...item,ok:false,identityOk:false,error:"Card identity/set mismatch",received:{id:card.id,setId:card.set?.id,setName:card.set?.name}};
+          const identity={
+            id:card.id??null,name:card.name??null,localId:card.localId??null,
+            category:card.category??null,rarity:card.rarity??null,
+            illustrator:card.illustrator??null,image:card.image??null,
+            set:card.set?{id:card.set.id??null,name:card.set.name??null}:null
+          };
+          const hasName=typeof card.name==="string"&&card.name.trim().length>0;
+          const hasLocalId=(typeof card.localId==="string"&&card.localId.trim().length>0)||(typeof card.localId==="number"&&Number.isFinite(card.localId));
+          const hasCategory=typeof card.category==="string"&&card.category.trim().length>0;
+          const hasImage=typeof card.image==="string"&&card.image.trim().length>0;
+          const identityOk=card.id===item.cardId&&card.set?.id===item.setId&&card.set?.name===item.setName&&hasName&&hasLocalId&&hasCategory&&hasImage;
+          if(!identityOk) return {...item,ok:false,identityOk:false,identity,error:"Card identity/set mismatch or missing required identity value"};
           return {
-            ...item,ok:true,identityOk:true,
-            hasName:!!card.name,hasLocalId:card.localId!==undefined,
-            hasSet:!!card.set,hasCategory:!!card.category,
-            hasRarity:card.rarity!==undefined,hasIllustrator:card.illustrator!==undefined,
-            hasImage:!!card.image,hasVariants:!!card.variants,
+            ...item,ok:true,identityOk:true,identity,
+            hasName,hasLocalId,
+            hasSet:!!card.set,hasCategory,
+            hasRarity:card.rarity!==undefined&&card.rarity!==null,
+            hasIllustrator:card.illustrator!==undefined&&card.illustrator!==null,
+            hasImage,hasVariants:!!card.variants,
             variantKeys:Object.keys(card.variants||{}),variants:card.variants||null,
             hasDetailedVariants:Array.isArray(card.variants_detailed),
             detailedVariantCount:Array.isArray(card.variants_detailed)?card.variants_detailed.length:0,
@@ -101,6 +112,16 @@ async function run(){
       statusEl.textContent="Validated "+done+" / "+samples.length+" cards…";
     }
     const successful=details.filter(item=>item.ok);
+    const duplicateCardIds=details.map(x=>x.cardId).filter((id,index,all)=>all.indexOf(id)!==index);
+    const identityValueCoverage={
+      name:details.filter(x=>typeof x.identity?.name==="string"&&x.identity.name.trim()).length,
+      localId:details.filter(x=>x.identity?.localId!==null&&x.identity?.localId!==undefined&&String(x.identity.localId).trim()).length,
+      category:details.filter(x=>typeof x.identity?.category==="string"&&x.identity.category.trim()).length,
+      rarity:details.filter(x=>x.identity?.rarity!==null&&x.identity?.rarity!==undefined).length,
+      illustrator:details.filter(x=>x.identity?.illustrator!==null&&x.identity?.illustrator!==undefined).length,
+      image:details.filter(x=>typeof x.identity?.image==="string"&&x.identity.image.trim()).length,
+      set:details.filter(x=>x.identity?.set?.id&&x.identity?.set?.name).length
+    };
     const variantKeyCounts={};
     for(const card of successful) for(const key of card.variantKeys||[]) variantKeyCounts[key]=(variantKeyCounts[key]||0)+1;
     const detailedRecords=successful.flatMap(card=>(card.variantsDetailed||[]).map(variant=>({cardId:card.cardId,era:card.era,variant})));
@@ -113,8 +134,10 @@ async function run(){
       auditVersion:AUDIT_VERSION,
       selectionMethod:"live-series-catalogue-exact-series-and-set-name-match",
       variantAudit:"raw basic and detailed variant payloads included per card",
+      identityAudit:"actual identity values exported; required values validated; duplicates checked",
       runAt:new Date().toISOString(),api:API,
       sampleCount:details.length,successful:successful.length,failed:details.length-successful.length,
+      duplicateCardIds:[...new Set(duplicateCardIds)],identityValueCoverage,
       selectedSets:selected,variantKeyCounts,
       detailedVariantRecordCount:detailedRecords.length,detailedVariantShapes,
       fieldCoverage:{
@@ -144,7 +167,7 @@ downloadButton.addEventListener("click",()=>{
   const blob=new Blob([JSON.stringify(report,null,2)],{type:"application/json"});
   const url=URL.createObjectURL(blob);
   const anchor=document.createElement("a");
-  anchor.href=url;anchor.download="raresignal-tcgdex-100-card-audit-v5.json";
+  anchor.href=url;anchor.download="raresignal-tcgdex-100-card-audit-v6.json";
   anchor.click();URL.revokeObjectURL(url);
 });
 </script></body></html>
