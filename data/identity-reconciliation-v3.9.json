@@ -1,0 +1,38 @@
+{
+  "source": "Pokemon_All_Eras_Investment_Database_v3_9_Second_Pass_Review.xlsx",
+  "sheet": "Research Batch 1",
+  "catalogue": "TCGdex English card catalogue and variant catalogue, workbook snapshot 2026-11-01",
+  "candidate_count": 20,
+  "card_id_matches": 19,
+  "unresolved": 1,
+  "variant_review_required": 8,
+  "method": "Matched English-language card name, set and collector number/local ID. Variant identity assessed separately; no marketplace IDs were used to force a match.",
+  "records": [
+    {"workbook_id":"WOTC-JUNGLE-1E-054","name":"Jigglypuff","set":"Jungle","number":"54/64","tcgdex_id":"base2-54","identity":"MATCHED","variant":"normal; 1st Edition"},
+    {"workbook_id":"WOTC-JUNGLE-1E-050","name":"Cubone","set":"Jungle","number":"50/64","tcgdex_id":"base2-50","identity":"MATCHED","variant":"normal; 1st Edition"},
+    {"workbook_id":"WOTC-TR-DARKDRAG-1ED","name":"Dark Dragonite","set":"Team Rocket","number":"5/82","tcgdex_id":"base5-5","identity":"MATCHED","variant":"holo; 1st Edition; marketplace collision warning"},
+    {"workbook_id":"WOTC-JUNGLE-SNORLAX","name":"Snorlax","set":"Jungle","number":"11/64","tcgdex_id":"base2-11","identity":"MATCHED","variant":"holo; standard/Unlimited candidate; expansion-symbol variant distinction retained"},
+    {"workbook_id":"WOTC-BASE-BLASTOISE","name":"Blastoise","set":"Base Set","number":"2/102","tcgdex_id":"base1-2","identity":"MATCHED","variant":"holo; Unlimited subtype"},
+    {"workbook_id":"EX-DS-DELTA-002","name":"Crobat δ","set":"EX Delta Species","number":"2/113","tcgdex_id":"ex11-2","identity":"MATCHED_CARD_VARIANT_REVIEW","variant":"holo; standard holo vs reverse must remain separate"},
+    {"workbook_id":"EX-DS-DELTA-005","name":"Flareon δ","set":"EX Delta Species","number":"5/113","tcgdex_id":"ex11-5","identity":"MATCHED_CARD_VARIANT_REVIEW","variant":"holo; standard holo vs reverse must remain separate"},
+    {"workbook_id":"EX-DS-DELTA-006","name":"Gardevoir δ","set":"EX Delta Species","number":"6/113","tcgdex_id":"ex11-6","identity":"MATCHED_CARD_VARIANT_REVIEW","variant":"holo; standard holo vs reverse must remain separate"},
+    {"workbook_id":"EX-DS-DELTA-010","name":"Marowak δ","set":"EX Delta Species","number":"10/113","tcgdex_id":"ex11-10","identity":"MATCHED_CARD_VARIANT_REVIEW","variant":"holo; standard holo vs reverse must remain separate"},
+    {"workbook_id":"EX-DS-DELTA-015","name":"Starmie δ","set":"EX Delta Species","number":"15/113","tcgdex_id":"ex11-15","identity":"MATCHED_CARD_VARIANT_REVIEW","variant":"holo; standard holo vs reverse must remain separate"},
+    {"workbook_id":"EX-DS-DELTA-068","name":"Eevee δ","set":"EX Delta Species","number":"68/113","tcgdex_id":"ex11-68","identity":"MATCHED_CARD_VARIANT_REVIEW","variant":"normal; non-holo; reverse holo is separate"},
+    {"workbook_id":"EX-UF-UNSEEN-029","name":"Lugia","set":"Unseen Forces","number":"29/115","tcgdex_id":"ex10-29","identity":"MATCHED","variant":"holo; cosmos foil"},
+    {"workbook_id":"EX-DRAGON-LATIAS-EX","name":"Latias ex","set":"EX Dragon","number":"93/97","tcgdex_id":"ex3-93","identity":"MATCHED","variant":"holo EX"},
+    {"workbook_id":"EX-DRAGON-RAYQUAZA-EX","name":"Rayquaza ex","set":"EX Dragon","number":"97/97","tcgdex_id":"ex3-97","identity":"MATCHED","variant":"holo EX"},
+    {"workbook_id":"DP-DP1-EMPOLEON-LVX","name":"Empoleon LV.X","set":"Diamond & Pearl","number":"120/130","tcgdex_id":"dp1-120","identity":"MATCHED","variant":"holo LV.X"},
+    {"workbook_id":"DP-DP1-INFERNAPE-LVX","name":"Infernape LV.X","set":"Diamond & Pearl","number":"121/130","tcgdex_id":"dp1-121","identity":"MATCHED","variant":"holo LV.X"},
+    {"workbook_id":"DP-STORMFRONT-GENGAR-LVX","name":"Gengar LV.X","set":"Stormfront as recorded","number":"97/100 as recorded","tcgdex_id":null,"identity":"UNRESOLVED","variant":"BLOCKED; workbook identity conflicts with catalogue; do not auto-correct"},
+    {"workbook_id":"DP-SUPREMEVICTORS-CHARIZARDG","name":"Charizard G LV.X","set":"Supreme Victors","number":"143/147","tcgdex_id":"pl3-143","identity":"MATCHED","variant":"holo LV.X"},
+    {"workbook_id":"BW-BW-RESHIRAM-113","name":"Reshiram","set":"Black & White","number":"113/114","tcgdex_id":"bw1-113","identity":"MATCHED_CARD_VARIANT_REVIEW","variant":"Full Art printing; catalogue variant is generic normal; printing treatment needs manual confirmation"},
+    {"workbook_id":"BW-BW-ZEKROM-114","name":"Zekrom","set":"Black & White","number":"114/114","tcgdex_id":"bw1-114","identity":"MATCHED_CARD_VARIANT_REVIEW","variant":"Full Art printing; catalogue variant is generic normal; printing treatment needs manual confirmation"}
+  ],
+  "warnings": [
+    "Eight records need further variant-level review despite a card-level match.",
+    "Marketplace IDs are not treated as proof of exact variant identity.",
+    "Gengar LV.X remains blocked: the workbook's Stormfront 97/100 identity did not match the English TCGdex catalogue; no substitute card was assigned.",
+    "This is a static workbook-to-catalogue reconciliation, not a live market or source refresh."
+  ]
+}
