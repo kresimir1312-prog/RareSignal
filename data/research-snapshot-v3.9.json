@@ -1,0 +1,257 @@
+{
+  "schema_version": "1.0",
+  "source_workbook": "Pokemon_All_Eras_Investment_Database_v3_9_Second_Pass_Review",
+  "source_sheet": "Research Batch 1",
+  "snapshot_date": "2026-11-01",
+  "source_scope": "Workbook research snapshot only; no live source refresh was performed. EUR values are indicative conversions/reference values, not verified EU delivered prices.",
+  "identity_note": "These research records are not yet linked to exact TCGdex card/variant IDs in Card Master. Treat them as research candidates, not fully reconciled catalogue identities.",
+  "signal_policy": "No BUY/WATCH/HOLD/AVOID signals are issued from this snapshot. EU delivered costs are missing; several records contain source conflicts or variant/population caveats.",
+  "cards": [
+    {
+      "id": "WOTC-JUNGLE-1E-054",
+      "name": "Jigglypuff",
+      "set": "Jungle",
+      "number": "54/64",
+      "printing": "1st Edition",
+      "finish": "Regular non-holo",
+      "raw_reference_eur": 6.68,
+      "raw_currency_value": 7.46,
+      "raw_currency": "USD",
+      "raw_sales_count": 65,
+      "sales_basis": "Near Mint completed sales; source snapshot 2026-10-29",
+      "snapshot_date": "2026-10-29",
+      "sources": [
+        "LastSold",
+        "Folio"
+      ],
+      "confidence": "MEDIUM",
+      "status": "REVIEW",
+      "notes": "Exact 1st Edition print is explicit. PSA10 figure is a provider estimate; population snapshot is dated 2026-09-01. No EU delivered cost verified.",
+      "source_urls": [
+        "https://lastsold.com/en/sets/jungle/jigglypuff-54-1st",
+        "https://folio.fyi/licences/pokemon/en/jungle/jigglypuff-1st-edition-54"
+      ]
+    },
+    {
+      "id": "WOTC-JUNGLE-1E-050",
+      "name": "Cubone",
+      "set": "Jungle",
+      "number": "50/64",
+      "printing": "1st Edition",
+      "finish": "Regular non-holo",
+      "raw_reference_eur": 7.61,
+      "raw_currency_value": 7.61,
+      "raw_currency": "EUR",
+      "raw_sales_count": 232,
+      "sales_basis": "Completed sales on record; latest 2026-10-30",
+      "snapshot_date": "2026-10-31",
+      "sources": [
+        "SearchCards",
+        "PriceCharting"
+      ],
+      "confidence": "MEDIUM",
+      "status": "REVIEW",
+      "notes": "Use the 1st Edition-specific record only. PSA10 reference is based on three sales and is thin. No EU delivered cost verified.",
+      "source_urls": [
+        "https://searchcards.co/market/card/pokemon-jungle/cubone-1st-edition-50",
+        "https://www.pricecharting.com/game/pokemon-jungle/cubone-1st-edition-50"
+      ]
+    },
+    {
+      "id": "WOTC-TR-DARKDRAG-1ED",
+      "name": "Dark Dragonite",
+      "set": "Team Rocket",
+      "number": "5/82",
+      "printing": "1st Edition",
+      "finish": "Holo",
+      "raw_reference_eur": 490.97,
+      "raw_currency_value": 548.51,
+      "raw_currency": "USD",
+      "raw_sales_count": 48,
+      "sales_basis": "Near Mint completed sales; snapshot 2026-10-31",
+      "snapshot_date": "2026-10-31",
+      "sources": [
+        "LastSold",
+        "SlabVector"
+      ],
+      "confidence": "MEDIUM",
+      "status": "REVIEW",
+      "notes": "Keep separate from Unlimited and non-holo. PSA10 quote is an estimate; population snapshot dated 2026-10-27. Confirm stamp on individual listings.",
+      "source_urls": [
+        "https://lastsold.com/en/sets/team-rocket/dark-dragonite-5-1st",
+        "https://slabvector.com/card/base5-5/psa/5/1st-edition"
+      ]
+    },
+    {
+      "id": "WOTC-JUNGLE-SNORLAX",
+      "name": "Snorlax",
+      "set": "Jungle",
+      "number": "11/64",
+      "printing": "Unlimited / standard",
+      "finish": "Holo",
+      "raw_reference_eur": 71.29,
+      "raw_currency_value": 79.65,
+      "raw_currency": "USD",
+      "raw_sales_count": 186,
+      "sales_basis": "Near Mint completed sales; snapshot 2026-10-31",
+      "snapshot_date": "2026-10-31",
+      "sources": [
+        "LastSold"
+      ],
+      "confidence": "MEDIUM",
+      "status": "REVIEW",
+      "notes": "1st Edition is a separate, higher-priced printing. Confirm printing stamp on individual listings. PSA10 value is approximate; no EU delivered cost verified.",
+      "source_urls": [
+        "https://lastsold.com/en/sets/jungle/snorlax-11",
+        "https://holotrends.com/pokemon/jungle/snorlax-11/"
+      ]
+    },
+    {
+      "id": "WOTC-BASE-BLASTOISE",
+      "name": "Blastoise",
+      "set": "Base Set",
+      "number": "2/102",
+      "printing": "Unlimited",
+      "finish": "Holo",
+      "raw_reference_eur": 88.15,
+      "raw_currency_value": 98.48,
+      "raw_currency": "USD",
+      "raw_sales_count": 34,
+      "sales_basis": "Raw sales median; 90 days; marked 2026-10-08",
+      "snapshot_date": "2026-10-28",
+      "sources": [
+        "ShopCardHub",
+        "SlabVector"
+      ],
+      "confidence": "MEDIUM",
+      "status": "REVIEW",
+      "notes": "Raw and PSA10 references come from distinct sources. PSA population reported as 381/52,965. Cardmarket trend is not a completed-sale median. No EU delivered cost verified.",
+      "source_urls": [
+        "https://www.shopcardhub.com/card-blastoise-2-base-set",
+        "https://slabvector.com/card/base1-2/psa/10/unlimited"
+      ]
+    },
+    {
+      "id": "EX-DS-DELTA-002",
+      "name": "Crobat δ",
+      "set": "EX Delta Species",
+      "number": "2/113",
+      "printing": "Standard holofoil (not reverse)",
+      "finish": "Holo",
+      "raw_reference_eur": 22.82,
+      "raw_currency_value": 25.49,
+      "raw_currency": "USD",
+      "raw_sales_count": 32,
+      "sales_basis": "Near Mint completed sales; snapshot 2026-10-30",
+      "snapshot_date": "2026-10-30",
+      "sources": [
+        "LastSold",
+        "EvoTerminal"
+      ],
+      "confidence": "LOW",
+      "status": "REVIEW",
+      "notes": "Holo and reverse-holo values differ sharply. PSA population source is variant-ambiguous and older; exclude PSA10 valuation pending exact-variant confirmation.",
+      "source_urls": [
+        "https://lastsold.com/en/sets/delta-species/crobat-2",
+        "https://evoterminal.com/card/84490"
+      ]
+    },
+    {
+      "id": "EX-DS-DELTA-005",
+      "name": "Flareon δ",
+      "set": "EX Delta Species",
+      "number": "5/113",
+      "printing": "Standard holofoil (not reverse)",
+      "finish": "Holo",
+      "raw_reference_eur": 114.14,
+      "raw_currency_value": 127.52,
+      "raw_currency": "USD",
+      "raw_sales_count": 23,
+      "sales_basis": "Near Mint completed sales; snapshot 2026-10-27",
+      "snapshot_date": "2026-10-27",
+      "sources": [
+        "LastSold",
+        "CollectSherpa"
+      ],
+      "confidence": "LOW",
+      "status": "REVIEW",
+      "notes": "Do not use reverse-holo PSA10 or market references for this standard holo. The LastSold raw reference is provisional. No EU delivered cost verified.",
+      "source_urls": [
+        "https://lastsold.com/en/sets/delta-species/flareon-5",
+        "https://collectsherpa.com/cards/english/flareon-delta-species-5-113-reverse-holofoil-85501/psa/10"
+      ]
+    },
+    {
+      "id": "EX-DS-DELTA-006",
+      "name": "Gardevoir δ",
+      "set": "EX Delta Species",
+      "number": "6/113",
+      "printing": "Standard holofoil (not reverse)",
+      "finish": "Holo",
+      "raw_reference_eur": 91.77,
+      "raw_currency_value": 102.52,
+      "raw_currency": "USD",
+      "raw_sales_count": 16,
+      "sales_basis": "Near Mint completed sales; snapshot 2026-10-25",
+      "snapshot_date": "2026-10-26",
+      "sources": [
+        "LastSold",
+        "GradeValue",
+        "CollectSherpa"
+      ],
+      "confidence": "LOW",
+      "status": "REVIEW",
+      "notes": "Sources disagree on raw value and PSA10. Keep source values separate; do not create a blended midpoint. Holo and reverse-holo are distinct.",
+      "source_urls": [
+        "https://lastsold.com/en/sets/delta-species/gardevoir-6",
+        "https://collectsherpa.com/cards/english/gardevoir-delta-species-6-113-holofoil-85640/psa/10"
+      ]
+    },
+    {
+      "id": "EX-DS-DELTA-010",
+      "name": "Marowak δ",
+      "set": "EX Delta Species",
+      "number": "10/113",
+      "printing": "Standard holofoil (not reverse)",
+      "finish": "Holo",
+      "raw_reference_eur": 47.76,
+      "raw_currency_value": 53.36,
+      "raw_currency": "USD",
+      "raw_sales_count": 15,
+      "sales_basis": "Near Mint completed sales; snapshot 2026-10-30",
+      "snapshot_date": "2026-10-30",
+      "sources": [
+        "LastSold"
+      ],
+      "confidence": "MEDIUM",
+      "status": "REVIEW",
+      "notes": "Exact English Holo line reported separately from Reverse Holo. PSA10 is approximate, not a transaction median. No EU delivered cost verified.",
+      "source_urls": [
+        "https://lastsold.com/en/sets/delta-species/marowak-10"
+      ]
+    },
+    {
+      "id": "EX-DS-DELTA-015",
+      "name": "Starmie δ",
+      "set": "EX Delta Species",
+      "number": "15/113",
+      "printing": "Standard holofoil (not reverse)",
+      "finish": "Holo",
+      "raw_reference_eur": 36.34,
+      "raw_currency_value": 40.6,
+      "raw_currency": "USD",
+      "raw_sales_count": 11,
+      "sales_basis": "Near Mint completed sales; snapshot 2026-10-30",
+      "snapshot_date": "2026-10-30",
+      "sources": [
+        "LastSold"
+      ],
+      "confidence": "MEDIUM",
+      "status": "REVIEW",
+      "notes": "Exact English Holo line; Reverse Holo is separately valued. PSA10 is approximate; raw sample is modest. No EU delivered cost verified.",
+      "source_urls": [
+        "https://lastsold.com/en/sets/delta-species/starmie-15"
+      ]
+    }
+  ]
+}
