@@ -16,3 +16,5 @@ jobs:
           node-version: 22
       - name: Check Card Finder JavaScript syntax
         run: node --check app.js
+      - name: Check Research Desk prototype JavaScript syntax
+        run: node --check prototype.js
