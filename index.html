@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101a2a">
+  <meta name="description" content="Discover Pokémon cards and explore independent European Pokémon TCG market research with RareSignal.">
+  <title>RareSignal — Pokémon TCG Card Finder & Market Intelligence</title>
+  <link rel="preconnect" href="https://api.tcgdex.net">
+  <link rel="preconnect" href="https://assets.tcgdex.net">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="RareSignal home">
+      <span class="brand-mark">R</span>
+      <span class="brand-name">Rare<span>Signal</span><small>RESEARCH</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="active" href="#finder">Card Finder</a>
+      <a href="#market">Market</a>
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="header-actions">
+      <span class="language-pill" aria-label="Current language">EN <span aria-hidden="true">⌄</span></span>
+      <a class="header-link" href="#newsletter">Newsletter <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> INDEPENDENT POKÉMON TCG MARKET INTELLIGENCE</div>
+        <h1>Find the card.<br><em>Understand its value.</em></h1>
+        <p class="hero-copy">A clearer way to explore Pokémon cards and the European market. Start with the card, then follow the evidence.</p>
+        <a class="text-link" href="#finder">Explore the Card Finder <span>↓</span></a>
+      </div>
+      <div class="hero-aside" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="signal-core"><span>R</span></div>
+        <div class="signal-label">RESEARCH<br>WITHOUT THE NOISE</div>
+      </div>
+      <div class="hero-footer"><span>EUROPEAN MARKET FOCUS</span><span>ENGLISH CATALOGUE PREVIEW</span></div>
+    </section>
+
+    <section class="finder-section section-wrap" id="finder">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow muted">01 / DISCOVER</div>
+          <h2>Pokémon Card Finder</h2>
+          <p>Search the English catalogue by Pokémon name, card name, set or collector number.</p>
+        </div>
+        <div class="catalogue-status"><span class="status-dot"></span><span id="catalogue-status">Catalogue ready to load</span></div>
+      </div>
+
+      <div class="search-panel">
+        <label class="search-label" for="card-search">WHAT CARD ARE YOU LOOKING FOR?</label>
+        <div class="search-row">
+          <div class="search-input-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input id="card-search" type="search" placeholder="Try Charizard, Pikachu, 4/102..." autocomplete="off"></div>
+          <button id="search-button" class="gold-button" type="button">Search cards <span>→</span></button>
+        </div>
+        <div class="search-hints"><span>POPULAR SEARCHES</span><button data-query="Charizard">Charizard</button><button data-query="Pikachu">Pikachu</button><button data-query="Umbreon">Umbreon</button><button data-query="Eevee">Eevee</button></div>
+      </div>
+
+      <div class="results-toolbar"><span id="results-count">Search the catalogue to begin</span><span class="results-note">Card identity data · TCGdex</span></div>
+      <div id="results" class="results-grid" aria-live="polite">
+        <div class="empty-state">
+          <div class="empty-symbol">⌕</div>
+          <h3>Your next discovery starts here.</h3>
+          <p>Search for a Pokémon or card name to explore catalogue records.</p>
+        </div>
+      </div>
+      <div id="load-more-wrap" class="load-more-wrap" hidden><button id="load-more" class="outline-button" type="button">Load more results</button></div>
+    </section>
+
+    <section class="market-strip" id="market">
+      <div class="section-wrap market-inner">
+        <div><div class="eyebrow muted">02 / MARKET INTELLIGENCE</div><h2>European perspective.<br><em>Evidence-led decisions.</em></h2></div>
+        <div class="market-copy"><p>Card identity is only the starting point. RareSignal is being built to bring together completed-sale evidence, European buying conditions and transparent investment research.</p><span class="coming-soon"><i></i> MARKET DATA LAYER — IN DEVELOPMENT</span></div>
+      </div>
+    </section>
+
+    <section class="research-section section-wrap" id="research">
+      <div class="section-heading">
+        <div><div class="eyebrow muted">03 / RESEARCH</div><h2>Research over speculation.</h2><p>Independent analysis, exact variants and clearly explained evidence.</p></div>
+        <span class="coming-soon"><i></i> COMING SOON</span>
+      </div>
+      <div class="research-cards">
+        <article class="research-card"><span class="card-index">01</span><div class="research-icon">↗</div><h3>Market opportunities</h3><p>Card-level research with completed-sale evidence and transparent confidence levels.</p><span class="card-foot">BUY · WATCH · HOLD · AVOID</span></article>
+        <article class="research-card"><span class="card-index">02</span><div class="research-icon">◎</div><h3>EU vs US pricing</h3><p>Compare equivalent printings and understand the real cost of buying in Europe.</p><span class="card-foot">EUR-FIRST ANALYSIS</span></article>
+        <article class="research-card"><span class="card-index">03</span><div class="research-icon">◇</div><h3>Grading economics</h3><p>PSA population, sale samples, gem rates and PSA 9 fallback analysis.</p><span class="card-foot">EVIDENCE-BASED GRADING</span></article>
+      </div>
+    </section>
+
+    <section class="newsletter-section" id="newsletter">
+      <div class="section-wrap newsletter-inner"><div><div class="eyebrow">RARESIGNAL BRIEFING</div><h2>Research worth<br><em>paying attention to.</em></h2></div><div><p>Get market observations and new research reports when the RareSignal briefing launches.</p><span class="newsletter-note">Newsletter signup is not connected yet. Join functionality will be added after the publication account is configured.</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap" id="about">
+    <a class="brand" href="#"><span class="brand-mark">R</span><span class="brand-name">Rare<span>Signal</span><small>RESEARCH</small></span></a>
+    <p>Independent Pokémon TCG market intelligence.<br>Built for collectors and investors across Europe.</p>
+    <div class="footer-bottom"><span>© <span id="year"></span> RareSignal Research</span><span>Independent project · Not affiliated with The Pokémon Company</span><a href="https://www.tcgdex.net/" target="_blank" rel="noopener noreferrer">Catalogue data: TCGdex ↗</a></div>
+  </footer>
+
+  <dialog id="card-dialog" class="card-dialog">
+    <button class="dialog-close" id="dialog-close" aria-label="Close card details">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+</body>
+</html>
