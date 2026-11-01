@@ -18,3 +18,33 @@ button:disabled{opacity:.55;cursor:wait}
 @media(max-width:1050px){.topbar{padding-left:20px;padding-right:20px}.topbar nav{gap:14px}.currency{display:none}.topbar .brand{font-size:19px}}
 @media(max-width:720px){.topbar nav{display:none}.top-actions{margin-left:auto}.welcome{padding-top:65px}.section-title{align-items:flex-start}.source{white-space:normal;text-align:right}}
 @media(max-width:560px){#finder,#estimator,#research,#method{scroll-margin-top:70px}.section-title .source{text-align:left}}
+
+/* Visual refinement: consistent hierarchy, focus states and compact responsive layouts */
+:root{--shadow-soft:0 12px 34px rgba(16,26,42,.07)}
+.topbar{box-shadow:0 3px 16px rgba(16,26,42,.035);backdrop-filter:saturate(1.15)}
+.brand .mark{box-shadow:inset 0 0 0 3px rgba(255,255,255,.035)}
+.welcome{isolation:isolate}
+.welcome:before{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(16,26,42,.35),transparent 70%);pointer-events:none}
+.welcome-note{backdrop-filter:blur(2px)}
+.primary,.searchline button,.outline-button{transition:background .18s ease,transform .18s ease,box-shadow .18s ease}
+.primary:hover{background:#d7b873;transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.searchbox,.estimator-panel,.candidate,.research-grid article{border-radius:4px;box-shadow:0 3px 12px rgba(16,26,42,.025)}
+.searchbox{box-shadow:var(--shadow-soft)}
+.searchline input:focus,.estimator-controls input:focus,.estimator-controls select:focus,.sales-inputs textarea:focus{border-color:#b99b5b;outline:0;box-shadow:0 0 0 3px rgba(198,164,94,.13)}
+.searchline button:hover{background:#233651;transform:translateY(-1px)}
+.card{border-radius:4px;box-shadow:0 2px 8px rgba(16,26,42,.025)}
+.card:hover{border-color:#d3c39f}
+.research-grid article,.candidate{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.research-grid article:hover,.candidate:hover{transform:translateY(-2px);box-shadow:var(--shadow-soft);border-color:#d9cba9}
+.art{border-radius:2px}
+.signal-panel{border:1px solid #e0ddd4;border-radius:4px}
+.estimate-stats>div{border-radius:3px}
+dialog{border-radius:5px;overflow:hidden}
+.close{width:36px;height:36px;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+button,a,input,select,textarea{ -webkit-tap-highlight-color:transparent }
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[role="button"]:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+button:disabled{opacity:.55;cursor:wait}
+@media(min-width:1200px){.welcome{padding-left:max(10vw,150px);padding-right:max(10vw,150px)}}
+@media(max-width:800px){.topbar{gap:12px}.top-actions{margin-left:auto}.metrics div{padding:20px 14px}.workspace,.research{padding-left:22px;padding-right:22px}.estimator{padding-left:22px;padding-right:22px}}
+@media(max-width:560px){.welcome h1{letter-spacing:-1.5px}.welcome p{font-size:12px}.metrics strong{font-size:17px}.result-head{flex-wrap:wrap;line-height:1.5}.result-head span:last-child{width:100%}.cards{gap:9px}.card{padding:9px}.card h3{font-size:15px}.art{height:138px}.candidate{padding:16px}.candidate-value{font-size:23px}.method{gap:10px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
