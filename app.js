@@ -3,7 +3,13 @@ const PAGE_SIZE = 24;
 let catalogue = null;
 let sets = null;
 let filteredCards = [];
-let visibleCount = PAGE_SIZE;\nlet cataloguePromise = null;\nlet searchSequence = 0;\nlet detailSequence = 0;
+let visibleCount = PAGE_SIZE;
+let cataloguePromise = null;
+let searchSequence = 0;
+let detailSequence = 0;
+let cataloguePromise = null;
+let searchSequence = 0;
+let detailSequence = 0;
 
 const searchInput = document.querySelector("#card-search");
 const searchButton = document.querySelector("#search-button");
@@ -36,18 +42,23 @@ async function apiGet(path) {
 }
 
 async function loadCatalogue() {
-  if (catalogue) return catalogue;\n  if (cataloguePromise) return cataloguePromise;
+  if (catalogue) return catalogue;
+  if (cataloguePromise) return cataloguePromise;
+  if (cataloguePromise) return cataloguePromise;
   setStatus("Loading English catalogue…");
   searchButton.disabled = true;
   searchButton.textContent = "Loading…";
   try {
-    const data = await apiGet("/cards");
-    if (!Array.isArray(data)) throw new Error("Unexpected card catalogue response");
-    catalogue = data;
-    setStatus(`${catalogue.length.toLocaleString()} English card records available`);
-    return catalogue;
+    cataloguePromise = apiGet("/cards").then(data => {
+      if (!Array.isArray(data)) throw new Error("Unexpected card catalogue response");
+      catalogue = data;
+      setStatus(`${catalogue.length.toLocaleString()} English card records available`);
+      return catalogue;
+    });
+    return await cataloguePromise;
   } catch (error) {
-    cataloguePromise = null;\n    setStatus("Catalogue unavailable");
+    cataloguePromise = null;
+    setStatus("Catalogue unavailable");
     results.innerHTML = `<div class="empty-state"><div class="empty-symbol">!</div><h3>We couldn't load the catalogue.</h3><p>${escapeHtml(error.message)}. Please try again shortly.</p></div>`;
     throw error;
   } finally {
@@ -79,6 +90,8 @@ function matchesCard(card, term) {
   const name = normalise(card.name);
   const id = normalise(card.id);
   const localId = normalise(card.localId);
+  const number = q.match(/^(\d+)\s*\/\s*\d+$/);
+  if (number) return localId === number[1] || id.endsWith(`-${number[1]}`);
   return name.includes(q) || id.includes(q) || localId === q || id.endsWith(`-${q}`);
 }
 
@@ -109,6 +122,7 @@ function renderResults() {
 }
 
 async function searchCards() {
+  const sequence = ++searchSequence;
   const query = searchInput.value.trim();
   const selectedSet = setFilter.value;
   if (query.length === 1) {
@@ -122,11 +136,13 @@ async function searchCards() {
   results.innerHTML = '<div class="empty-state"><div class="empty-symbol">…</div><h3>Searching the catalogue</h3><p>Matching English card records.</p></div>';
   try {
     const cards = await loadCatalogue();
+    if (sequence !== searchSequence) return;
     filteredCards = cards.filter(card => matchesCard(card, query) && (!selectedSet || card.id.startsWith(selectedSet + "-")));
     filteredCards.sort((a,b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
     visibleCount = PAGE_SIZE;
     renderResults();
   } catch {
+    if (sequence !== searchSequence) return;
     resultsCount.textContent = "Search could not be completed";
   }
 }
@@ -150,10 +166,13 @@ function detailedVariants(card) {
 }
 
 async function showCard(cardId) {
+  const sequence = ++detailSequence;
   dialogContent.innerHTML = '<div class="dialog-info"><p>Loading card details…</p></div>';
   dialog.showModal();
   try {
-    const card = await apiGet(`/cards/${encodeURIComponent(cardId)}`);\n    if (sequence !== detailSequence) return;
+    const card = await apiGet(`/cards/${encodeURIComponent(cardId)}`);
+    if (sequence !== detailSequence) return;
+    if (sequence !== detailSequence) return;
     const image = card.image ? `${card.image}/high.png` : "";
     const setName = card.set?.name || "Set details unavailable";
     const rarity = card.rarity || "Not provided";
@@ -182,6 +201,7 @@ async function showCard(cardId) {
       </div>
     </div>`;
   } catch (error) {
+    if (sequence !== detailSequence) return;
     dialogContent.innerHTML = `<div class="dialog-info"><h2>Card details unavailable</h2><p>${escapeHtml(error.message)}</p></div>`;
   }
 }
