@@ -32,6 +32,12 @@ function normalise(value) {
   return String(value ?? "").toLocaleLowerCase("en").normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim();
 }
 
+
+// TCGdex identifies Pokémon TCG Pocket assets with the dedicated /tcgp/ path.
+function isPhysicalTCGCard(card) {
+  return !(typeof card.image === "string" && card.image.toLowerCase().includes("/tcgp/"));
+}
+
 async function apiGet(path) {
   const response = await fetch(`${API_BASE}${path}`);
   if (!response.ok) throw new Error(`TCGdex request failed (${response.status})`);
@@ -47,8 +53,8 @@ async function loadCatalogue() {
   try {
     cataloguePromise = apiGet("/cards").then(data => {
       if (!Array.isArray(data)) throw new Error("Unexpected card catalogue response");
-      catalogue = data;
-      setStatus(`${catalogue.length.toLocaleString()} English card records available`);
+      catalogue = data.filter(isPhysicalTCGCard);
+      setStatus(`${catalogue.length.toLocaleString()} English physical TCG card records available · Pokémon TCG Pocket excluded`);
       return catalogue;
     });
     return await cataloguePromise;
@@ -69,7 +75,8 @@ async function loadSets() {
     const data = await apiGet("/sets");
     if (!Array.isArray(data)) throw new Error("Unexpected set catalogue response");
     sets = data;
-    const sorted = [...sets].sort((a,b) => (a.name || "").localeCompare(b.name || ""));
+    const physicalSets = sets.filter(set => set.serie?.id !== "tcgp");
+    const sorted = [...physicalSets].sort((a,b) => (a.name || "").localeCompare(b.name || ""));
     setFilter.innerHTML = '<option value="">All sets</option>' + sorted.map(set =>
       `<option value="${escapeHtml(set.id)}">${escapeHtml(set.name)}${set.serie?.name ? ` — ${escapeHtml(set.serie.name)}` : ""}</option>`
     ).join("");
