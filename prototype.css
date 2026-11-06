@@ -368,3 +368,36 @@ body{font-size:18px}
  .workspace,.research,.estimator{padding:28px 16px}
  .research-grid{grid-template-columns:1fr}
 }
+
+/* Accessibility contrast pass — readable text, controls and focus states */
+:root{--rs-bg:#090b0f;--rs-panel:#171b22;--rs-panel-2:#202630;--rs-text:#f7f8fa;--rs-muted:#c0c7d1;--rs-line:#3b4552;--rs-accent:#36e0b5;--rs-purple:#d1a2ff}
+html,body{background:var(--rs-bg);color:var(--rs-text)}
+body{color:var(--rs-text)}
+p,li,dd,.hero-copy,.section-heading p,.section-title p,.welcome p,.method-copy p,.research-card p,.research-grid article p,.candidate p,.results-note,.report-foot,.snapshot-note{color:var(--rs-muted)}
+h1,h2,h3,h4,h5,strong,b,.brand,.brand-name,.section-heading h2,.section-title h2,.welcome h1{color:var(--rs-text)}
+small,caption,.muted,.source,.catalogue-status,.search-label,.filter-row label,.estimator-controls label,.sales-inputs label{color:#c0c7d1}
+a,.engine-status-panel a,.method-copy a,.section-link,.method-link,.snapshot-note a{color:var(--rs-accent)}
+a:hover{color:#8ff5dc}
+.site-header,.topbar{background:#0b0e13;border-color:var(--rs-line)}
+.main-nav a,.topbar nav a,.footer-nav a{color:#d0d5dd}
+.main-nav a.active,.main-nav a:hover,.topbar nav a.selected,.topbar nav a:hover{color:var(--rs-accent)}
+.search-panel,.searchbox,.estimator-panel,.engine-status-panel,.candidate-controls,.welcome-note,.signal-panel,.research-card,.research-grid article,.candidate,.latest-report .report-content{background:var(--rs-panel);color:var(--rs-text);border-color:var(--rs-line);box-shadow:none}
+.trust-band,.metrics,.research-section,.estimator,.method-section,.method{background:#11161d;color:var(--rs-text);border-color:var(--rs-line)}
+.trust-band b,.metrics strong,.engine-status-grid strong{color:var(--rs-text)}
+.trust-band small,.metrics small,.metrics span,.engine-status-grid span,.engine-status-grid small{color:#c0c7d1}
+.search-input-wrap,.searchline input,.estimator-controls input,.estimator-controls select,.sales-inputs textarea,.filter-row select,.candidate-controls select{background:#0b0f15;color:#fff;border:1px solid #596575}
+.search-input-wrap input{color:#fff}.search-input-wrap input::placeholder,.searchline input::placeholder,.sales-inputs textarea::placeholder{color:#aeb7c4;opacity:1}
+.search-hints button,.quick button,.outline-button,.clear-filters,.load-more-wrap button{background:#252d38;color:#f2f4f7;border:1px solid #566171}
+.gold-button,.header-cta,.report-link,.primary,.searchline button{background:#36e0b5!important;color:#07130f!important}
+.pending,.status-dot{color:#07130f;background:#36e0b5}
+.research-icon,.research-grid .symbol,.empty-symbol,.empty>b{background:#173f37;color:#65f3d0}
+#results.results-grid>.card-result,#results.cards>.card{background:#171b22;border:1px solid #3b4552;color:#f7f8fa}
+#results.results-grid>.card-result>h3,#results.cards>.card>h3{color:#fff!important}
+#results.results-grid>.card-result>.card-meta,#results.cards>.card>.meta{color:#c0c7d1!important}
+#results.results-grid>.card-result>.card-number,#results.cards>.card>.id{color:#65f3d0!important}
+.card-dialog,#detail{background:#171b22;color:#f7f8fa;border-color:#596575}
+.collector-float{background:#171b22f5;border-color:#667080}
+.collector-float b{color:#fff}.collector-float small{color:#d0d6df}
+.collector-card-caption span{color:#d1a2ff}.collector-card-caption small{color:#d0d6df}
+:where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:3px solid #d1a2ff!important;outline-offset:3px}
+::selection{background:#36e0b5;color:#07130f}
