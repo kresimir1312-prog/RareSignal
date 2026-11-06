@@ -70,18 +70,51 @@ function calculateEstimate(){
 }
 $("#calculate-estimate").addEventListener("click",calculateEstimate);
 
+let researchCards=[], researchIdentityById={};
+function renderResearchCandidates(){
+ const host=$("#research-candidates");
+ const filter=$("#candidate-identity-filter")?.value||"all";
+ const sort=$("#candidate-sort")?.value||"date";
+ const visible=researchCards.filter(c=>{
+  const identity=researchIdentityById[c.id]||{}, status=String(identity.identity||"PENDING");
+  if(filter==="matched")return status==="MATCHED";
+  if(filter==="variant")return status.includes("VARIANT_REVIEW");
+  if(filter==="unresolved")return status==="UNRESOLVED";
+  return true;
+ });
+ visible.sort((a,b)=>{
+  if(sort==="name")return String(a.name).localeCompare(String(b.name));
+  if(sort==="set")return String(a.set).localeCompare(String(b.set))||String(a.name).localeCompare(String(b.name));
+  return String(b.snapshot_date||"").localeCompare(String(a.snapshot_date||""));
+ });
+ const count=$("#candidate-count");
+ if(count)count.textContent=visible.length+" of "+researchCards.length+" candidates";
+ host.innerHTML=visible.map(c=>{
+  const identity=researchIdentityById[c.id]||{}, value=Number(c.raw_currency_value), currency=String(c.raw_currency||"");
+  const validValue=c.raw_currency_value!==null&&c.raw_currency_value!==undefined&&Number.isFinite(value);
+  const notes=String(c.notes||"").replace(/(?:No|no) EU delivered cost verified\\.?/g,"").replace(/\\s{2,}/g," ").trim();
+  const status=String(identity.identity||"PENDING");
+  const variantReview=status.includes("VARIANT_REVIEW");
+  const statusLabel=status==="MATCHED"?"IDENTITY MATCHED":variantReview?"VARIANT REVIEW":status==="UNRESOLVED"?"UNRESOLVED":"PENDING";
+  const statusClass=status==="MATCHED"?"":variantReview?" review":status==="UNRESOLVED"?" unresolved":" review";
+  const tcgdexLink=identity.tcgdex_id?"<a class=\"candidate-tcgdex\" href=\"https://api.tcgdex.net/v2/en/cards/"+encodeURIComponent(identity.tcgdex_id)+"\" target=\"_blank\" rel=\"noopener noreferrer\">TCGdex "+esc(identity.tcgdex_id)+" ↗</a>":"";
+  return '<article class="candidate"><div class="candidate-top"><span>'+esc(c.set)+' · '+esc(c.number)+'</span><b>'+esc(c.status||"HISTORICAL")+'</b></div><h4>'+esc(c.name)+'</h4><p class="candidate-print">'+esc(c.printing)+' · '+esc(c.finish)+'</p><div class="candidate-identity"><span class="identity-state'+statusClass+'">'+esc(statusLabel)+'</span>'+tcgdexLink+'</div><p class="candidate-variant">Catalogue variant: '+esc(identity.variant||"Not reconciled")+'</p><div class="candidate-value">'+(validValue?money(value,currency):"Not available")+' <small>historical raw reference</small></div><div class="candidate-meta">'+esc(c.raw_sales_count??"—")+' NM sales · '+esc(c.snapshot_date||"Date not recorded")+' · '+esc(c.confidence||"Unrated")+' confidence · '+esc(currency||"Currency unavailable")+'</div><p class="candidate-note">'+esc(notes)+'</p><div class="candidate-sources">'+(c.sources||[]).map(s=>'<span>'+esc(s)+'</span>').join('')+'</div><div class="candidate-links">'+(c.source_urls||[]).map((u,i)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">Source '+(i+1)+' ↗</a>').join(' ')+'</div></article>';
+ }).join("")||'<div class="candidate-empty">No candidates match this identity filter.</div>';
+}
 async function loadResearchSnapshot(){
  const host=$("#research-candidates");
  try{
   const r=await fetch("./data/research-snapshot-v3.9.json");if(!r.ok)throw new Error("Snapshot file unavailable");
   const data=await r.json(), auditResponse=await fetch("./data/identity-reconciliation-v3.9.json");
-  const audit=auditResponse.ok?await auditResponse.json():{records:[]}, identityById=Object.fromEntries((audit.records||[]).map(x=>[x.workbook_id,x]));
-  host.innerHTML=(data.cards||[]).map(c=>{
-   const identity=identityById[c.id]||{}, value=Number(c.raw_currency_value), currency=String(c.raw_currency||"");
-   const validValue=c.raw_currency_value!==null&&c.raw_currency_value!==undefined&&Number.isFinite(value);
-   const notes=String(c.notes||"").replace(/(?:No|no) EU delivered cost verified\.?/g,"").replace(/\s{2,}/g," ").trim();
-   return '<article class="candidate"><div class="candidate-top"><span>'+esc(c.set)+' · '+esc(c.number)+'</span><b>'+esc(c.status||"HISTORICAL")+'</b></div><h4>'+esc(c.name)+'</h4><p class="candidate-print">'+esc(c.printing)+' · '+esc(c.finish)+'</p><p class="candidate-note">TCGdex: '+esc(identity.tcgdex_id||"Unresolved")+' · '+esc(identity.identity||"Pending")+'</p><div class="candidate-value">'+(validValue?money(value,currency):"Not available")+' <small>historical raw reference</small></div><div class="candidate-meta">'+esc(c.raw_sales_count??"—")+' NM sales · '+esc(c.snapshot_date||"Date not recorded")+' · '+esc(c.confidence||"Unrated")+' confidence · '+esc(currency||"Currency unavailable")+'</div><p class="candidate-note">'+esc(notes)+'</p><div class="candidate-sources">'+(c.sources||[]).map(s=>'<span>'+esc(s)+'</span>').join('')+'</div><div class="candidate-links">'+(c.source_urls||[]).map((u,i)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener noreferrer">Source '+(i+1)+' ↗</a>').join(' ')+'</div></article>';
-  }).join("")||'<div class="candidate-loading">No research candidates are available in this snapshot.</div>';
- }catch(e){host.innerHTML='<div class="candidate-loading">Research snapshot could not be loaded: '+esc(e.message)+'</div>';}
+  const audit=auditResponse.ok?await auditResponse.json():{records:[]};
+  researchCards=data.cards||[];
+  researchIdentityById=Object.fromEntries((audit.records||[]).map(x=>[x.workbook_id,x]));
+  renderResearchCandidates();
+ }catch(e){
+  host.innerHTML='<div class="candidate-loading">Research snapshot could not be loaded: '+esc(e.message)+'</div>';
+  const count=$("#candidate-count");if(count)count.textContent="Candidates unavailable";
+ }
 }
+$("#candidate-identity-filter")?.addEventListener("change",renderResearchCandidates);
+$("#candidate-sort")?.addEventListener("change",renderResearchCandidates);
 loadResearchSnapshot();
