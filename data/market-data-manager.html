@@ -56,7 +56,7 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
 <script src="../market-engine.js?v=20261106-2"></script>
 <script>
 (()=>{"use strict";
-const KEY="raresignal.market-observations.v1",LAST="raresignal.market-observations.last-import.v1";\nconst FEED_URL="https://raw.githubusercontent.com/kresimir1312-prog/RareSignal/main/data/market-feed/pending-review.json";\nlet queue=[],decisions={};
+const KEY="raresignal.market-observations.v1",LAST="raresignal.market-observations.last-import.v1";\nconst FEED_URL="https://raw.githubusercontent.com/kresimir1312-prog/RareSignal/main/data/market-feed/pending-review.json";\nconst REVIEW_KEY="raresignal.soldcomps-review-decisions.v1";\nlet queue=[],decisions=(()=>{try{return JSON.parse(localStorage.getItem(REVIEW_KEY)||"{}")}catch{return{}}})();\nfunction persistDecisions(){localStorage.setItem(REVIEW_KEY,JSON.stringify(decisions))}
 const $=s=>document.querySelector(s),engine=window.RareSignalMarketEngine;
 let records=load();
 function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||"[]");return Array.isArray(x)?x:[]}catch{return[]}}
