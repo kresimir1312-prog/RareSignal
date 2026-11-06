@@ -77,7 +77,7 @@
  }
  function investmentSignal(valuation,entryPrice){
   if(!valuation||!Number.isFinite(Number(entryPrice))||Number(entryPrice)<=0)return {signal:"INSUFFICIENT DATA",reason:"A positive observed entry price is required."};
-  if(valuation.confidence_score<70||valuation.sales_90d<8||valuation.source_count_90d<2||valuation.median_90d===null)
+  if(valuation.confidence_score<70||valuation.sales_90d<8||valuation.marketplace_count_90d<2||valuation.median_90d===null)
    return {signal:"INSUFFICIENT DATA",reason:"Evidence threshold not met: require confidence ≥70, at least 8 comparable 90-day sales across 2 independent marketplaces and 3 directly verifiable transactions."};
   const upside=(valuation.median_90d-Number(entryPrice))/Number(entryPrice)*100;
   if(upside>=17&&!(valuation.trend_30d_vs_prior_percent!==null&&valuation.trend_30d_vs_prior_percent<=-15))
