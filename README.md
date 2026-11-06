@@ -16,7 +16,7 @@ RareSignal is an English-first Pokémon card discovery and market-value research
 
 RareSignal estimates what an exact Pokémon card is realistically worth. It does not provide country-specific buying costs, shipping calculations or delivered-price recommendations. Asking prices are not treated as completed-sale evidence.
 
-## Current prototype
+## Latest market report\n\n- [Three-card market review — 6 November 2026](reports/2026-11-06-market-review.html): Umbreon VMAX, Giratina V and Base Set Charizard. Third-party references are clearly labelled; no BUY signals are assigned.\n\n## Current prototype
 
 The research desk is available at `prototype.html`, with responsive styling in `prototype.css` and English catalogue search/card details in `prototype.js`.
 
