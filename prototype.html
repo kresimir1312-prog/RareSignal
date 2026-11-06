@@ -52,6 +52,15 @@
         <article><span class="number">04</span><div class="symbol">◇</div><h3>Transparent signal</h3><p>BUY, WATCH, HOLD or AVOID only when evidence thresholds are met. Missing or weak data means no estimate is presented as reliable.</p><span class="state">NO DATA · NO SIGNAL</span></article>
       </div>
       <div class="signal-panel"><div><span class="kicker muted">SIGNAL ENGINE</span><h3>Market estimates are not connected yet.</h3><p>The figures below are dated workbook references, not live valuations. The live sold-comparable data layer is still in development; no current value or investment signal is inferred.</p></div><span class="pending">REVIEW SNAPSHOT · V3.9</span></div>
+      <div class="engine-status-panel">
+        <div class="engine-status-head"><div><span class="kicker muted">MARKET INTELLIGENCE ENGINE · V1</span><h3>Valuation core</h3><p>Calculation logic is installed. Verified completed-sale observations are not connected yet.</p></div><span id="engine-runtime-status" class="engine-runtime-status">Checking engine…</span></div>
+        <div class="engine-status-grid">
+          <div><span>CALCULATION MODULE</span><strong id="engine-module-state">Checking</strong><small>Local deterministic calculations</small></div>
+          <div><span>MARKET OBSERVATIONS</span><strong>Not connected</strong><small>No live sale feed or stored transactions</small></div>
+          <div><span>VALUATION POLICY</span><strong>Evidence gated</strong><small>Exact identity, market and currency separation</small></div>
+        </div>
+        <a href="./data/schemas/market-observation-v1.schema.json" target="_blank" rel="noopener">View completed-sale data contract ↗</a>
+      </div>
       <div class="snapshot-head"><div><div class="kicker muted">V3.9 / RESEARCH BATCH 1</div><h3>Research candidates</h3><p>Historical workbook references only. Values retain their recorded currency and are not presented as live estimates.</p></div><span class="source">20 IDENTITIES AUDITED · SNAPSHOT 01 NOV 2026</span></div>
       <div class="candidate-controls" aria-label="Research candidate filters">
         <label>IDENTITY STATUS
