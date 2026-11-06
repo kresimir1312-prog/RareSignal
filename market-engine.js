@@ -8,7 +8,7 @@
  const VALID_GRADES=new Set(["RAW","PSA10"]);
  const VALID_STATUSES=new Set(["COMPLETED"]);
  const EVIDENCE_WEIGHTS={DIRECT_TRANSACTION:1,PROVIDER_REPORTED:0.55,AGGREGATE:0.25};
- const evidenceType=o=>EVIDENCE_WEIGHTS[o.evidence_type]?o.evidence_type:"PROVIDER_REPORTED";
+ const evidenceType=o=>{if(EVIDENCE_WEIGHTS[o.evidence_type])return o.evidence_type;if(o.source_url&&(/ebay\\.[^/]+\\/itm\\//i.test(o.source_url)||/fanaticscollect\\.com\\/weekly\\//i.test(o.source_url)))return "DIRECT_TRANSACTION";return "PROVIDER_REPORTED";};
  const median=values=>{const s=[...values].sort((a,b)=>a-b),m=Math.floor(s.length/2);return !s.length?null:s.length%2?s[m]:(s[m-1]+s[m])/2;};
  const round=(n,d=2)=>n===null?null:Number(n.toFixed(d));
  const dateMs=v=>{const n=Date.parse(v);return Number.isFinite(n)?n:null;};
