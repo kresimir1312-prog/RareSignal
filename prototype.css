@@ -344,3 +344,27 @@ body{font-size:18px}
  .search-input-wrap input,.searchline input{font-size:18px}
  .trust-band b{font-size:16px}.trust-band small{font-size:13px}
 }
+
+/* Compact collector-style layout across Research Desk */
+.topbar{height:62px;padding-inline:clamp(16px,3vw,48px)}
+.topbar nav{gap:clamp(12px,2vw,24px)}
+.welcome{padding:36px clamp(22px,5vw,72px) 30px;min-height:0;gap:24px}
+.welcome h1{font-size:clamp(42px,5vw,64px);line-height:.98;letter-spacing:-2.5px}
+.welcome p{font-size:17px;line-height:1.4;margin:10px 0}
+.welcome-note{padding:18px;max-width:320px}
+.metrics{padding:12px clamp(20px,5vw,72px);gap:10px}
+.metrics>div{padding:9px 12px}
+.workspace,.research,.estimator{padding:34px clamp(18px,5vw,72px)}
+.workspace h2,.research h2,.estimator h2{font-size:clamp(27px,3vw,36px);margin:0 0 8px}
+.searchbox,.estimator-panel{padding:18px;margin:14px 0}
+.research-grid{gap:12px}.research-grid article{padding:17px;min-height:150px}
+.candidate{padding:15px;margin:10px 0}
+.method{padding:30px clamp(20px,5vw,72px)}
+@media(max-width:700px){
+ .topbar{height:auto;min-height:60px;padding:10px 16px}
+ .welcome{padding:30px 20px 24px;display:block}
+ .welcome h1{font-size:46px}.welcome-note{margin-top:18px;max-width:none}
+ .metrics{grid-template-columns:repeat(2,minmax(0,1fr));padding:10px 16px}
+ .workspace,.research,.estimator{padding:28px 16px}
+ .research-grid{grid-template-columns:1fr}
+}
