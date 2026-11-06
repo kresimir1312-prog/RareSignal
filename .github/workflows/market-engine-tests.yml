@@ -1,14 +1,18 @@
-name: Market engine tests
+name: Market engine and import tests
 on:
   push:
     paths:
       - "market-engine.js"
+      - "tools/import-market-observations.mjs"
       - "tests/market-engine.test.js"
+      - "tests/market-import.test.mjs"
       - ".github/workflows/market-engine-tests.yml"
   pull_request:
     paths:
       - "market-engine.js"
+      - "tools/import-market-observations.mjs"
       - "tests/market-engine.test.js"
+      - "tests/market-import.test.mjs"
       - ".github/workflows/market-engine-tests.yml"
 jobs:
   test:
@@ -18,4 +22,4 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node --test tests/market-engine.test.js
+      - run: node --test tests/market-engine.test.js tests/market-import.test.mjs
