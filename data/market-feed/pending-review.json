@@ -35,7 +35,10 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [],
+      "quality_tier": "PRELIMINARY_MATCH",
+      "valuation_eligible": false
     },
     {
       "item_id": "377605925065",
@@ -69,7 +72,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "960118492636",
@@ -103,7 +111,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "900054698564",
@@ -137,7 +150,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "820296977691",
@@ -171,7 +190,10 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [],
+      "quality_tier": "PRELIMINARY_MATCH",
+      "valuation_eligible": false
     },
     {
       "item_id": "860111093667",
@@ -205,7 +227,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "147656258290",
@@ -239,7 +267,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "257831576075",
@@ -273,7 +306,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "327430898789",
@@ -307,7 +346,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "800814959945",
@@ -341,7 +386,14 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "407328563133",
@@ -375,7 +427,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "257819336832",
@@ -409,7 +466,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "377599397461",
@@ -443,7 +505,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287676213149",
@@ -477,7 +544,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128151316628",
@@ -511,7 +583,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287671356422",
@@ -545,7 +622,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287678211582",
@@ -579,7 +661,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "POSSIBLE_DUPLICATE"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "407310392679",
@@ -613,7 +701,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "307259731076",
@@ -647,7 +740,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "278386671768",
@@ -681,7 +780,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "407325039192",
@@ -715,7 +819,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "267820750709",
@@ -749,7 +858,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "127806624119",
@@ -783,7 +897,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "960102141522",
@@ -817,7 +936,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "206631629604",
@@ -851,7 +975,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "377592333408",
@@ -885,7 +1014,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "147644464403",
@@ -919,7 +1053,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "840036340180",
@@ -953,7 +1092,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "377591187886",
@@ -987,7 +1132,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "820275975886",
@@ -1021,7 +1171,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287607963762",
@@ -1055,7 +1211,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "840024327613",
@@ -1089,7 +1250,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128147509726",
@@ -1123,7 +1289,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "820253918505",
@@ -1157,7 +1328,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "407293725086",
@@ -1191,7 +1367,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "800831839056",
@@ -1227,7 +1408,14 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "POSSIBLE_NON_ENGLISH",
+        "LANGUAGE_NOT_CONFIRMED",
+        "PROVIDER_OUTLIER_FLAG"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "327406881503",
@@ -1261,7 +1449,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "840035837118",
@@ -1295,7 +1488,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "800837014473",
@@ -1329,7 +1527,15 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "POSSIBLE_NON_ENGLISH",
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "POSSIBLE_DUPLICATE"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "840029413429",
@@ -1363,7 +1569,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "128144886859",
@@ -1397,7 +1609,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "800728165424",
@@ -1431,7 +1648,14 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "POSSIBLE_NON_ENGLISH",
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "377578766548",
@@ -1465,7 +1689,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287644317124",
@@ -1499,7 +1728,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "237124338984",
@@ -1533,7 +1768,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "377573056132",
@@ -1567,7 +1807,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "168803556718",
@@ -1601,7 +1846,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "377570059648",
@@ -1635,7 +1886,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128111701430",
@@ -1669,7 +1925,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "237120816522",
@@ -1703,7 +1964,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128135678096",
@@ -1737,7 +2003,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "800784206301",
@@ -1771,7 +2042,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287639606002",
@@ -1805,7 +2081,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287638210148",
@@ -1839,7 +2120,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128130928276",
@@ -1873,7 +2159,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128135977637",
@@ -1907,7 +2198,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "377560805105",
@@ -1941,7 +2238,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128125077416",
@@ -1975,7 +2277,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "366718302138",
@@ -2009,7 +2316,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "257792998054",
@@ -2043,7 +2356,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "178560103248",
@@ -2077,7 +2396,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "900001470460",
@@ -2111,7 +2435,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "168790460336",
@@ -2145,7 +2475,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "198696938336",
@@ -2179,7 +2515,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "278434822576",
@@ -2213,7 +2555,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "147633046617",
@@ -2247,7 +2594,10 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [],
+      "quality_tier": "PRELIMINARY_MATCH",
+      "valuation_eligible": false
     },
     {
       "item_id": "198685943726",
@@ -2281,7 +2631,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "237113419572",
@@ -2315,7 +2670,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287622542112",
@@ -2349,7 +2709,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "377548851982",
@@ -2383,7 +2748,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128109514854",
@@ -2417,7 +2787,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128109514937",
@@ -2451,7 +2826,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287624037839",
@@ -2485,7 +2865,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287622537784",
@@ -2519,7 +2904,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "168761860354",
@@ -2553,7 +2943,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "189042519747",
@@ -2587,7 +2982,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "377548851992",
@@ -2621,7 +3021,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "327383526025",
@@ -2655,7 +3060,10 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [],
+      "quality_tier": "PRELIMINARY_MATCH",
+      "valuation_eligible": false
     },
     {
       "item_id": "407266771280",
@@ -2689,7 +3097,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "407266934243",
@@ -2723,7 +3136,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "377544526684",
@@ -2757,7 +3175,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "377544532135",
@@ -2791,7 +3214,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "178335449622",
@@ -2825,7 +3253,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "407276435177",
@@ -2859,7 +3292,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128115183372",
@@ -2893,7 +3331,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "407221864325",
@@ -2927,7 +3370,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "820218213699",
@@ -2961,7 +3409,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "287321092407",
@@ -2995,7 +3449,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "128110981540",
@@ -3029,7 +3488,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "398449342162",
@@ -3063,7 +3527,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "257785821579",
@@ -3097,7 +3567,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "128105117376",
@@ -3131,7 +3607,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "377536490972",
@@ -3165,7 +3646,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "960005001416",
@@ -3199,7 +3685,10 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [],
+      "quality_tier": "PRELIMINARY_MATCH",
+      "valuation_eligible": false
     },
     {
       "item_id": "206591463063",
@@ -3233,7 +3722,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "257771596361",
@@ -3267,7 +3761,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "189043026884",
@@ -3301,7 +3800,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "820200933060",
@@ -3335,7 +3839,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "800693080464",
@@ -3369,7 +3878,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287620785290",
@@ -3403,7 +3917,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "287610505852",
@@ -3437,7 +3957,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287610505881",
@@ -3471,7 +3996,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "206577916077",
@@ -3505,7 +4035,14 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "GRADED_CARD_IN_RAW_SEARCH",
+        "MARKETPLACE_CONDITION_NOT_NEW"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "206593781342",
@@ -3539,7 +4076,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "267799041981",
@@ -3573,7 +4116,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "307201380958",
@@ -3607,7 +4155,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "287596124895",
@@ -3641,7 +4195,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "168695823948",
@@ -3675,7 +4234,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "287594629348",
@@ -3709,7 +4273,12 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "158210012034",
@@ -3743,7 +4312,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     },
     {
       "item_id": "117406493645",
@@ -3777,7 +4352,14 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "407161954932",
@@ -3811,7 +4393,14 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "LANGUAGE_NOT_CONFIRMED",
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "BEST_OFFER_PRICE_UNKNOWN"
+      ],
+      "quality_tier": "HIGH_RISK",
+      "valuation_eligible": false
     },
     {
       "item_id": "800479555813",
@@ -3847,7 +4436,13 @@
       "first_seen_at": "2026-11-06T20:26:29.891Z",
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
-      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "PROVIDER_OUTLIER_FLAG"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
+      "valuation_eligible": false
     }
   ],
   "runs": [
@@ -3935,5 +4530,14 @@
       "note": "Search matches only; all entries require manual review before import."
     }
   ],
-  "policy": "Search matches are pending manual review. Never use as accepted market observations until exact identity, grade, condition, price and sale validity are confirmed."
+  "policy": "Search matches are pending manual review. Never use as accepted market observations until exact identity, grade, condition, price and sale validity are confirmed.",
+  "quality_audit": {
+    "audited_at": "2026-11-06T20:33:28.449Z",
+    "records": 113,
+    "high_risk": 24,
+    "needs_review": 84,
+    "preliminary_match": 5,
+    "valuation_eligible": 0,
+    "policy": "No record is accepted automatically."
+  }
 }
