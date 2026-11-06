@@ -1,134 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T20:45:01.099Z",
+  "updated_at": "2026-11-06T21:00:00.000Z",
   "source": "SoldComps",
   "records": [
-    {
-      "item_id": "377605925065",
-      "source": "eBay via SoldComps",
-      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
-      "marketplace": "eBay",
-      "currency": "USD",
-      "sold_price": 3450,
-      "sold_at": "2026-11-05",
-      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
-      "condition_label": "New (Other)",
-      "buying_format": "auction",
-      "best_offer_accepted": false,
-      "best_offer_price_known": true,
-      "shipping": {
-        "value": 4.99,
-        "currency": "USD"
-      },
-      "url": "https://www.ebay.com/itm/377605925065",
-      "flags": [],
-      "matched_profiles": [
-        {
-          "profile_id": "umbreon-vmax-215-203-psa10",
-          "target_grade_hint": "PSA10",
-          "card_id_hint": "evolving-skies-215-english",
-          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
-          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
-          "collected_at": "2026-11-06T20:26:29.891Z"
-        }
-      ],
-      "first_seen_at": "2026-11-06T20:26:29.891Z",
-      "last_seen_at": "2026-11-06T20:26:29.891Z",
-      "review_status": "PENDING",
-      "review_note": "Automated triage only. Manual verification required before acceptance.",
-      "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED",
-        "ALT_ART_VARIANT_NOT_CONFIRMED",
-        "ENGLISH_NOT_CONFIRMED"
-      ],
-      "quality_tier": "NEEDS_REVIEW",
-      "valuation_eligible": false
-    },
-    {
-      "item_id": "960118492636",
-      "source": "eBay via SoldComps",
-      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
-      "marketplace": "eBay",
-      "currency": "USD",
-      "sold_price": 3209.93,
-      "sold_at": "2026-11-05",
-      "title": "2021 Pokemon SWSH07: Evolving Skies Umbreon VMAX PSA 10 #215/203",
-      "condition_label": "New (Other)",
-      "buying_format": "auction",
-      "best_offer_accepted": false,
-      "best_offer_price_known": true,
-      "shipping": {
-        "value": 10.69,
-        "currency": "USD"
-      },
-      "url": "https://www.ebay.com/itm/960118492636",
-      "flags": [],
-      "matched_profiles": [
-        {
-          "profile_id": "umbreon-vmax-215-203-psa10",
-          "target_grade_hint": "PSA10",
-          "card_id_hint": "evolving-skies-215-english",
-          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
-          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
-          "collected_at": "2026-11-06T20:26:29.891Z"
-        }
-      ],
-      "first_seen_at": "2026-11-06T20:26:29.891Z",
-      "last_seen_at": "2026-11-06T20:26:29.891Z",
-      "review_status": "PENDING",
-      "review_note": "Automated triage only. Manual verification required before acceptance.",
-      "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED",
-        "ALT_ART_VARIANT_NOT_CONFIRMED",
-        "ENGLISH_NOT_CONFIRMED"
-      ],
-      "quality_tier": "NEEDS_REVIEW",
-      "valuation_eligible": false
-    },
-    {
-      "item_id": "900054698564",
-      "source": "eBay via SoldComps",
-      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
-      "marketplace": "eBay",
-      "currency": "USD",
-      "sold_price": 830.3,
-      "sold_at": "2026-11-05",
-      "title": "Giratina V 186/196 Ultra Rare Lost Origin Pokemon Holo Near Mint",
-      "condition_label": "Pre-Owned",
-      "buying_format": "fixed_price",
-      "best_offer_accepted": false,
-      "best_offer_price_known": true,
-      "shipping": {
-        "value": 20,
-        "currency": "USD"
-      },
-      "url": "https://www.ebay.com/itm/900054698564",
-      "flags": [],
-      "matched_profiles": [
-        {
-          "profile_id": "giratina-v-186-196-raw-nm",
-          "target_grade_hint": "RAW",
-          "card_id_hint": "lost-origin-186-english",
-          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
-          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
-          "collected_at": "2026-11-06T20:26:29.891Z"
-        }
-      ],
-      "first_seen_at": "2026-11-06T20:26:29.891Z",
-      "last_seen_at": "2026-11-06T20:26:29.891Z",
-      "review_status": "PENDING",
-      "review_note": "Automated triage only. Manual verification required before acceptance.",
-      "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED",
-        "MARKETPLACE_CONDITION_NOT_NEW",
-        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
-        "ALT_ART_VARIANT_NOT_CONFIRMED",
-        "ENGLISH_NOT_CONFIRMED",
-        "PSA10_NOT_CONFIRMED"
-      ],
-      "quality_tier": "NEEDS_REVIEW",
-      "valuation_eligible": false
-    },
     {
       "item_id": "860111093667",
       "source": "eBay via SoldComps",
@@ -165,46 +39,6 @@
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
         "BEST_OFFER_PRICE_UNKNOWN",
-        "ENGLISH_NOT_CONFIRMED"
-      ],
-      "quality_tier": "NEEDS_REVIEW",
-      "valuation_eligible": false
-    },
-    {
-      "item_id": "147656258290",
-      "source": "eBay via SoldComps",
-      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
-      "marketplace": "eBay",
-      "currency": "USD",
-      "sold_price": 3201,
-      "sold_at": "2026-11-04",
-      "title": "Giratina V 186/196 Pokemon Lost Origin Alternate Art Holo PSA 10",
-      "condition_label": "New (Other)",
-      "buying_format": "auction",
-      "best_offer_accepted": false,
-      "best_offer_price_known": true,
-      "shipping": {
-        "value": 5.9,
-        "currency": "USD"
-      },
-      "url": "https://www.ebay.com/itm/147656258290",
-      "flags": [],
-      "matched_profiles": [
-        {
-          "profile_id": "giratina-v-186-196-psa10",
-          "target_grade_hint": "PSA10",
-          "card_id_hint": "lost-origin-186-english",
-          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
-          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
-          "collected_at": "2026-11-06T20:26:29.891Z"
-        }
-      ],
-      "first_seen_at": "2026-11-06T20:26:29.891Z",
-      "last_seen_at": "2026-11-06T20:26:29.891Z",
-      "review_status": "PENDING",
-      "review_note": "Automated triage only. Manual verification required before acceptance.",
-      "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED",
         "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
@@ -4581,5 +4415,11 @@
     "approved_count": 4,
     "remaining_count": 109,
     "note": "Only candidates passing all current strict automatic rules were moved to auto-approved feed. RAW and all ambiguous records remain pending."
+  },
+  "manual_approved_batch": {
+    "batch_id": "manual-reviewed-2026-11-06",
+    "record_count": 4,
+    "removed_from_pending": 4,
+    "note": "Four candidates manually approved and moved to data/market-feed/manual-approved-batch-2026-11-06.json."
   }
 }
