@@ -22,6 +22,27 @@ const PROFILES = [
   {id:"giratina-v-186-196-psa10",card_id:"lost-origin-186-english",variant_id:"lost-origin-186-196-alt-art-holo-english",target_grade:"PSA10",query:'Giratina V 186/196 Lost Origin "PSA 10" -lot -proxy'},
   {id:"giratina-v-186-196-raw-nm",card_id:"lost-origin-186-english",variant_id:"lost-origin-186-196-alt-art-holo-english",target_grade:"RAW",query:'Giratina V 186/196 Lost Origin "Near Mint" -lot -proxy'}
 ];
+function assessListing(item, profile, now = new Date()) {
+ const title=String(item.title||'').toLowerCase();
+ const flags=[]; const target=profile.target_grade;
+ const expectedNumber=profile.card_id.includes('evolving')?'215/203':'186/196';
+ if(/\\b(german|deutsch|french|français|italian|italiano|spanish|español|japanese|korean|chinese)\\b/i.test(title)) flags.push('POSSIBLE_NON_ENGLISH');
+ if(!/\\b(english|eng)\\b/i.test(title)) flags.push('LANGUAGE_NOT_CONFIRMED');
+ if(!title.includes(expectedNumber)) flags.push('CARD_NUMBER_NOT_CONFIRMED');
+ if(target==='PSA10' && !/\\bpsa\\s*10\\b/i.test(title)) flags.push('TARGET_GRADE_NOT_CONFIRMED');
+ if(target==='PSA10' && /\\bpsa\\s*(?!10\\b)\\d{1,2}\\b/i.test(title)) flags.push('CONFLICTING_PSA_GRADE');
+ if(target==='RAW' && /\\b(psa|bgs|beckett|cgc|sgc)\\s*\\d{1,2}\\b/i.test(title)) flags.push('GRADED_CARD_IN_RAW_SEARCH');
+ if(target==='RAW' && !/\\b(near mint|nm)\\b/i.test(title)) flags.push('RAW_CONDITION_NOT_CONFIRMED');
+ if(target==='RAW' && String(item.condition||'').toLowerCase()!=='new') flags.push('MARKETPLACE_CONDITION_NOT_NEW');
+ if(item.best_offer_accepted===true && item.best_offer_price_known!==true) flags.push('BEST_OFFER_PRICE_UNKNOWN');
+ if(item.buying_format && !['auction','fixed_price'].includes(item.buying_format)) flags.push('UNSUPPORTED_SALE_FORMAT');
+ if(!item.sold_price || !Number.isFinite(Number(item.sold_price.value)) || Number(item.sold_price.value)<=0) flags.push('INVALID_OR_MISSING_PRICE');
+ if(!item.sold_at || Number.isNaN(Date.parse(item.sold_at)) || new Date(item.sold_at)>now) flags.push('INVALID_OR_FUTURE_SALE_DATE');
+ if(item.flags && item.flags.includes('outlier')) flags.push('PROVIDER_OUTLIER_FLAG');
+ if(!item.url || !/^https:\\/\\/www\\.ebay\\.com\\/itm\\/\\d+/.test(item.url)) flags.push('LISTING_URL_UNVERIFIED');
+ const hard=['POSSIBLE_NON_ENGLISH','CONFLICTING_PSA_GRADE','GRADED_CARD_IN_RAW_SEARCH','BEST_OFFER_PRICE_UNKNOWN','INVALID_OR_MISSING_PRICE','INVALID_OR_FUTURE_SALE_DATE','UNSUPPORTED_SALE_FORMAT'];
+ return {review_flags:flags,quality_tier:flags.some(x=>hard.includes(x))?'HIGH_RISK':flags.length?'NEEDS_REVIEW':'PRELIMINARY_MATCH',valuation_eligible:false,review_status:'PENDING'};
+}
 function readJson(file,fallback){try{return JSON.parse(fs.readFileSync(file,"utf8"));}catch(e){if(e.code==="ENOENT")return fallback;throw e;}}
 function writeJson(file,value){fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,JSON.stringify(value,null,2)+"\n");}
 async function apiGet(url){const r=await fetch(url,{headers:{Authorization:`Bearer ${KEY}`,Accept:"application/json"},signal:AbortSignal.timeout(45000)});const body=await r.json().catch(()=>({}));if(!r.ok)throw new Error(`SoldComps ${r.status}: ${body?.error?.code||JSON.stringify(body).slice(0,300)}`);return body;}
@@ -57,7 +78,10 @@ async function main(){
     const hint={profile_id:p.id,target_grade_hint:p.target_grade,card_id_hint:p.card_id,variant_id_hint:p.variant_id,query:p.query,collected_at:run.run_at};
     const prior=byItem.get(item.item_id);
     if(prior){prior.matched_profiles||=[];if(!prior.matched_profiles.some(x=>x.profile_id===p.id))prior.matched_profiles.push(hint);prior.last_seen_at=run.run_at;prior.review_status="PENDING";}
-    else byItem.set(item.item_id,{item_id:item.item_id,source:"eBay via SoldComps",evidence_type:"DIRECT_TRANSACTION_CANDIDATE",marketplace:"eBay",currency:item.sold_price?.currency||data.stats?.currency||null,sold_price:item.sold_price?.value??null,sold_at:item.sold_at||null,title:item.title||"",condition_label:item.condition||null,buying_format:item.buying_format||null,best_offer_accepted:item.best_offer_accepted??null,best_offer_price_known:item.best_offer_price_known??null,shipping:item.shipping??null,url:item.url||null,flags:Array.isArray(item.flags)?item.flags:[],matched_profiles:[hint],first_seen_at:run.run_at,last_seen_at:run.run_at,review_status:"PENDING",review_note:"Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."});
+    else {
+     const record={item_id:item.item_id,source:'eBay via SoldComps',evidence_type:'DIRECT_TRANSACTION_CANDIDATE',marketplace:'eBay',currency:item.sold_price?.currency||data.stats?.currency||null,sold_price:item.sold_price?.value??null,sold_at:item.sold_at||null,title:item.title||'',condition_label:item.condition||null,buying_format:item.buying_format||null,best_offer_accepted:item.best_offer_accepted??null,best_offer_price_known:item.best_offer_price_known??null,shipping:item.shipping??null,url:item.url||null,flags:Array.isArray(item.flags)?item.flags:[],matched_profiles:[hint],first_seen_at:run.run_at,last_seen_at:run.run_at,review_note:'Automated checks are triage only. Confirm exact printing, language, grade, condition, sale and accepted price manually.'};
+     Object.assign(record,assessListing(item,p)); byItem.set(item.item_id,record);
+    }
    }
    console.log(`OK ${p.id}: ${data.items?.length||0} returned; ${charged} credits.`);
   }catch(e){run.status="partial";run.searches.push({profile_id:p.id,query:p.query,status:"failed",error:e.message});console.error(`FAILED ${p.id}: ${e.message}`);}
