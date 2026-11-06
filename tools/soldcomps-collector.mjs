@@ -108,7 +108,12 @@ async function main(){
     if(!item?.item_id)continue;
     const hint={profile_id:p.id,target_grade_hint:p.target_grade,card_id_hint:p.card_id,variant_id_hint:p.variant_id,query:p.query,collected_at:run.run_at};
     const prior=byItem.get(item.item_id);
+    const autoPrior=autoByItem.get(item.item_id);
     if(prior){prior.matched_profiles||=[];if(!prior.matched_profiles.some(x=>x.profile_id===p.id))prior.matched_profiles.push(hint);prior.last_seen_at=run.run_at;prior.review_status="PENDING";}
+    else if(autoPrior){
+     autoByItem.delete(item.item_id);
+     byItem.set(item.item_id,{...autoPrior,matched_profiles:[...(autoPrior.matched_profiles||[]),hint],review_flags:["MULTIPLE_PROFILE_MATCH_CONFLICT"],quality_tier:"HIGH_RISK",review_status:"PENDING",valuation_eligible:false,review_note:"Matched conflicting search profiles; removed from automatic acceptance."});
+    }
     else {
      const record={item_id:item.item_id,source:'eBay via SoldComps',evidence_type:'DIRECT_TRANSACTION_CANDIDATE',marketplace:'eBay',currency:item.sold_price?.currency||data.stats?.currency||null,sold_price:item.sold_price?.value??null,sold_at:item.sold_at||null,title:item.title||'',condition_label:item.condition||null,buying_format:item.buying_format||null,best_offer_accepted:item.best_offer_accepted??null,best_offer_price_known:item.best_offer_price_known??null,shipping:item.shipping??null,url:item.url||null,flags:Array.isArray(item.flags)?item.flags:[],matched_profiles:[hint],first_seen_at:run.run_at,last_seen_at:run.run_at,review_note:'Automated checks are triage only. Confirm exact printing, language, grade, condition, sale and accepted price manually.'};
      const triage=assessListing(item,p),automatic=autoApprove(item,p);
