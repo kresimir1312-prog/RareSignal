@@ -528,3 +528,7 @@ a:hover{color:#8ff5dc}
 .collector-card-caption span{color:#d1a2ff}.collector-card-caption small{color:#d0d6df}
 :where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:3px solid #d1a2ff!important;outline-offset:3px}
 ::selection{background:#36e0b5;color:#07130f}
+
+/* RareSignal identity refresh */
+.brand{display:flex;align-items:center;gap:0;min-width:0}.brand-logo{display:block;width:clamp(190px,18vw,258px);height:auto;max-height:62px;object-fit:contain;object-position:left center}.brand-mark,.brand-name{display:none!important}
+@media(max-width:760px){.site-header{padding:0 16px}.brand-logo{width:190px;max-height:52px}}
