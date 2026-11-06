@@ -92,7 +92,7 @@ function renderResearchCandidates(){
  host.innerHTML=visible.map(c=>{
   const identity=researchIdentityById[c.id]||{}, value=Number(c.raw_currency_value), currency=String(c.raw_currency||"");
   const validValue=c.raw_currency_value!==null&&c.raw_currency_value!==undefined&&Number.isFinite(value);
-  const notes=String(c.notes||"").replace(/(?:No|no) EU delivered cost verified\\.?/g,"").replace(/\\s{2,}/g," ").trim();
+  const notes=String(c.notes||"").replace(/(?:No|no) EU delivered cost verified\.?/g,"").replace(/\s{2,}/g," ").trim();
   const status=String(identity.identity||"PENDING");
   const variantReview=status.includes("VARIANT_REVIEW");
   const statusLabel=status==="MATCHED"?"IDENTITY MATCHED":variantReview?"VARIANT REVIEW":status==="UNRESOLVED"?"UNRESOLVED":"PENDING";
