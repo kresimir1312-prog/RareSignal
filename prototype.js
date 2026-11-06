@@ -14,12 +14,14 @@ updateEngineStatus();
 const PAGE_SIZE=24;
 let cataloguePromise=null, catalogue=[], filtered=[], visible=PAGE_SIZE, searchToken=0, detailToken=0;
 function esc(v=""){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+// TCGdex identifies Pokémon TCG Pocket assets with the dedicated /tcgp/ path.
+function isPhysicalTCGCard(c){return !(typeof c.image==="string"&&c.image.toLowerCase().includes("/tcgp/"));}
 async function get(path){const r=await fetch(API+path);if(!r.ok)throw new Error("TCGdex returned "+r.status);return r.json();}
 function norm(s){return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").trim();}
 function empty(title,sub){results.innerHTML='<div class="empty"><b>⌕</b><strong>'+esc(title)+'</strong><span>'+esc(sub)+'</span></div>';moreWrap.hidden=true;}
 async function loadCatalogue(){
  if(catalogue.length)return catalogue;
- if(!cataloguePromise)cataloguePromise=get("/cards").then(data=>{if(!Array.isArray(data))throw new Error("Unexpected catalogue response");catalogue=data;return data;}).catch(error=>{cataloguePromise=null;throw error;});
+ if(!cataloguePromise)cataloguePromise=get("/cards").then(data=>{if(!Array.isArray(data))throw new Error("Unexpected catalogue response");catalogue=data.filter(isPhysicalTCGCard);return catalogue;}).catch(error=>{cataloguePromise=null;throw error;});
  return cataloguePromise;
 }
 function matches(c,q){
