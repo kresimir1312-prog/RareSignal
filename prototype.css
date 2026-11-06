@@ -253,3 +253,10 @@ body{font-size:17px}
 .topbar nav a{font-size:13px}
 .searchbox>label,.quick>span,.result-head,.meta,.id,.candidate-meta,.source,.state{font-size:11px}
 #results.cards>.card>.meta,#results.cards>.card>.id{font-size:11px}
+
+/* Readability adjustment: +2px over the previous 17px base */
+body{font-size:19px}
+.welcome p,.research-grid article p,.method-copy p{font-size:1.05em}
+.topbar nav a{font-size:14px}
+.searchbox>label,.quick>span,.result-head,.meta,.id,.candidate-meta,.source,.state{font-size:12px}
+#results.cards>.card>.meta,#results.cards>.card>.id{font-size:12px}
