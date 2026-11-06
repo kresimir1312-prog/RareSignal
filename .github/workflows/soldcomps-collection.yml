@@ -1,0 +1,41 @@
+name: RareSignal SoldComps collection
+
+on:
+  schedule:
+    - cron: "0 9 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: raresignal-soldcomps-collector
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Collect completed sales into review queue
+        env:
+          SOLDCOMPS_API_KEY: ${{ secrets.SOLDCOMPS_API_KEY }}
+        run: node tools/soldcomps-collector.mjs
+      - name: Commit feed and credit ledger
+        if: always()
+        run: |
+          if git diff --quiet -- data/market-feed/pending-review.json data/market-feed/usage-ledger.json; then
+            echo "No feed or ledger changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/market-feed/pending-review.json data/market-feed/usage-ledger.json
+          git commit -m "Update SoldComps sales review feed"
+          git push
