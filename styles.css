@@ -323,3 +323,7 @@ body{background:var(--paper);color:var(--ink)}
 /* Slightly larger, more comfortable site typography */
 body{font-size:17px}
 p,li{font-size:1.04em}
+
+/* Readability adjustment: +2px over the previous 17px base */
+body{font-size:19px}
+p,li{font-size:1.04em}
