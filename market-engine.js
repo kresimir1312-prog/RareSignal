@@ -33,6 +33,7 @@
   for(const o of observations||[]){
    const errors=validateObservation(o);
    if(!errors.length&&seen.has(o.sale_id))errors.push("Duplicate sale_id.");
+   if(!errors.length&&dateMs(o.sold_at)>now)errors.push("Future-dated sales are not eligible.");
    if(errors.length){excluded.push({sale_id:o&&o.sale_id||null,reasons:errors});continue;}
    seen.add(o.sale_id);accepted.push(o);
   }
@@ -80,5 +81,7 @@
   if(upside<0)return {signal:"AVOID AT THIS PRICE",upside_percent:round(upside,1),reason:"Entry price is above the 90-day median."};
   return {signal:"HOLD / FAIR VALUE",upside_percent:round(upside,1),reason:"Entry price is close to the 90-day median."};
  }
- root.RareSignalMarketEngine={validateObservation,summarize,investmentSignal,median};
+ const api={validateObservation,summarize,investmentSignal,median};
+ root.RareSignalMarketEngine=api;
+ if(typeof module!=="undefined"&&module.exports)module.exports=api;
 })(typeof window!=="undefined"?window:globalThis);
