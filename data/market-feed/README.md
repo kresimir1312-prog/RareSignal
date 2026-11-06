@@ -55,4 +55,4 @@ Important interpretation:
 - Duplicate detection uses eBay item IDs during collection; near-duplicate title/date/price patterns are flagged for review, not automatically deleted.
 - A preliminary match is not an approved transaction. Every record still needs human confirmation.
 
-The initial 113-record feed remains pending and is not retroactively auto-approved. The new strict rules apply to newly collected results only. This avoids silently promoting old records that were gathered before the stricter acceptance gate existed.
+Retrospective application of the strict rules to the initial 113-record feed approved 4 exact English PSA 10 matches and left 109 records pending. The approved records were moved to `auto-approved.json` with their original listing details, rule-set, and normalized observations. All RAW results and ambiguous PSA 10 matches remain pending.
