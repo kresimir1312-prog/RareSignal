@@ -1,0 +1,10 @@
+{
+  "month": "",
+  "automation_charged": 0,
+  "runs": 0,
+  "searches": 0,
+  "monthly_automation_cap": 560,
+  "free_monthly_allowance": 700,
+  "reserved_credits": 140,
+  "max_runs_per_month": 2
+}
