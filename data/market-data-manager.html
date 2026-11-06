@@ -18,7 +18,7 @@ button.secondary,.file-button.secondary{background:#f2eafa;color:#7132a9;border:
 input[type=file]{display:none}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:10px;margin-top:16px}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top}th{background:#f7f4fb;color:#655d75;font-size:11px;text-transform:uppercase;letter-spacing:.7px}tr:last-child td{border:0}
 .notice{border-left:4px solid var(--purple);background:#f4ecfb;padding:14px 17px;border-radius:0 10px 10px 0;margin:15px 0;font-size:14px}
 .status{font-size:13px;margin-top:10px}.good{color:#28734a}.bad{color:#a33b53}.pill{display:inline-block;background:#f2eafa;color:#7132a9;border-radius:20px;padding:3px 8px;font-size:11px;font-weight:800}
-.queue-card{border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;background:#fff}.queue-card h3{font-size:17px;margin:0 0 6px}.queue-meta{font-size:13px;color:var(--muted);margin:7px 0}.queue-flags{font-size:12px;color:#9a3e50;margin:8px 0}.queue-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}.queue-fields label{font-size:12px;color:var(--muted)}.queue-fields input,.queue-fields select{display:block;width:100%;padding:9px;border:1px solid var(--line);border-radius:7px;font:14px inherit;color:var(--ink)}.queue-checks{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;margin:12px 0}.queue-checks label{display:flex;gap:6px;align-items:center}.queue-card a{color:var(--purple);font-weight:700}@media(max-width:600px){.queue-fields{grid-template-columns:1fr}}\ntextarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:9px;padding:12px;font:13px ui-monospace,monospace}
+.queue-card{border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;background:#fff}.queue-card h3{font-size:17px;margin:0 0 6px}.queue-meta{font-size:13px;color:var(--muted);margin:7px 0}.queue-flags{font-size:12px;color:#9a3e50;margin:8px 0}.queue-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}.queue-fields label{font-size:12px;color:var(--muted)}.queue-fields input,.queue-fields select{display:block;width:100%;padding:9px;border:1px solid var(--line);border-radius:7px;font:14px inherit;color:var(--ink)}.queue-checks{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;margin:12px 0}.queue-checks label{display:flex;gap:6px;align-items:center}.queue-card a{color:var(--purple);font-weight:700}@media(max-width:600px){.queue-fields{grid-template-columns:1fr}}\n.queue-card{border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;background:#fff}.queue-card h3{font-size:17px;margin:0 0 6px}.queue-meta{font-size:13px;color:var(--muted);margin:7px 0}.queue-flags{font-size:12px;color:#9a3e50;margin:8px 0}.queue-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}.queue-fields label{font-size:12px;color:var(--muted)}.queue-fields input,.queue-fields select{display:block;width:100%;padding:9px;border:1px solid var(--line);border-radius:7px;font:14px inherit;color:var(--ink)}.queue-checks{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;margin:12px 0}.queue-checks label{display:flex;gap:6px;align-items:center}.queue-card a{color:var(--purple);font-weight:700}@media(max-width:600px){.queue-fields{grid-template-columns:1fr}}textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:9px;padding:12px;font:13px ui-monospace,monospace}
 footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:20px;margin-top:35px}
 @media(max-width:720px){.metrics{grid-template-columns:repeat(2,1fr)}.panel{padding:17px}}
 </style>
@@ -36,6 +36,20 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
 <div class="actions"><label class="file-button" for="csv-file">Import sales CSV</label><input id="csv-file" type="file" accept=".csv,text/csv"><label class="file-button secondary" for="json-file">Restore JSON backup</label><input id="json-file" type="file" accept=".json,application/json"><button class="secondary" id="export-json">Export JSON backup</button><button class="secondary" id="export-csv">Export CSV</button><button class="secondary" id="template">Download CSV template</button></div>
 <div id="import-status" class="status" aria-live="polite">No import performed in this session.</div>
 </section>
+<section class="panel" id="soldcomps-review">
+<h2>SoldComps review queue</h2>
+<p class="muted">Review collected candidates against their original completed-sale listings. Nothing is accepted automatically.</p>
+<div class="metrics">
+<div class="metric"><span>PENDING</span><strong id="queue-pending">—</strong><small>Awaiting review</small></div>
+<div class="metric"><span>APPROVED</span><strong id="queue-approved">0</strong><small>For CSV export</small></div>
+<div class="metric"><span>REJECTED</span><strong id="queue-rejected">0</strong><small>Excluded</small></div>
+<div class="metric"><span>FEED UPDATED</span><strong id="queue-updated" style="font-size:15px">—</strong><small>GitHub timestamp</small></div>
+</div>
+<div class="actions"><button id="load-queue">Load / refresh queue</button><button class="secondary" id="export-approved" disabled>Export approved sales CSV</button><button class="secondary" id="export-decisions" disabled>Export review decisions JSON</button></div>
+<div class="actions"><label for="queue-filter">Filter</label><select id="queue-filter" style="padding:9px;border:1px solid var(--line);border-radius:8px"><option value="PENDING">Pending only</option><option value="ALL">All records</option><option value="PRELIMINARY_MATCH">Preliminary matches</option><option value="NEEDS_REVIEW">Needs review</option><option value="HIGH_RISK">High risk</option><option value="APPROVED">Approved</option><option value="REJECTED">Rejected</option></select></div>
+<div id="queue-status" class="status" aria-live="polite">Queue not loaded yet.</div><div id="queue-list"></div>
+<div class="notice">Approval requires manual confirmation of English language, exact card number and printing, completed sale and final price. RAW sales require independently verified Near Mint condition; graded sales require a visible PSA 10 label. Approval only enables CSV export; it does not write to GitHub or the local database.</div>
+</section>
 <section class="panel">
 <h2>Import requirements</h2><p class="muted">CSV headers must match these field names. Required fields are marked with *.</p>
 <div class="table-wrap"><table><thead><tr><th>Field</th><th>Required</th><th>Example / rule</th></tr></thead><tbody>
@@ -51,7 +65,7 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
 <h2>Recent stored observations</h2><p class="muted">Most recently imported records, with source provenance retained.</p>
 <div class="table-wrap"><table><thead><tr><th>Sold at</th><th>Card ID</th><th>Variant</th><th>Grade</th><th>Price</th><th>Market</th><th>Source</th></tr></thead><tbody id="recent-body"><tr><td colspan="7">No observations stored.</td></tr></tbody></table></div>
 </section>
-<footer>RareSignal Market Data Manager v1.2 · SoldComps review queue · Browser-local storage · No market prices are fetched or invented. Keep independent backups of your data.</footer>
+<footer>RareSignal Market Data Manager v1.3 · SoldComps review queue · Browser-local storage · No market prices are fetched or invented. Keep independent backups of your data.</footer>
 </main>
 <script src="../market-engine.js?v=20261106-2"></script>
 <script>
