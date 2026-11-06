@@ -1,6 +1,299 @@
 {
   "schema_version": 1,
-  "updated_at": null,
+  "updated_at": "2026-11-06T20:45:01.099Z",
   "source": "SoldComps strict auto-accept",
-  "records": []
+  "records": [
+    {
+      "item_id": "900058667001",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3611.26,
+      "sold_at": "2026-11-05",
+      "title": "UMBREON VMAX 215/203 PSA 10 EVOLVING SKIES ALTERNATE ART POKEMON CARD ENGLISH",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 13.14,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/900058667001",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "AUTO_APPROVED",
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [],
+      "quality_tier": "AUTO_APPROVED",
+      "valuation_eligible": true,
+      "auto_approval": {
+        "method": "STRICT_ENGLISH_PSA10_V1_RETROSPECTIVE",
+        "approved_at": "2026-11-06T20:45:01.087Z",
+        "checks": [
+          "exact card name",
+          "set",
+          "card number",
+          "alt-art variant",
+          "English marker",
+          "PSA 10",
+          "supported sale format",
+          "known sold price",
+          "valid date",
+          "supported currency",
+          "verified eBay item URL"
+        ]
+      },
+      "observation": {
+        "sale_id": "soldcomps-ebay-900058667001",
+        "card_id": "evolving-skies-215-english",
+        "variant_id": "evolving-skies-215-203-alt-art-secret-holo-english",
+        "language": "English",
+        "grade_type": "PSA10",
+        "condition": "PSA 10",
+        "sale_status": "COMPLETED",
+        "sold_at": "2026-11-05",
+        "price": 3611.26,
+        "currency": "USD",
+        "market": "US",
+        "source": "eBay via SoldComps",
+        "marketplace": "eBay",
+        "evidence_type": "DIRECT_TRANSACTION",
+        "source_url": "https://www.ebay.com/itm/900058667001",
+        "is_lot": false,
+        "notes": "Approved using STRICT_ENGLISH_PSA10_V1 after retrospective rule evaluation; source listing retained."
+      }
+    },
+    {
+      "item_id": "820296977691",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3500,
+      "sold_at": "2026-11-04",
+      "title": "The Pok��mon Company Umbreon VMAX 215/203 Evolving Skies Alt Art Holo ENG PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.74,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/820296977691",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "AUTO_APPROVED",
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [],
+      "quality_tier": "AUTO_APPROVED",
+      "valuation_eligible": true,
+      "auto_approval": {
+        "method": "STRICT_ENGLISH_PSA10_V1_RETROSPECTIVE",
+        "approved_at": "2026-11-06T20:45:01.088Z",
+        "checks": [
+          "exact card name",
+          "set",
+          "card number",
+          "alt-art variant",
+          "English marker",
+          "PSA 10",
+          "supported sale format",
+          "known sold price",
+          "valid date",
+          "supported currency",
+          "verified eBay item URL"
+        ]
+      },
+      "observation": {
+        "sale_id": "soldcomps-ebay-820296977691",
+        "card_id": "evolving-skies-215-english",
+        "variant_id": "evolving-skies-215-203-alt-art-secret-holo-english",
+        "language": "English",
+        "grade_type": "PSA10",
+        "condition": "PSA 10",
+        "sale_status": "COMPLETED",
+        "sold_at": "2026-11-04",
+        "price": 3500,
+        "currency": "USD",
+        "market": "US",
+        "source": "eBay via SoldComps",
+        "marketplace": "eBay",
+        "evidence_type": "DIRECT_TRANSACTION",
+        "source_url": "https://www.ebay.com/itm/820296977691",
+        "is_lot": false,
+        "notes": "Approved using STRICT_ENGLISH_PSA10_V1 after retrospective rule evaluation; source listing retained."
+      }
+    },
+    {
+      "item_id": "147633046617",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-10-12",
+      "title": "Giratina V Alt Full Art 186/196 Lost Origin Holo PSA 10 2022 English",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.63,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/147633046617",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "AUTO_APPROVED",
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [],
+      "quality_tier": "AUTO_APPROVED",
+      "valuation_eligible": true,
+      "auto_approval": {
+        "method": "STRICT_ENGLISH_PSA10_V1_RETROSPECTIVE",
+        "approved_at": "2026-11-06T20:45:01.088Z",
+        "checks": [
+          "exact card name",
+          "set",
+          "card number",
+          "alt-art variant",
+          "English marker",
+          "PSA 10",
+          "supported sale format",
+          "known sold price",
+          "valid date",
+          "supported currency",
+          "verified eBay item URL"
+        ]
+      },
+      "observation": {
+        "sale_id": "soldcomps-ebay-147633046617",
+        "card_id": "lost-origin-186-english",
+        "variant_id": "lost-origin-186-196-alt-art-holo-english",
+        "language": "English",
+        "grade_type": "PSA10",
+        "condition": "PSA 10",
+        "sale_status": "COMPLETED",
+        "sold_at": "2026-10-12",
+        "price": 3600,
+        "currency": "USD",
+        "market": "US",
+        "source": "eBay via SoldComps",
+        "marketplace": "eBay",
+        "evidence_type": "DIRECT_TRANSACTION",
+        "source_url": "https://www.ebay.com/itm/147633046617",
+        "is_lot": false,
+        "notes": "Approved using STRICT_ENGLISH_PSA10_V1 after retrospective rule evaluation; source listing retained."
+      }
+    },
+    {
+      "item_id": "327383526025",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3104,
+      "sold_at": "2026-10-11",
+      "title": "Pokemon 2022 SWSH Lost Origin Giratina V 186/196 Alt Art Holo PSA 10 GEM English",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/327383526025",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "AUTO_APPROVED",
+      "review_note": "Automated triage only. Manual verification required before acceptance.",
+      "review_flags": [],
+      "quality_tier": "AUTO_APPROVED",
+      "valuation_eligible": true,
+      "auto_approval": {
+        "method": "STRICT_ENGLISH_PSA10_V1_RETROSPECTIVE",
+        "approved_at": "2026-11-06T20:45:01.088Z",
+        "checks": [
+          "exact card name",
+          "set",
+          "card number",
+          "alt-art variant",
+          "English marker",
+          "PSA 10",
+          "supported sale format",
+          "known sold price",
+          "valid date",
+          "supported currency",
+          "verified eBay item URL"
+        ]
+      },
+      "observation": {
+        "sale_id": "soldcomps-ebay-327383526025",
+        "card_id": "lost-origin-186-english",
+        "variant_id": "lost-origin-186-196-alt-art-holo-english",
+        "language": "English",
+        "grade_type": "PSA10",
+        "condition": "PSA 10",
+        "sale_status": "COMPLETED",
+        "sold_at": "2026-10-11",
+        "price": 3104,
+        "currency": "USD",
+        "market": "US",
+        "source": "eBay via SoldComps",
+        "marketplace": "eBay",
+        "evidence_type": "DIRECT_TRANSACTION",
+        "source_url": "https://www.ebay.com/itm/327383526025",
+        "is_lot": false,
+        "notes": "Approved using STRICT_ENGLISH_PSA10_V1 after retrospective rule evaluation; source listing retained."
+      }
+    }
+  ]
 }
