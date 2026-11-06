@@ -2,6 +2,15 @@ const API="https://api.tcgdex.net/v2/en";
 const $=s=>document.querySelector(s);
 const results=$("#results"), count=$("#result-count"), input=$("#query"), dlg=$("#detail"), body=$("#detail-body");
 const moreWrap=$("#prototype-load-more-wrap"), moreButton=$("#prototype-load-more");
+function updateEngineStatus(){
+ const status=$("#engine-runtime-status"),moduleState=$("#engine-module-state");
+ if(!status||!moduleState)return;
+ const ready=!!(window.RareSignalMarketEngine&&typeof window.RareSignalMarketEngine.summarize==="function");
+ status.textContent=ready?"CALCULATION CORE READY":"ENGINE MODULE UNAVAILABLE";
+ status.classList.toggle("ready",ready);status.classList.toggle("error",!ready);
+ moduleState.textContent=ready?"Loaded · v1":"Not loaded";
+}
+updateEngineStatus();
 const PAGE_SIZE=24;
 let cataloguePromise=null, catalogue=[], filtered=[], visible=PAGE_SIZE, searchToken=0, detailToken=0;
 function esc(v=""){return String(v).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
