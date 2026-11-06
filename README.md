@@ -36,7 +36,25 @@ The estimator calculates only the data entered by the user. It is not a live mar
 - `prototype.html` — research desk and value estimator
 - `prototype.css` — research desk styling
 - `prototype.js` — research desk interactions
+- `market-engine.js` — completed-sale valuation and evidence-gated signal functions
 - `tools/catalogue-audit.html` — browser-based catalogue structure audit
+
+## Market Intelligence Engine (v1)
+
+The dependency-free `market-engine.js` module provides a first, testable valuation layer:
+
+- Accepts only completed sales with exact card and variant IDs.
+- Keeps RAW and PSA 10 observations separate.
+- Requires an explicit raw condition and separates market and currency groups.
+- Deduplicates stable sale IDs and reports excluded observations with reasons.
+- Calculates 30-day and 90-day medians, prior-period median, trend, sample counts and observed range.
+- Flags IQR outliers for review; it does not silently delete them.
+- Produces a transparent confidence score and conservative entry-price signal gate.
+- Does not fetch, fabricate or convert market data. A live source adapter and verified observation store are still required.
+
+The initial signal policy requires confidence of at least 70/100, eight comparable sales in 90 days and two sources before considering a BUY CANDIDATE. These are provisional research thresholds, not a promise of investment performance. BUY CANDIDATE is not an instruction to buy. Signals remain unavailable when evidence is insufficient.
+
+Observation contract: `data/schemas/market-observation-v1.schema.json`.
 
 ## Catalogue validation
 
