@@ -246,3 +246,10 @@ footer>span{font-size:11px}
   #results.cards{grid-template-columns:1fr}
   #results.cards>.card>.art{height:300px;min-height:300px;flex-basis:300px}
 }
+
+/* Slightly larger, more comfortable Research Desk typography */
+body{font-size:17px}
+.welcome p,.research-grid article p,.method-copy p{font-size:1.05em}
+.topbar nav a{font-size:13px}
+.searchbox>label,.quick>span,.result-head,.meta,.id,.candidate-meta,.source,.state{font-size:11px}
+#results.cards>.card>.meta,#results.cards>.card>.id{font-size:11px}
