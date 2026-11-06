@@ -32,3 +32,20 @@ Never put the API key in source code, commits, public files, the website or chat
 Results are written to `pending-review.json`, not the accepted observation archive. Search profiles are hints only. A person must confirm exact English card/printing, card number, grade or raw NM condition, individual-card sale, sold amount and sale validity. Flags and Best Offer price uncertainty are retained. No search match is automatically treated as an accepted valuation observation.
 
 The feed contains public listing information and is committed to this public repository. It never contains the API key.
+
+## Automated quality triage
+
+The collector adds the following fields to each pending candidate:
+- `review_flags`: language, card number, grade, raw-condition, Best Offer, sale date, price, URL and provider-outlier warnings.
+- `quality_tier`: `HIGH_RISK`, `NEEDS_REVIEW` or `PRELIMINARY_MATCH`.
+- `valuation_eligible`: always `false` until a human review process explicitly accepts a record.
+- `review_status`: remains `PENDING`.
+
+Important interpretation:
+- Search-title language checks are heuristic. Missing an explicit English marker is a review flag, not proof that a card is foreign.
+- Marketplace condition labels do not prove card condition. Raw NM requires manual inspection or reliable condition evidence.
+- A Best Offer sale with unknown accepted price is not suitable for valuation.
+- Duplicate detection uses eBay item IDs during collection; near-duplicate title/date/price patterns are flagged for review, not automatically deleted.
+- A preliminary match is not an approved transaction. Every record still needs human confirmation.
+
+The initial 113-record feed has been audited: 24 high-risk, 84 needing review, 5 preliminary matches and 0 valuation-eligible records. This is triage, not final transaction validation.
