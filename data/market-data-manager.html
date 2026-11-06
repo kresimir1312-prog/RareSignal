@@ -51,6 +51,26 @@ table th,table td{padding:9px 10px}
 @media(max-width:650px){main{padding:22px 14px 34px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.panel{padding:14px;margin:11px 0}h1{font-size:38px}}
 </style>
 
+
+<style>
+/* High-contrast data manager palette */
+:root{color-scheme:dark;--ink:#f7f8fa;--muted:#c0c7d1;--line:#3b4552;--panel:#171b22;--accent:#36e0b5}
+html,body{background:#090b0f!important;color:#f7f8fa!important}
+header{background:#0b0e13!important;color:#fff!important;border-bottom:1px solid var(--line)}
+header a,a{color:var(--accent)!important}
+h1,h2,h3,h4,strong,b{color:#fff!important}
+p,.lede,.muted,small,label,th{color:var(--muted)!important}
+.panel,.metric,.queue-card,.review-card,.status,.table-wrap{background:var(--panel)!important;color:#f7f8fa!important;border:1px solid var(--line)!important;box-shadow:none!important}
+.metric span,.metric small{color:var(--muted)!important}.metric strong{color:var(--accent)!important}
+input,select,textarea{background:#0b0f15!important;color:#fff!important;border:1px solid #596575!important}
+input::placeholder,textarea::placeholder{color:#aeb7c4!important;opacity:1}
+button,.file-button{background:#36e0b5!important;color:#07130f!important}
+button.secondary,.file-button.secondary{background:#252d38!important;color:#f7f8fa!important;border:1px solid #596575!important}
+td,th,tr{color:#f2f4f7!important;border-color:var(--line)!important}
+.good{color:#65f3d0!important}.bad{color:#ff9b9b!important}
+:where(a,button,input,select,textarea):focus-visible{outline:3px solid #d1a2ff!important;outline-offset:3px}
+</style>
+
 </head>
 <body>
 <header><div class="brand">Rare<span>Signal</span> <small style="font-size:9px;letter-spacing:1.5px;color:#b6bdc8">DATA MANAGER</small></div><nav><a href="../prototype.html">← Research Desk</a></nav></header>
