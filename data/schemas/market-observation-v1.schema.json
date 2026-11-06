@@ -4,22 +4,95 @@
   "title": "RareSignal completed-sale observation",
   "type": "object",
   "additionalProperties": false,
-  "required": ["sale_id","card_id","variant_id","grade_type","sale_status","sold_at","price","currency","market","source"],
+  "required": [
+    "sale_id",
+    "card_id",
+    "variant_id",
+    "grade_type",
+    "sale_status",
+    "sold_at",
+    "price",
+    "currency",
+    "market",
+    "source"
+  ],
   "properties": {
-    "sale_id": {"type":"string","minLength":1,"description":"Stable transaction identifier; used for deduplication."},
-    "card_id": {"type":"string","minLength":1,"description":"Exact TCGdex card identity or RareSignal canonical identity."},
-    "variant_id": {"type":"string","minLength":1,"description":"RareSignal exact printing/finish identity; never infer from card_id alone."},
-    "language": {"type":"string","const":"English"},
-    "grade_type": {"type":"string","enum":["RAW","PSA10"]},
-    "condition": {"type":"string","description":"Required for RAW; use PSA 10 for PSA10."},
-    "sale_status": {"type":"string","const":"COMPLETED"},
-    "sold_at": {"type":"string","format":"date-time"},
-    "price": {"type":"number","exclusiveMinimum":0},
-    "currency": {"type":"string","pattern":"^[A-Z]{3}$"},
-    "market": {"type":"string","minLength":1,"description":"Market/region label; never mix silently."},
-    "source": {"type":"string","minLength":1},
-    "source_url": {"type":"string","format":"uri"},
-    "is_lot": {"type":"boolean","default":false},
-    "notes": {"type":"string"}
+    "sale_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Stable transaction identifier; used for deduplication."
+    },
+    "card_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Exact TCGdex card identity or RareSignal canonical identity."
+    },
+    "variant_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "RareSignal exact printing/finish identity; never infer from card_id alone."
+    },
+    "language": {
+      "type": "string",
+      "const": "English"
+    },
+    "grade_type": {
+      "type": "string",
+      "enum": [
+        "RAW",
+        "PSA10"
+      ]
+    },
+    "condition": {
+      "type": "string",
+      "description": "Required for RAW; use PSA 10 for PSA10."
+    },
+    "sale_status": {
+      "type": "string",
+      "const": "COMPLETED"
+    },
+    "sold_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "price": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "market": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Market/region label; never mix silently."
+    },
+    "source": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "Direct transaction URL when evidence_type is DIRECT_TRANSACTION; provider page otherwise."
+    },
+    "is_lot": {
+      "type": "boolean",
+      "default": false
+    },
+    "notes": {
+      "type": "string"
+    },
+    "evidence_type": {
+      "type": "string",
+      "enum": [
+        "DIRECT_TRANSACTION",
+        "PROVIDER_REPORTED",
+        "AGGREGATE"
+      ],
+      "default": "PROVIDER_REPORTED",
+      "description": "Evidence provenance tier; direct transaction requires a transaction-level source_url."
+    }
   }
 }
