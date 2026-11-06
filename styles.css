@@ -379,3 +379,35 @@ html,body{background:#090a0d;color:#f3f4f6}
 .hero{min-height:540px;padding:78px clamp(22px,7vw,100px) 76px}.hero h1{font-size:clamp(46px,6.2vw,76px);line-height:1.02;letter-spacing:-3px}.hero-visual{opacity:.35}
 .search-panel{padding:24px}.research-section{padding:68px 0}.research-card{padding:26px}.latest-report{padding-block:70px}.latest-report .report-content{background:#15171b;border:1px solid #2c3037;border-radius:18px;padding:clamp(22px,4vw,44px)}
 @media(max-width:700px){.hero{padding:52px 22px 58px}.research-section{padding:48px 0}.research-section .section-wrap{padding-inline:18px}.research-cards{grid-template-columns:1fr}}
+
+/* Visual-first hierarchy: fewer words, bigger type, clear iconography */
+body{font-size:18px}
+.hero h1,.welcome h1{font-size:clamp(52px,7vw,88px);line-height:.98;letter-spacing:-3.5px}
+.hero-copy,.welcome p{font-size:20px;line-height:1.45;max-width:510px}
+.section-heading h2,.section-title h2{font-size:clamp(34px,4vw,48px);line-height:1.05}
+.section-heading p,.section-title p{font-size:18px;line-height:1.4}
+.trust-band .trust-number{font-size:25px;font-weight:800}
+.trust-band b{font-size:17px}.trust-band small{font-size:14px}
+.research-icon,.research-grid .symbol{width:58px;height:58px;display:grid;place-items:center;font-size:31px;margin:12px 0 20px;border-radius:17px;background:#19372f;color:#20c6a0}
+.research-card h3,.research-grid article h3{font-size:23px;letter-spacing:-.5px}
+.research-card p,.research-grid article p{font-size:16px;line-height:1.4}
+.card-index,.research-grid .number{font-size:13px;font-weight:800;color:#20c6a0}
+.eyebrow,.kicker{font-size:12px;font-weight:800;letter-spacing:1.4px}
+.search-label,.searchbox>label{font-size:13px;font-weight:800}
+.search-input-wrap input,.searchline input{font-size:21px;min-height:60px}
+.gold-button,.primary,.searchline button{font-size:17px;min-height:54px;padding:0 24px}
+.search-hints button,.quick button{font-size:14px;padding:10px 15px}
+#results.results-grid>.card-result>h3,#results.cards>.card>h3{font-size:19px!important}
+#results.results-grid>.card-result>.card-meta,#results.cards>.card>.meta{font-size:13px!important}
+.welcome-note{padding:26px}.welcome-note strong{font-size:26px;line-height:1.1}
+.metrics strong{font-size:23px}.metrics span{font-size:11px;font-weight:800;letter-spacing:.8px}
+.metrics small{font-size:13px}
+.candidate h4{font-size:21px}.candidate-value{font-size:32px}
+@media(max-width:700px){
+ .hero h1,.welcome h1{font-size:clamp(48px,13vw,68px)}
+ .hero-copy,.welcome p{font-size:18px}
+ .section-heading h2,.section-title h2{font-size:36px}
+ .research-icon,.research-grid .symbol{width:54px;height:54px;font-size:29px}
+ .search-input-wrap input,.searchline input{font-size:18px}
+ .trust-band b{font-size:16px}.trust-band small{font-size:13px}
+}
