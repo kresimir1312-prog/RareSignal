@@ -84,6 +84,26 @@ a{color:var(--accent)}table{width:100%;border-collapse:collapse}th,td{padding:10
 @media(max-width:650px){main{padding:24px 16px 34px}.summary{grid-template-columns:1fr 1fr}h2{margin-top:24px}}
 </style>
 
+
+<style>
+/* High-contrast report palette */
+:root{color-scheme:dark;--bg:#090b0f;--panel:#171b22;--line:#3b4552;--text:#f7f8fa;--muted:#c0c7d1;--accent:#36e0b5}
+html,body{background:var(--bg)!important;color:var(--text)!important}
+.top{background:#0b0e13!important;color:#fff!important;border-bottom:1px solid var(--line)}
+.top a,a{color:var(--accent)!important}
+main{color:var(--text)!important}
+h1,h2,h3,strong,b{color:#fff!important}
+h1 em,.eyebrow{color:var(--accent)!important}
+.lede,.meta,.muted,p,li,td small{color:var(--muted)!important}
+.tile,.card,.section-card,.note,.callout,.table-wrap{background:var(--panel)!important;color:var(--text)!important;border:1px solid var(--line)!important;box-shadow:none!important}
+.tile span{color:var(--muted)!important}.tile strong{color:var(--accent)!important}
+th,td{color:#f2f4f7!important;border-color:var(--line)!important}
+.status.good{color:#65f3d0!important}.status.caution{color:#ffd479!important}
+.footer,.method{color:var(--muted)!important;border-color:var(--line)!important}
+:where(a):focus-visible{outline:3px solid #d1a2ff;outline-offset:3px}
+@media(max-width:650px){.summary{grid-template-columns:1fr 1fr}}
+</style>
+
 </head>
 <body>
   <header class="top"><div class="brand">Rare<span>Signal</span> <small style="font:700 9px system-ui;letter-spacing:2px;color:#b6bdc8">RESEARCH</small></div><a href="../index.html">← Back to RareSignal</a></header>
