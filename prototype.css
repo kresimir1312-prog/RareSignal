@@ -77,3 +77,29 @@ button:disabled{opacity:.55;cursor:wait}
 .engine-status-grid small{font-size:8px;letter-spacing:0}
 .engine-status-panel>a{font-size:9px;color:#927849}
 @media(max-width:560px){.engine-status-panel{padding:16px}.engine-status-head{display:block}.engine-runtime-status{display:inline-block;margin-top:12px}.engine-status-grid{grid-template-columns:1fr}}
+
+/* Shared RareSignal purple hybrid design system */
+:root{--navy:#0b1020;--navy2:#15152d;--gold:#9c4dff;--paper:#f5f4fb;--line:#e6e2f0;--muted:#777991;--ink:#171832}
+body{background:var(--paper);color:var(--ink)}
+.topbar{background:rgba(9,12,27,.97);border-bottom:1px solid rgba(190,144,255,.18);box-shadow:0 8px 28px #0a0a1c1f;backdrop-filter:blur(14px)}
+.brand{color:#fff;font:750 22px Inter,system-ui,sans-serif;letter-spacing:-1px}.brand .mark{border:0;border-radius:9px;background:linear-gradient(145deg,#a94cff,#6f24c7);color:#fff;font:800 23px Inter,system-ui}.brand small{color:#aaa5bd}.gold{color:#c58bff}
+.topbar nav a{color:#c1bfd1}.topbar nav a.selected,.topbar nav a:hover{color:#fff;border-bottom:2px solid #b66bff}
+.demo-tag{color:#d5aaff;border:1px solid #be78ff70;border-radius:20px}
+.welcome{background:#090d1d}.welcome:after{background:radial-gradient(circle,#9c48ff3d,transparent 68%)}
+.kicker{color:#c58bff}.kicker i{background:#bd70ff;box-shadow:0 0 12px #bd70ff}.welcome h1 em{color:#bd75ff}
+.primary{background:linear-gradient(110deg,#8b2fe8,#b54dff);color:#fff;border-radius:9px;box-shadow:0 8px 25px #9636ef33}.primary:hover{background:#a64aff}
+.welcome-note{border-color:#be78ff70}.welcome-note strong{color:#ead8ff}
+.metrics{background:var(--paper)}.metrics div{border-color:var(--line)}.metrics strong,.section-title h2,.method h2{color:var(--ink)}
+.muted{color:#9143cf}.source,.state,.candidate-meta{color:#9143cf}
+.searchbox,.research-grid article,.estimator-panel,.candidate{border-color:var(--line);border-radius:13px;box-shadow:0 10px 30px #1e11360b}
+.searchline input,.estimator-controls input,.estimator-controls select,.sales-inputs textarea{border-color:#ded3ed;border-radius:8px}
+.searchline button{background:linear-gradient(110deg,#8b2fe8,#b54dff);border-radius:8px}.searchline button b{color:#fff}
+.quick button,.candidate-links a,.method-copy a,footer a{color:#9143cf}
+.empty{background:#f3eefa;border-color:#d8c3ef;border-radius:12px}.empty b,.symbol{color:#9c4dff}
+.research-grid article{background:#fff}.research-grid .symbol{border-color:#e2d3f2;background:#f7f0ff;border-radius:9px}
+.signal-panel{background:#eee8f6;border-radius:13px}.signal-panel h3,.candidate h4,.candidate-value{color:var(--ink)}
+.pending{color:#9143cf}.method{background:linear-gradient(120deg,#0b1020,#19132e)}.method h2{color:#fff}.method-copy a{color:#c58bff}
+footer{background:#f5f4fb;border-top:1px solid var(--line)}footer .brand{color:var(--ink)}footer .brand small{color:#777991}footer .brand .mark{color:#fff}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #9c4dff;outline-offset:3px}
+#finder,#estimator,#research,#method{scroll-margin-top:90px}
+@media(max-width:800px){.topbar nav{gap:12px}.top-actions{display:none}}
