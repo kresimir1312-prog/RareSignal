@@ -18,7 +18,7 @@ button.secondary,.file-button.secondary{background:#f2eafa;color:#7132a9;border:
 input[type=file]{display:none}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:10px;margin-top:16px}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:top}th{background:#f7f4fb;color:#655d75;font-size:11px;text-transform:uppercase;letter-spacing:.7px}tr:last-child td{border:0}
 .notice{border-left:4px solid var(--purple);background:#f4ecfb;padding:14px 17px;border-radius:0 10px 10px 0;margin:15px 0;font-size:14px}
 .status{font-size:13px;margin-top:10px}.good{color:#28734a}.bad{color:#a33b53}.pill{display:inline-block;background:#f2eafa;color:#7132a9;border-radius:20px;padding:3px 8px;font-size:11px;font-weight:800}
-textarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:9px;padding:12px;font:13px ui-monospace,monospace}
+.queue-card{border:1px solid var(--line);border-radius:12px;padding:16px;margin:14px 0;background:#fff}.queue-card h3{font-size:17px;margin:0 0 6px}.queue-meta{font-size:13px;color:var(--muted);margin:7px 0}.queue-flags{font-size:12px;color:#9a3e50;margin:8px 0}.queue-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}.queue-fields label{font-size:12px;color:var(--muted)}.queue-fields input,.queue-fields select{display:block;width:100%;padding:9px;border:1px solid var(--line);border-radius:7px;font:14px inherit;color:var(--ink)}.queue-checks{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;margin:12px 0}.queue-checks label{display:flex;gap:6px;align-items:center}.queue-card a{color:var(--purple);font-weight:700}@media(max-width:600px){.queue-fields{grid-template-columns:1fr}}\ntextarea{width:100%;min-height:100px;border:1px solid var(--line);border-radius:9px;padding:12px;font:13px ui-monospace,monospace}
 footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:20px;margin-top:35px}
 @media(max-width:720px){.metrics{grid-template-columns:repeat(2,1fr)}.panel{padding:17px}}
 </style>
@@ -51,12 +51,12 @@ footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);paddin
 <h2>Recent stored observations</h2><p class="muted">Most recently imported records, with source provenance retained.</p>
 <div class="table-wrap"><table><thead><tr><th>Sold at</th><th>Card ID</th><th>Variant</th><th>Grade</th><th>Price</th><th>Market</th><th>Source</th></tr></thead><tbody id="recent-body"><tr><td colspan="7">No observations stored.</td></tr></tbody></table></div>
 </section>
-<footer>RareSignal Market Data Manager v1.1 · Browser-local storage · No market prices are fetched or invented. Keep independent backups of your data.</footer>
+<footer>RareSignal Market Data Manager v1.2 · SoldComps review queue · Browser-local storage · No market prices are fetched or invented. Keep independent backups of your data.</footer>
 </main>
 <script src="../market-engine.js?v=20261106-2"></script>
 <script>
 (()=>{"use strict";
-const KEY="raresignal.market-observations.v1",LAST="raresignal.market-observations.last-import.v1";
+const KEY="raresignal.market-observations.v1",LAST="raresignal.market-observations.last-import.v1";\nconst FEED_URL="https://raw.githubusercontent.com/kresimir1312-prog/RareSignal/main/data/market-feed/pending-review.json";\nlet queue=[],decisions={};
 const $=s=>document.querySelector(s),engine=window.RareSignalMarketEngine;
 let records=load();
 function load(){try{const x=JSON.parse(localStorage.getItem(KEY)||"[]");return Array.isArray(x)?x:[]}catch{return[]}}
