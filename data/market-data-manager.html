@@ -22,6 +22,19 @@ input[type=file]{display:none}.table-wrap{overflow:auto;border:1px solid var(--l
 footer{color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:20px;margin-top:35px}
 @media(max-width:720px){.metrics{grid-template-columns:repeat(2,1fr)}.panel{padding:17px}}
 </style>
+<style>
+/* Shared RareSignal dark market-app theme */
+:root{color-scheme:dark;--bg:#090a0d;--panel:#17191d;--line:#2c3037;--text:#f3f4f6;--muted:#a0a6af;--accent:#20c6a0}
+html,body{background:var(--bg)!important;color:var(--text)!important}
+header,.panel,.metric,.queue-card,.review-card,.status,.table-wrap{background:var(--panel)!important;color:var(--text)!important;border-color:var(--line)!important;box-shadow:none!important}
+p,small,.muted,label,th{color:var(--muted)!important}
+a{color:var(--accent)!important}
+button,.file-button{background:var(--accent)!important;color:#06110e!important;border:0!important;border-radius:9px!important;font-weight:700}
+button.secondary,.file-button.secondary{background:#242830!important;color:#e5e8ec!important;border:1px solid #3a4049!important}
+input,select,textarea{background:#0d0f12!important;color:#f4f5f6!important;border:1px solid #3a4049!important;border-radius:9px!important}
+table{color:var(--text)!important}td,tr{border-color:var(--line)!important}
+.good{color:#20c6a0!important}.bad{color:#ff8c8c!important}
+</style>
 </head>
 <body>
 <header><div class="brand">Rare<span>Signal</span> <small style="font-size:9px;letter-spacing:1.5px;color:#b6bdc8">DATA MANAGER</small></div><nav><a href="../prototype.html">← Research Desk</a></nav></header>
