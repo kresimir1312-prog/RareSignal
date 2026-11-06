@@ -93,6 +93,10 @@
       ],
       "default": "PROVIDER_REPORTED",
       "description": "Evidence provenance tier; direct transaction requires a transaction-level source_url."
+    },
+    "marketplace": {
+      "type": "string",
+      "description": "Underlying marketplace (eBay, Fanatics Collect, Goldin etc.); distinct from the data provider/source."
     }
   }
 }
