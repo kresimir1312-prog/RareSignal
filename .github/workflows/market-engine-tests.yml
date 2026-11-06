@@ -1,0 +1,21 @@
+name: Market engine tests
+on:
+  push:
+    paths:
+      - "market-engine.js"
+      - "tests/market-engine.test.js"
+      - ".github/workflows/market-engine-tests.yml"
+  pull_request:
+    paths:
+      - "market-engine.js"
+      - "tests/market-engine.test.js"
+      - ".github/workflows/market-engine-tests.yml"
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node --test tests/market-engine.test.js
