@@ -27,9 +27,16 @@ Never put the API key in source code, commits, public files, the website or chat
 - Giratina V 186/196 Lost Origin — PSA 10 and Near Mint searches.
 - eBay US, USD, last 90 days, maximum 50 returned per query.
 
-## Review-only policy
+## Hybrid acceptance policy
 
-Results are written to `pending-review.json`, not the accepted observation archive. Search profiles are hints only. A person must confirm exact English card/printing, card number, grade or raw NM condition, individual-card sale, sold amount and sale validity. Flags and Best Offer price uncertainty are retained. No search match is automatically treated as an accepted valuation observation.
+New results are split into two feeds:
+
+- `auto-approved.json`: strict, high-confidence English PSA 10 matches that pass every deterministic check. Each entry includes a normalized `observation` ready for batch CSV export, plus the original listing and the rule-set that accepted it.
+- `pending-review.json`: all ambiguous matches, every RAW result, unsupported/uncertain conditions, unknown accepted Best Offer prices, conflicting profile matches, outliers and other flagged records.
+
+Automatic acceptance is intentionally narrow. It requires the exact target card name, set, card number, alternate-art wording, an explicit English/ENG marker, PSA 10 wording, a supported sale format and currency, a valid eBay item URL, a valid non-future sold date, a positive sold price, and no unresolved Best Offer price. Possible lots/proxies/reprints and non-English markers are excluded. RAW cards are never auto-accepted because title and marketplace condition labels cannot establish Near Mint condition reliably.
+
+Auto-approved records remain in a separate public evidence feed. They are not silently written into the browser-local historical database. In Market Data Manager, load the feed and export all qualifying records as one CSV batch; import that CSV once through the existing validator. The original listing URL and source provenance remain attached. No exchange-rate conversion or shipping-price adjustment is applied.
 
 The feed contains public listing information and is committed to this public repository. It never contains the API key.
 
@@ -38,7 +45,7 @@ The feed contains public listing information and is committed to this public rep
 The collector adds the following fields to each pending candidate:
 - `review_flags`: language, card number, grade, raw-condition, Best Offer, sale date, price, URL and provider-outlier warnings.
 - `quality_tier`: `HIGH_RISK`, `NEEDS_REVIEW` or `PRELIMINARY_MATCH`.
-- `valuation_eligible`: always `false` until a human review process explicitly accepts a record.
+- `valuation_eligible`: `false` for pending records; strict matches are stored separately with `true` and an explicit auto-approval rule-set.
 - `review_status`: remains `PENDING`.
 
 Important interpretation:
@@ -48,4 +55,4 @@ Important interpretation:
 - Duplicate detection uses eBay item IDs during collection; near-duplicate title/date/price patterns are flagged for review, not automatically deleted.
 - A preliminary match is not an approved transaction. Every record still needs human confirmation.
 
-The initial 113-record feed has been audited: 24 high-risk, 84 needing review, 5 preliminary matches and 0 valuation-eligible records. This is triage, not final transaction validation.
+The initial 113-record feed remains pending and is not retroactively auto-approved. The new strict rules apply to newly collected results only. This avoids silently promoting old records that were gathered before the stricter acceptance gate existed.
