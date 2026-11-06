@@ -77,3 +77,17 @@ python -m http.server 8000
 ```
 
 Then open `http://localhost:8000`.
+
+## Completed-sales ingestion (Phase 2)
+
+A local, source-neutral CSV importer is available at `tools/import-market-observations.mjs`. It converts completed-sale exports into immutable JSONL batches and writes a provenance manifest containing the input SHA-256 and row-level rejection reasons.
+
+Example:
+
+```bash
+node tools/import-market-observations.mjs --input path/to/completed-sales.csv --out data/observations/batches/2026-11-06-source-name.jsonl
+```
+
+The importer validates exact card/variant identifiers, English language, RAW/PSA10 grade type, condition, completed status, ISO sale date, positive price, uppercase currency and source attribution. It rejects listings, lots, duplicate sale IDs and future-dated observations. It never overwrites an existing batch. See `data/observations/README.md` and `data/templates/completed-sales-import-template.csv`.
+
+This is an offline import utility, not a marketplace connector. It does not scrape websites, access private APIs or claim that a source offers downloadable sold data. Import only transactions that the source legitimately makes available and that may be retained under its terms. No completed-sale feed is connected yet.
