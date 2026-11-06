@@ -319,3 +319,7 @@ body{background:var(--paper);color:var(--ink)}
   #results.results-grid{grid-template-columns:1fr !important}
   #results.results-grid>.card-result>.card-art{height:280px !important;min-height:280px !important;max-height:280px !important;flex-basis:280px !important}
 }
+
+/* Slightly larger, more comfortable site typography */
+body{font-size:17px}
+p,li{font-size:1.04em}
