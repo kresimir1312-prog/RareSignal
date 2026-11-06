@@ -411,3 +411,23 @@ body{font-size:18px}
  .search-input-wrap input,.searchline input{font-size:18px}
  .trust-band b{font-size:16px}.trust-band small{font-size:13px}
 }
+
+/* Collector showcase hero — card artwork is the visual anchor */
+.hero{min-height:610px;display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,.9fr);align-items:center;column-gap:4vw}
+.hero-content{position:relative;z-index:3}
+.hero-visual.collector-hero{position:relative;inset:auto;width:100%;height:490px;opacity:1;transform:none;overflow:visible;display:block}
+.collector-glow{position:absolute;width:390px;height:390px;left:50%;top:48%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,#572d8c55 0%,#20c6a01c 42%,transparent 72%);filter:blur(8px)}
+.collector-orbit{position:absolute;left:50%;top:48%;border:1px solid #7952a966;border-radius:50%;transform:translate(-50%,-50%) rotate(-18deg)}
+.orbit-one{width:430px;height:340px}.orbit-two{width:500px;height:390px;transform:translate(-50%,-50%) rotate(22deg);border-color:#20c6a044}
+.collector-card-stage{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%) rotate(5deg);width:260px;filter:drop-shadow(0 28px 40px #000b);z-index:2}
+.collector-card-frame{padding:8px;background:linear-gradient(145deg,#d5b5ff,#4d2a70 45%,#20242b);border-radius:17px;box-shadow:0 0 0 1px #ffffff30,inset 0 0 0 1px #ffffff30}
+.collector-card-frame img{display:block;width:100%;height:auto;border-radius:11px}
+.collector-float{position:absolute;z-index:4;display:flex;align-items:center;gap:11px;padding:12px 15px;background:#17191def;border:1px solid #41404c;border-radius:13px;box-shadow:0 12px 30px #0008;backdrop-filter:blur(12px)}
+.collector-float b,.collector-float small{display:block;white-space:nowrap}.collector-float b{font-size:13px;color:#f5f5f7}.collector-float small{font-size:10px;color:#a5a7b0;margin-top:3px}
+.float-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#203b35;color:#20c6a0;font-size:19px;font-weight:800}
+.float-identity{left:0;top:17%}.float-market{right:0;top:42%}.float-evidence{left:7%;bottom:16%}
+.collector-card-caption{position:absolute;z-index:3;bottom:0;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;white-space:nowrap}
+.collector-card-caption span{font-size:9px;letter-spacing:1.6px;color:#a88bd0;font-weight:800}.collector-card-caption b{font-size:17px;color:#f4f4f6;letter-spacing:.5px}.collector-card-caption small{font-size:10px;color:#9da3ad;letter-spacing:1px}
+.hero-footer{z-index:5}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:12px;padding-top:55px}.hero-visual.collector-hero{height:430px;max-width:620px;margin:0 auto}.collector-card-stage{width:220px}.collector-glow{width:330px;height:330px}.orbit-one{width:360px;height:290px}.orbit-two{width:410px;height:330px}}
+@media(max-width:520px){.hero{padding:42px 20px 28px}.hero-visual.collector-hero{height:365px;margin-top:8px}.collector-card-stage{width:176px}.collector-glow{width:270px;height:270px}.orbit-one{width:300px;height:245px}.orbit-two{width:340px;height:280px}.collector-float{padding:8px 9px;gap:7px}.collector-float b{font-size:11px}.collector-float small{font-size:9px}.float-icon{width:28px;height:28px;font-size:15px}.float-identity{left:-2px;top:12%}.float-market{right:-2px;top:39%}.float-evidence{left:0;bottom:17%}.collector-card-caption b{font-size:14px}.collector-card-caption span,.collector-card-caption small{font-size:8px}.hero-proof{font-size:10px}}
