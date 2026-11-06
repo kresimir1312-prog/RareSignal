@@ -59,15 +59,14 @@ export function normalizeRows(csvText,{asOf=new Date().toISOString()}={}){
   const headers=rows[0].map(h=>clean(h).replace(/^\uFEFF/,""));
   const seen=new Set(),accepted=[],excluded=[];
   rows.slice(1).forEach((row,i)=>{
-    const result=normalizeRow(row,headers,i+1),o=result.observation;
+    const result=normalizeRow(row,headers,i),o=result.observation;
     if(row.length!==headers.length)result.errors.push("Column count does not match the CSV header.");
     result.errors.push(...engine.validateObservation(o));
     const date=Date.parse(o.sold_at);
     if(Number.isFinite(date)&&date>Date.parse(asOf))result.errors.push("Future-dated sales are not eligible.");
     if(o.sale_id&&seen.has(o.sale_id))result.errors.push("Duplicate sale_id within this CSV batch.");
-    if(o.sale_id)seen.add(o.sale_id);
     if(result.errors.length)excluded.push({row_number:result.row_number,sale_id:o.sale_id||null,reasons:[...new Set(result.errors)]});
-    else accepted.push(o);
+    else {seen.add(o.sale_id);accepted.push(o);}
   });
   return {accepted,excluded};
 }
