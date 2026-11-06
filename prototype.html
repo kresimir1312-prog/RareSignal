@@ -52,6 +52,24 @@
       </div>
       <div class="signal-panel"><div><span class="kicker muted">SIGNAL ENGINE</span><h3>Market estimates are not connected yet.</h3><p>The figures below are dated workbook references, not live valuations. The live sold-comparable data layer is still in development; no current value or investment signal is inferred.</p></div><span class="pending">REVIEW SNAPSHOT · V3.9</span></div>
       <div class="snapshot-head"><div><div class="kicker muted">V3.9 / RESEARCH BATCH 1</div><h3>Research candidates</h3><p>Historical workbook references only. Values retain their recorded currency and are not presented as live estimates.</p></div><span class="source">20 IDENTITIES AUDITED · SNAPSHOT 01 NOV 2026</span></div>
+      <div class="candidate-controls" aria-label="Research candidate filters">
+        <label>IDENTITY STATUS
+          <select id="candidate-identity-filter">
+            <option value="all">All identity statuses</option>
+            <option value="matched">Card identity matched</option>
+            <option value="variant">Variant review required</option>
+            <option value="unresolved">Unresolved identity</option>
+          </select>
+        </label>
+        <label>SORT CANDIDATES
+          <select id="candidate-sort">
+            <option value="date">Most recent snapshot</option>
+            <option value="name">Name A–Z</option>
+            <option value="set">Set A–Z</option>
+          </select>
+        </label>
+        <span id="candidate-count" aria-live="polite">Loading candidates…</span>
+      </div>
       <div id="research-candidates" class="candidate-grid"><div class="candidate-loading">Loading v3.9 research snapshot…</div></div>
       <p class="snapshot-note">Source: v3.9 workbook, “Research Batch 1”. Values are displayed in the source currency recorded in the workbook; they are historical references, not live market estimates. 19 of 20 card identities matched to TCGdex; 1 remains blocked and 8 need variant-level review. Open the <a href="./data/identity-reconciliation-v3.9.json" target="_blank" rel="noopener">full identity audit</a>. No BUY/WATCH/HOLD/AVOID signals are assigned.</p>
     </section>
