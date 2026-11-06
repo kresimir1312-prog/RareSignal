@@ -1,45 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T20:26:29.891Z",
+  "updated_at": "2026-11-06T20:45:01.099Z",
   "source": "SoldComps",
   "records": [
-    {
-      "item_id": "900058667001",
-      "source": "eBay via SoldComps",
-      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
-      "marketplace": "eBay",
-      "currency": "USD",
-      "sold_price": 3611.26,
-      "sold_at": "2026-11-05",
-      "title": "UMBREON VMAX 215/203 PSA 10 EVOLVING SKIES ALTERNATE ART POKEMON CARD ENGLISH",
-      "condition_label": "New (Other)",
-      "buying_format": "auction",
-      "best_offer_accepted": false,
-      "best_offer_price_known": true,
-      "shipping": {
-        "value": 13.14,
-        "currency": "USD"
-      },
-      "url": "https://www.ebay.com/itm/900058667001",
-      "flags": [],
-      "matched_profiles": [
-        {
-          "profile_id": "umbreon-vmax-215-203-psa10",
-          "target_grade_hint": "PSA10",
-          "card_id_hint": "evolving-skies-215-english",
-          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
-          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
-          "collected_at": "2026-11-06T20:26:29.891Z"
-        }
-      ],
-      "first_seen_at": "2026-11-06T20:26:29.891Z",
-      "last_seen_at": "2026-11-06T20:26:29.891Z",
-      "review_status": "PENDING",
-      "review_note": "Automated triage only. Manual verification required before acceptance.",
-      "review_flags": [],
-      "quality_tier": "PRELIMINARY_MATCH",
-      "valuation_eligible": false
-    },
     {
       "item_id": "377605925065",
       "source": "eBay via SoldComps",
@@ -74,7 +37,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -113,7 +78,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -153,46 +120,13 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "MARKETPLACE_CONDITION_NOT_NEW"
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
-      "valuation_eligible": false
-    },
-    {
-      "item_id": "820296977691",
-      "source": "eBay via SoldComps",
-      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
-      "marketplace": "eBay",
-      "currency": "USD",
-      "sold_price": 3500,
-      "sold_at": "2026-11-04",
-      "title": "The Pok��mon Company Umbreon VMAX 215/203 Evolving Skies Alt Art Holo ENG PSA 10",
-      "condition_label": "New (Other)",
-      "buying_format": "fixed_price",
-      "best_offer_accepted": false,
-      "best_offer_price_known": true,
-      "shipping": {
-        "value": 5.74,
-        "currency": "USD"
-      },
-      "url": "https://www.ebay.com/itm/820296977691",
-      "flags": [],
-      "matched_profiles": [
-        {
-          "profile_id": "umbreon-vmax-215-203-psa10",
-          "target_grade_hint": "PSA10",
-          "card_id_hint": "evolving-skies-215-english",
-          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
-          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
-          "collected_at": "2026-11-06T20:26:29.891Z"
-        }
-      ],
-      "first_seen_at": "2026-11-06T20:26:29.891Z",
-      "last_seen_at": "2026-11-06T20:26:29.891Z",
-      "review_status": "PENDING",
-      "review_note": "Automated triage only. Manual verification required before acceptance.",
-      "review_flags": [],
-      "quality_tier": "PRELIMINARY_MATCH",
       "valuation_eligible": false
     },
     {
@@ -230,9 +164,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -269,7 +204,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -309,9 +245,11 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -349,9 +287,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -390,9 +329,12 @@
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
         "MARKETPLACE_CONDITION_NOT_NEW",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -429,7 +371,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -468,7 +411,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -507,7 +452,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -546,7 +493,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -585,7 +533,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -624,7 +574,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -664,9 +615,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "POSSIBLE_DUPLICATE"
+        "POSSIBLE_DUPLICATE",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -703,7 +655,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -743,7 +696,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "MARKETPLACE_CONDITION_NOT_NEW"
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -782,7 +738,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -821,7 +778,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -860,7 +818,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -899,7 +859,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -938,7 +899,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -977,7 +940,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1016,7 +980,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1055,7 +1021,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1095,9 +1062,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -1134,7 +1102,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1174,7 +1144,11 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "MARKETPLACE_CONDITION_NOT_NEW"
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1213,7 +1187,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1252,7 +1228,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1291,7 +1268,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1330,7 +1309,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1369,7 +1349,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1412,9 +1394,11 @@
       "review_flags": [
         "POSSIBLE_NON_ENGLISH",
         "LANGUAGE_NOT_CONFIRMED",
-        "PROVIDER_OUTLIER_FLAG"
+        "PROVIDER_OUTLIER_FLAG",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -1451,7 +1435,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1490,7 +1475,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1532,9 +1518,11 @@
         "POSSIBLE_NON_ENGLISH",
         "LANGUAGE_NOT_CONFIRMED",
         "BEST_OFFER_PRICE_UNKNOWN",
-        "POSSIBLE_DUPLICATE"
+        "POSSIBLE_DUPLICATE",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -1572,9 +1560,11 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -1611,7 +1601,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1652,9 +1644,11 @@
       "review_flags": [
         "POSSIBLE_NON_ENGLISH",
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -1691,7 +1685,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1731,9 +1727,11 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -1770,7 +1768,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1809,7 +1808,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1849,7 +1850,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "MARKETPLACE_CONDITION_NOT_NEW"
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1888,7 +1892,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1927,7 +1933,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -1966,7 +1973,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2005,7 +2013,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2044,7 +2054,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2083,7 +2094,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2122,7 +2134,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2161,7 +2174,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2201,9 +2216,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -2240,7 +2256,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2279,7 +2297,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2319,7 +2339,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "MARKETPLACE_CONDITION_NOT_NEW"
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2359,7 +2382,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "MARKETPLACE_CONDITION_NOT_NEW"
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2398,7 +2424,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2438,9 +2466,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -2478,9 +2507,11 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -2518,9 +2549,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -2557,46 +2589,11 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
-      "valuation_eligible": false
-    },
-    {
-      "item_id": "147633046617",
-      "source": "eBay via SoldComps",
-      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
-      "marketplace": "eBay",
-      "currency": "USD",
-      "sold_price": 3600,
-      "sold_at": "2026-10-12",
-      "title": "Giratina V Alt Full Art 186/196 Lost Origin Holo PSA 10 2022 English",
-      "condition_label": "New (Other)",
-      "buying_format": "fixed_price",
-      "best_offer_accepted": false,
-      "best_offer_price_known": true,
-      "shipping": {
-        "value": 5.63,
-        "currency": "USD"
-      },
-      "url": "https://www.ebay.com/itm/147633046617",
-      "flags": [],
-      "matched_profiles": [
-        {
-          "profile_id": "giratina-v-186-196-psa10",
-          "target_grade_hint": "PSA10",
-          "card_id_hint": "lost-origin-186-english",
-          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
-          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
-          "collected_at": "2026-11-06T20:26:29.891Z"
-        }
-      ],
-      "first_seen_at": "2026-11-06T20:26:29.891Z",
-      "last_seen_at": "2026-11-06T20:26:29.891Z",
-      "review_status": "PENDING",
-      "review_note": "Automated triage only. Manual verification required before acceptance.",
-      "review_flags": [],
-      "quality_tier": "PRELIMINARY_MATCH",
       "valuation_eligible": false
     },
     {
@@ -2633,7 +2630,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2672,7 +2671,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2711,7 +2711,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2750,7 +2751,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2789,7 +2792,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2828,7 +2833,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2867,7 +2874,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2906,7 +2914,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2945,7 +2954,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -2984,7 +2994,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3023,46 +3035,11 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
-      "valuation_eligible": false
-    },
-    {
-      "item_id": "327383526025",
-      "source": "eBay via SoldComps",
-      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
-      "marketplace": "eBay",
-      "currency": "USD",
-      "sold_price": 3104,
-      "sold_at": "2026-10-11",
-      "title": "Pokemon 2022 SWSH Lost Origin Giratina V 186/196 Alt Art Holo PSA 10 GEM English",
-      "condition_label": "New (Other)",
-      "buying_format": "auction",
-      "best_offer_accepted": false,
-      "best_offer_price_known": true,
-      "shipping": {
-        "value": 0,
-        "currency": "USD"
-      },
-      "url": "https://www.ebay.com/itm/327383526025",
-      "flags": [],
-      "matched_profiles": [
-        {
-          "profile_id": "giratina-v-186-196-psa10",
-          "target_grade_hint": "PSA10",
-          "card_id_hint": "lost-origin-186-english",
-          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
-          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
-          "collected_at": "2026-11-06T20:26:29.891Z"
-        }
-      ],
-      "first_seen_at": "2026-11-06T20:26:29.891Z",
-      "last_seen_at": "2026-11-06T20:26:29.891Z",
-      "review_status": "PENDING",
-      "review_note": "Automated triage only. Manual verification required before acceptance.",
-      "review_flags": [],
-      "quality_tier": "PRELIMINARY_MATCH",
       "valuation_eligible": false
     },
     {
@@ -3099,7 +3076,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3138,7 +3116,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3177,7 +3156,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3216,7 +3197,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3255,7 +3238,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3294,7 +3278,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3333,7 +3318,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3372,7 +3359,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3412,9 +3400,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -3451,7 +3440,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3490,7 +3481,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3530,9 +3523,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -3570,9 +3564,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -3609,7 +3604,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3648,7 +3645,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3686,8 +3685,10 @@
       "last_seen_at": "2026-11-06T20:26:29.891Z",
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
-      "review_flags": [],
-      "quality_tier": "PRELIMINARY_MATCH",
+      "review_flags": [
+        "ALT_ART_VARIANT_NOT_CONFIRMED"
+      ],
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -3724,7 +3725,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3763,7 +3765,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3802,7 +3806,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3841,7 +3846,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3880,7 +3887,9 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3920,9 +3929,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -3959,7 +3969,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -3998,7 +4009,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -4039,9 +4051,14 @@
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
         "GRADED_CARD_IN_RAW_SEARCH",
-        "MARKETPLACE_CONDITION_NOT_NEW"
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED",
+        "CONFLICTING_PSA_GRADE"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -4079,9 +4096,11 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "MARKETPLACE_CONDITION_NOT_NEW",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "PSA10_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -4118,7 +4137,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -4158,9 +4178,11 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "ALT_ART_VARIANT_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -4197,7 +4219,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -4236,7 +4259,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -4275,7 +4299,8 @@
       "review_status": "PENDING",
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
-        "LANGUAGE_NOT_CONFIRMED"
+        "LANGUAGE_NOT_CONFIRMED",
+        "ENGLISH_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -4315,7 +4340,10 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
-        "MARKETPLACE_CONDITION_NOT_NEW"
+        "MARKETPLACE_CONDITION_NOT_NEW",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -4356,9 +4384,12 @@
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
         "MARKETPLACE_CONDITION_NOT_NEW",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -4397,9 +4428,12 @@
       "review_flags": [
         "LANGUAGE_NOT_CONFIRMED",
         "MARKETPLACE_CONDITION_NOT_NEW",
-        "BEST_OFFER_PRICE_UNKNOWN"
+        "BEST_OFFER_PRICE_UNKNOWN",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "ENGLISH_NOT_CONFIRMED",
+        "PSA10_NOT_CONFIRMED"
       ],
-      "quality_tier": "HIGH_RISK",
+      "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
     },
     {
@@ -4439,7 +4473,9 @@
       "review_note": "Automated triage only. Manual verification required before acceptance.",
       "review_flags": [
         "MARKETPLACE_CONDITION_NOT_NEW",
-        "PROVIDER_OUTLIER_FLAG"
+        "PROVIDER_OUTLIER_FLAG",
+        "RAW_REQUIRES_MANUAL_CONDITION_REVIEW",
+        "PSA10_NOT_CONFIRMED"
       ],
       "quality_tier": "NEEDS_REVIEW",
       "valuation_eligible": false
@@ -4539,5 +4575,11 @@
     "preliminary_match": 5,
     "valuation_eligible": 0,
     "policy": "No record is accepted automatically."
+  },
+  "retroactive_auto_approval": {
+    "rule": "STRICT_ENGLISH_PSA10_V1_RETROSPECTIVE",
+    "approved_count": 4,
+    "remaining_count": 109,
+    "note": "Only candidates passing all current strict automatic rules were moved to auto-approved feed. RAW and all ambiguous records remain pending."
   }
 }
