@@ -40,6 +40,14 @@ async function main(){
  for(const p of PROFILES){
   const u=new URL(`${API}/sold`);u.searchParams.set("q",p.query);u.searchParams.set("site","EBAY_US");u.searchParams.set("days","90");u.searchParams.set("limit",String(LIMIT));
   try{
+   const freshUsage=await apiGet(API+"/usage");
+   const worstCaseRemaining=MAX_RUN_CREDITS-run.credits_charged;
+   if(freshUsage.plan!=="free"||!Number.isFinite(freshUsage.remaining)||freshUsage.remaining<worstCaseRemaining){
+    run.status="partial";
+    run.searches.push({profile_id:p.id,query:p.query,status:"skipped",reason:"Free-tier guard: insufficient monthly credits for the remaining worst-case searches."});
+    console.log("Budget guard stopped before "+p.id+"; no billable request made.");
+    break;
+   }
    const data=await apiGet(u);const charged=Number(data?.credits?.charged);
    if(!Number.isFinite(charged)||charged<20)throw new Error("Missing valid credits.charged in API response.");
    run.credits_charged+=charged;ledger.automation_charged+=charged;ledger.searches++;
