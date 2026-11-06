@@ -11,6 +11,7 @@ const API = "https://www.soldcomps.io/v1";
 const KEY = process.env.SOLDCOMPS_API_KEY;
 const ROOT = process.cwd();
 const FEED_PATH = path.join(ROOT, "data/market-feed/pending-review.json");
+const APPROVED_PATH = path.join(ROOT, "data/market-feed/auto-approved.json");
 const LEDGER_PATH = path.join(ROOT, "data/market-feed/usage-ledger.json");
 const MONTHLY_AUTOMATION_CAP = 560;
 const MAX_MONTHLY_RUNS = 2;
@@ -43,6 +44,34 @@ function assessListing(item, profile, now = new Date()) {
  const hard=['POSSIBLE_NON_ENGLISH','CONFLICTING_PSA_GRADE','GRADED_CARD_IN_RAW_SEARCH','BEST_OFFER_PRICE_UNKNOWN','INVALID_OR_MISSING_PRICE','INVALID_OR_FUTURE_SALE_DATE','UNSUPPORTED_SALE_FORMAT'];
  return {review_flags:flags,quality_tier:flags.some(x=>hard.includes(x))?'HIGH_RISK':flags.length?'NEEDS_REVIEW':'PRELIMINARY_MATCH',valuation_eligible:false,review_status:'PENDING'};
 }
+function autoApprove(item, profile, now = new Date()) {
+ const title=String(item.title||"").toLowerCase();
+ const number=profile.card_id.includes("evolving")?"215/203":"186/196";
+ const cardName=profile.card_id.includes("evolving")?"umbreon vmax":"giratina";
+ const setName=profile.card_id.includes("evolving")?"evolving skies":"lost origin";
+ const altArt=/\b(alt\s*art|alternate\s*art|alternate\s*full\s*art|alt\s*full\s*art)\b/i.test(title);
+ const flags=[];
+ if(profile.target_grade!=="PSA10") flags.push("RAW_REQUIRES_MANUAL_CONDITION_REVIEW");
+ if(!title.includes(cardName)) flags.push("CARD_NAME_NOT_CONFIRMED");
+ if(!title.includes(setName)) flags.push("SET_NAME_NOT_CONFIRMED");
+ if(!title.includes(number)) flags.push("CARD_NUMBER_NOT_CONFIRMED");
+ if(!altArt) flags.push("ALT_ART_VARIANT_NOT_CONFIRMED");
+ if(!/\b(english|eng)\b/i.test(title)) flags.push("ENGLISH_NOT_CONFIRMED");
+ if(/\b(german|deutsch|french|français|italian|italiano|spanish|español|japanese|korean|chinese|portuguese)\b/i.test(title)) flags.push("POSSIBLE_NON_ENGLISH");
+ if(!/\bpsa\s*10\b/i.test(title)) flags.push("PSA10_NOT_CONFIRMED");
+ if(/\bpsa\s*(?!10\b)\d{1,2}\b/i.test(title)) flags.push("CONFLICTING_PSA_GRADE");
+ if(/\b(lot|bundle|collection|proxy|replica|custom|reprint)\b/i.test(title)) flags.push("POSSIBLE_LOT_OR_NON_AUTHENTIC");
+ if(item.best_offer_accepted===true&&item.best_offer_price_known!==true) flags.push("BEST_OFFER_PRICE_UNKNOWN");
+ if(!["auction","fixed_price"].includes(item.buying_format)) flags.push("UNSUPPORTED_SALE_FORMAT");
+ const price=Number(item.sold_price?.value),date=Date.parse(item.sold_at);
+ if(!Number.isFinite(price)||price<=0) flags.push("INVALID_PRICE");
+ if(!item.sold_at||!Number.isFinite(date)||date>now.getTime()) flags.push("INVALID_SALE_DATE");
+ if(!["USD","EUR","GBP","CAD","AUD"].includes(String(item.sold_price?.currency||"").toUpperCase())) flags.push("UNSUPPORTED_CURRENCY");
+ if(typeof item.url!=="string"||!/^https:\/\/www\.ebay\.com\/itm\/\d+$/.test(item.url)) flags.push("LISTING_URL_UNVERIFIED");
+ if(Array.isArray(item.flags)&&item.flags.some(x=>/outlier/i.test(x))) flags.push("PROVIDER_OUTLIER_FLAG");
+ return {eligible:flags.length===0,flags};
+}
+function toObservation(item,profile){return {sale_id:"soldcomps-ebay-"+item.item_id,card_id:profile.card_id,variant_id:profile.variant_id,language:"English",grade_type:"PSA10",condition:"PSA 10",sale_status:"COMPLETED",sold_at:item.sold_at,price:Number(item.sold_price.value),currency:String(item.sold_price.currency||"USD").toUpperCase(),market:"US",source:"eBay via SoldComps",marketplace:"eBay",evidence_type:"DIRECT_TRANSACTION",source_url:item.url,is_lot:false,notes:"Strict automatic acceptance; source listing retained for audit."};}
 function readJson(file,fallback){try{return JSON.parse(fs.readFileSync(file,"utf8"));}catch(e){if(e.code==="ENOENT")return fallback;throw e;}}
 function writeJson(file,value){fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,JSON.stringify(value,null,2)+"\n");}
 async function apiGet(url){const r=await fetch(url,{headers:{Authorization:`Bearer ${KEY}`,Accept:"application/json"},signal:AbortSignal.timeout(45000)});const body=await r.json().catch(()=>({}));if(!r.ok)throw new Error(`SoldComps ${r.status}: ${body?.error?.code||JSON.stringify(body).slice(0,300)}`);return body;}
@@ -57,7 +86,9 @@ async function main(){
  if(!Number.isFinite(usage.remaining)||usage.remaining<MAX_RUN_CREDITS){console.log(`Free balance ${usage.remaining}; ${MAX_RUN_CREDITS} required for a worst-case run. No searches made.`);return;}
  const feed=readJson(FEED_PATH,{schema_version:1,updated_at:null,source:"SoldComps",records:[],runs:[]});
  const byItem=new Map((feed.records||[]).map(x=>[x.item_id,x]));
- const run={run_at:new Date().toISOString(),month,site:"EBAY_US",limit_per_search:LIMIT,status:"completed",searches:[],credits_charged:0,note:"Search matches only; all entries require manual review before import."};
+ const approved=readJson(APPROVED_PATH,{schema_version:1,updated_at:null,source:"SoldComps strict auto-accept",records:[]});
+ const autoByItem=new Map((approved.records||[]).map(x=>[x.item_id,x]));
+ const run={run_at:new Date().toISOString(),month,site:"EBAY_US",limit_per_search:LIMIT,status:"completed",searches:[],credits_charged:0,note:"Strict English PSA 10 matches may be auto-accepted; ambiguous and RAW results remain in manual review."};
  for(const p of PROFILES){
   const u=new URL(`${API}/sold`);u.searchParams.set("q",p.query);u.searchParams.set("site","EBAY_US");u.searchParams.set("days","90");u.searchParams.set("limit",String(LIMIT));
   try{
@@ -80,15 +111,22 @@ async function main(){
     if(prior){prior.matched_profiles||=[];if(!prior.matched_profiles.some(x=>x.profile_id===p.id))prior.matched_profiles.push(hint);prior.last_seen_at=run.run_at;prior.review_status="PENDING";}
     else {
      const record={item_id:item.item_id,source:'eBay via SoldComps',evidence_type:'DIRECT_TRANSACTION_CANDIDATE',marketplace:'eBay',currency:item.sold_price?.currency||data.stats?.currency||null,sold_price:item.sold_price?.value??null,sold_at:item.sold_at||null,title:item.title||'',condition_label:item.condition||null,buying_format:item.buying_format||null,best_offer_accepted:item.best_offer_accepted??null,best_offer_price_known:item.best_offer_price_known??null,shipping:item.shipping??null,url:item.url||null,flags:Array.isArray(item.flags)?item.flags:[],matched_profiles:[hint],first_seen_at:run.run_at,last_seen_at:run.run_at,review_note:'Automated checks are triage only. Confirm exact printing, language, grade, condition, sale and accepted price manually.'};
-     Object.assign(record,assessListing(item,p)); byItem.set(item.item_id,record);
+     const triage=assessListing(item,p),automatic=autoApprove(item,p);
+     if(automatic.eligible){
+      const accepted={...record,...triage,review_flags:[],quality_tier:"AUTO_APPROVED",review_status:"AUTO_APPROVED",valuation_eligible:true,auto_approval:{method:"STRICT_ENGLISH_PSA10_V1",approved_at:run.run_at,checks:["card name","set","card number","alt-art variant","English marker","PSA 10","sale date","price","currency","eBay URL"]},matched_profiles:[hint]};
+      autoByItem.set(item.item_id,{...accepted,observation:toObservation(item,p)});
+     } else {
+      record.review_flags=[...new Set([...triage.review_flags,...automatic.flags])];record.quality_tier=record.review_flags.length?"NEEDS_REVIEW":"PRELIMINARY_MATCH";record.review_status="PENDING";record.valuation_eligible=false;byItem.set(item.item_id,record);
+     }
     }
    }
    console.log(`OK ${p.id}: ${data.items?.length||0} returned; ${charged} credits.`);
   }catch(e){run.status="partial";run.searches.push({profile_id:p.id,query:p.query,status:"failed",error:e.message});console.error(`FAILED ${p.id}: ${e.message}`);}
  }
  ledger.runs++;ledger.last_run_at=run.run_at;ledger.last_reported_free_remaining=usage.remaining-run.credits_charged;
- feed.records=[...byItem.values()].sort((a,b)=>String(b.sold_at||"").localeCompare(String(a.sold_at||"")));feed.updated_at=run.run_at;feed.runs||=[];feed.runs.push(run);
- writeJson(LEDGER_PATH,ledger);writeJson(FEED_PATH,feed);
- console.log(`Run ${run.status}; charged ${run.credits_charged}; monthly automation total ${ledger.automation_charged}/${MONTHLY_AUTOMATION_CAP}; records in review queue ${feed.records.length}.`);
+ feed.records=[...byItem.values()].sort((a,b)=>String(b.sold_at||"").localeCompare(String(a.sold_at||"")));feed.updated_at=run.run_at;
+ approved.records=[...autoByItem.values()].sort((a,b)=>String(b.sold_at||"").localeCompare(String(a.sold_at||"")));approved.updated_at=run.run_at;feed.runs||=[];feed.runs.push(run);
+ writeJson(LEDGER_PATH,ledger);writeJson(FEED_PATH,feed);writeJson(APPROVED_PATH,approved);
+ console.log(`Run ${run.status}; charged ${run.credits_charged}; monthly automation total ${ledger.automation_charged}/${MONTHLY_AUTOMATION_CAP}; records in review queue ${feed.records.length}; auto-approved ${approved.records.length}.`);
 }
 main().catch(e=>{console.error(e.message);process.exitCode=1;});
