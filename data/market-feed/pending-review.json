@@ -1,8 +1,3939 @@
 {
   "schema_version": 1,
-  "updated_at": null,
+  "updated_at": "2026-11-06T20:26:29.891Z",
   "source": "SoldComps",
-  "records": [],
-  "runs": [],
+  "records": [
+    {
+      "item_id": "900058667001",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3611.26,
+      "sold_at": "2026-11-05",
+      "title": "UMBREON VMAX 215/203 PSA 10 EVOLVING SKIES ALTERNATE ART POKEMON CARD ENGLISH",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 13.14,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/900058667001",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377605925065",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3450,
+      "sold_at": "2026-11-05",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377605925065",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "960118492636",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3209.93,
+      "sold_at": "2026-11-05",
+      "title": "2021 Pokemon SWSH07: Evolving Skies Umbreon VMAX PSA 10 #215/203",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 10.69,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/960118492636",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "900054698564",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 830.3,
+      "sold_at": "2026-11-05",
+      "title": "Giratina V 186/196 Ultra Rare Lost Origin Pokemon Holo Near Mint",
+      "condition_label": "Pre-Owned",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 20,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/900054698564",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "820296977691",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3500,
+      "sold_at": "2026-11-04",
+      "title": "The Pok��mon Company Umbreon VMAX 215/203 Evolving Skies Alt Art Holo ENG PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.74,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/820296977691",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "860111093667",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3299.99,
+      "sold_at": "2026-11-04",
+      "title": "PSA 10 Giratina V 186/196 Lost Origin Alternate Full Art Holo Ultra Rare",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 5.8,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/860111093667",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "147656258290",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3201,
+      "sold_at": "2026-11-04",
+      "title": "Giratina V 186/196 Pokemon Lost Origin Alternate Art Holo PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.9,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/147656258290",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "257831576075",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-11-03",
+      "title": "Umbreon Vmax 215/203 Secret Evolving Skies Pokemon PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 5.74,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/257831576075",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "327430898789",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3333,
+      "sold_at": "2026-11-03",
+      "title": "Pokemon 2022 SWSH Lost Origin Giratina V 186/196 Alt Full Art Holo PSA 10 CLEAN",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/327430898789",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "800814959945",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 855.95,
+      "sold_at": "2026-11-03",
+      "title": "Giratina V 186/196 Pokemon Lost Origin Alternate Art Rare Near Mint (NM) 2022",
+      "condition_label": "Pre-Owned",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": null,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/800814959945",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "407328563133",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3699,
+      "sold_at": "2026-11-02",
+      "title": "Pokemon 2021 Umbreon VMAX 215/203 Alt Art Evolving Skies GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/407328563133",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "257819336832",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3150,
+      "sold_at": "2026-11-02",
+      "title": "Umbreon Vmax 215/203 Secret Evolving Skies Pokemon PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.74,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/257819336832",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377599397461",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3350,
+      "sold_at": "2026-11-02",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377599397461",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287676213149",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3350,
+      "sold_at": "2026-11-01",
+      "title": "Pokemon Umbreon Vmax Evolving Skies 215/203 Secret Rare Full Alt Art PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 12.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287676213149",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128151316628",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3400,
+      "sold_at": "2026-11-01",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT (99)",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128151316628",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287671356422",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3050,
+      "sold_at": "2026-11-01",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 12.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287671356422",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287678211582",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3050,
+      "sold_at": "2026-11-01",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 12.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287678211582",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "407310392679",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-11-01",
+      "title": "Pokemon 2022 Giratina V 186/196 Alt Art Lost Origin GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 19.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/407310392679",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "307259731076",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 850,
+      "sold_at": "2026-11-01",
+      "title": "Giratina V 186/196 Lost Origin Ultra Rare Alternate Full Art Holo NEAR MINT",
+      "condition_label": "Pre-Owned",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/307259731076",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "278386671768",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3299,
+      "sold_at": "2026-10-31",
+      "title": "Giratina V (Alternate Full Art) 186/196 Swsh11: Lost Origin Holo PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/278386671768",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "407325039192",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3799,
+      "sold_at": "2026-10-30",
+      "title": "Pokemon 2021 Umbreon VMAX 215/203 Alt Art Evolving Skies GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/407325039192",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "267820750709",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3500,
+      "sold_at": "2026-10-29",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6.82,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/267820750709",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "127806624119",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 4750,
+      "sold_at": "2026-10-29",
+      "title": "Umbreon VMAX 215/203 Alt Art Moonbreon Pokemon Evolving Skies PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6.82,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/127806624119",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "960102141522",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3102.93,
+      "sold_at": "2026-10-29",
+      "title": "2021 Pokemon SWSH07: Evolving Skies Secret FA Umbreon VMAX PSA 10 #215/203",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 10.69,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/960102141522",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "206631629604",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3709.25,
+      "sold_at": "2026-10-29",
+      "title": "2021 POKEMON SWSH EVOLVING SKIES #215/203 UMBREON VMAX SECRET ALT ART PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 32.1,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/206631629604",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377592333408",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3550,
+      "sold_at": "2026-10-28",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377592333408",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "147644464403",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3300,
+      "sold_at": "2026-10-27",
+      "title": "Giratina V 186/196 Pokemon Lost Origin Alternate Art Holo PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.9,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/147644464403",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "840036340180",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3150,
+      "sold_at": "2026-10-27",
+      "title": "Giratina V 186/196 PSA 10 Lost Origin Alt Art Holo Pokemon Card Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/840036340180",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377591187886",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3000,
+      "sold_at": "2026-10-27",
+      "title": "2022 Pokemon SWSH Lost Origin Giratina V Ultra Rare #186/196 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377591187886",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "820275975886",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 1850,
+      "sold_at": "2026-10-26",
+      "title": "Pokémon TCG Umbreon VMAX Holo Ultra Rare 215/203 Evolving Skies Near Mint",
+      "condition_label": "Pre-Owned",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 13.5,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/820275975886",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287607963762",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3765.99,
+      "sold_at": "2026-10-26",
+      "title": "Giratina V 186/196 PSA 10 Lost Origin Pokemon Card Game",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 47.06,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287607963762",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "840024327613",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3900,
+      "sold_at": "2026-10-25",
+      "title": "Umbreon VMAX PSA 10 (Alternate Art Secret) 215/203 SWSH07: Evolving Skies Holo",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.74,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/840024327613",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128147509726",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3550,
+      "sold_at": "2026-10-25",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128147509726",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "820253918505",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3500,
+      "sold_at": "2026-10-25",
+      "title": "Pokemon 2021 Umbreon VMAX 215/203 Evolving Skies Alt Art PSA 10 Moonbreon",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 14.39,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/820253918505",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "407293725086",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-10-25",
+      "title": "Pokemon 2021 Umbreon VMAX 215/203 Full Art SR Evolving Skies GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 19.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/407293725086",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "800831839056",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 2016.16,
+      "sold_at": "2026-10-25",
+      "title": "PSA 10 GERMAN GIRATINA V 186/196 LOST ORIGIN POKEMON POP #235",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 103.35,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/800831839056",
+      "flags": [
+        "outlier"
+      ],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "327406881503",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 2999.99,
+      "sold_at": "2026-10-25",
+      "title": "Pokemon 2022 SWSH Lost Origin Giratina V 186/196 Alt Full Art Holo PSA 10 CLEAN",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/327406881503",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "840035837118",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3049.99,
+      "sold_at": "2026-10-25",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.74,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/840035837118",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "800837014473",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 2016.16,
+      "sold_at": "2026-10-25",
+      "title": "PSA 10 GERMAN GIRATINA V 186/196 LOST ORIGIN POKEMON POP #235",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 103.35,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/800837014473",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "840029413429",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3149.99,
+      "sold_at": "2026-10-24",
+      "title": "GIRATINA V PSA 10 2022 POKEMON SWORD & SHIELD SWSH LOST ORIGIN #186/196 4245",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 19.95,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/840029413429",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128144886859",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3049.99,
+      "sold_at": "2026-10-24",
+      "title": "2022 Pokemon SWSH Lost Origin Giratina V #186/196 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128144886859",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "800728165424",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 2016.16,
+      "sold_at": "2026-10-23",
+      "title": "PSA 10 GERMAN GIRATINA V 186/196 LOST ORIGIN POKEMON POP #235",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 103.35,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/800728165424",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377578766548",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3550,
+      "sold_at": "2026-10-22",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377578766548",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287644317124",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-10-22",
+      "title": "Umbreon VMAX PSA 10 215/203 Evolving Skies Secret Rare Holo 2021",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 6.82,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287644317124",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "237124338984",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3763,
+      "sold_at": "2026-10-21",
+      "title": "Umbreon VMAX Alt Art Secret Rare 215/203 Evolving Skies Holo PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.8,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/237124338984",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377573056132",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3500,
+      "sold_at": "2026-10-20",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377573056132",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "168803556718",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 854.69,
+      "sold_at": "2026-10-20",
+      "title": "Pokemon Giratina V (Alternate Full Art) 186/196 SWSH11: Lost Origin UR Near Mint",
+      "condition_label": "Pre-Owned",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/168803556718",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377570059648",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3500,
+      "sold_at": "2026-10-19",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX Secret Rare #215/203 PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377570059648",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128111701430",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3050,
+      "sold_at": "2026-10-19",
+      "title": "Giratina V 186/196 PSA 10 Lost Origin Alt Art Holo Pokemon Card Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.8,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128111701430",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "237120816522",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3050,
+      "sold_at": "2026-10-19",
+      "title": "Giratina V (Alternate Full Art) 186/196 Swsh11: Lost Origin PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6.07,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/237120816522",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128135678096",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3000,
+      "sold_at": "2026-10-19",
+      "title": "2022 Pokemon SWSH Lost Origin Giratina V #186/196 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128135678096",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "800784206301",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3100,
+      "sold_at": "2026-10-18",
+      "title": "Pokemon 2022 Giratina V 186/196 Alt Art Lost Origin GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.8,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/800784206301",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287639606002",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3116.22,
+      "sold_at": "2026-10-18",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 7.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287639606002",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287638210148",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3051,
+      "sold_at": "2026-10-18",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 12.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287638210148",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128130928276",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3501,
+      "sold_at": "2026-10-17",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128130928276",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128135977637",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3249.95,
+      "sold_at": "2026-10-16",
+      "title": "PSA 10 Giratina V Alt Full Art | Holo Ultra Rare 186/196 | Pokemon Lost Origin",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 5.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128135977637",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377560805105",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3900,
+      "sold_at": "2026-10-15",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377560805105",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128125077416",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 2936,
+      "sold_at": "2026-10-14",
+      "title": "2022 Pokemon SWSH Lost Origin Giratina V #186/196 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128125077416",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "366718302138",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 710,
+      "sold_at": "2026-10-14",
+      "title": "Giratina V (Alternate Full Art) 186/196 Swsh11: Lost Origin Holo NEAR MINT",
+      "condition_label": "Pre-Owned",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 1.36,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/366718302138",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "257792998054",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 909.99,
+      "sold_at": "2026-10-14",
+      "title": "Pokemon Giratina V 186/196 Alt Art Holo Lost Origin Ultra Rare TCG NM Near Mint",
+      "condition_label": "Pre-Owned",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 9.35,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/257792998054",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "178560103248",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3782.45,
+      "sold_at": "2026-10-13",
+      "title": "2021 Pokemon TCG Evolving Skies Umbreon VMAX Secret Rare 215/203 PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 13.14,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/178560103248",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "900001470460",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3250,
+      "sold_at": "2026-10-13",
+      "title": "Giratina V (Alternate Full Art) 186/196 Swsh11: Lost Origin Holo PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 6.4,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/900001470460",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "168790460336",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3350,
+      "sold_at": "2026-10-13",
+      "title": "Pokemon TCG Giratina V 186/196 Lost Origin 2022 PSA 10 Full Art Holo EN",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 6.24,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/168790460336",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "198696938336",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3993.87,
+      "sold_at": "2026-10-12",
+      "title": "PSA 10 Umbreon VMAX Alt Art Secret Rare 215/203 'MOONBREON' Evolving Skies",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 12.92,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/198696938336",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "278434822576",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3900,
+      "sold_at": "2026-10-12",
+      "title": "UMBREON VMAX 2021 POKEMON SWSH EVOLVING SKIES 215/203 SECRET RARE A PSA 10 Q7872",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/278434822576",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "147633046617",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-10-12",
+      "title": "Giratina V Alt Full Art 186/196 Lost Origin Holo PSA 10 2022 English",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.63,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/147633046617",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "198685943726",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3160,
+      "sold_at": "2026-10-12",
+      "title": "Pokemon TCG Giratina V 186/196 Lost Origin 2022 Full Art Holo PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/198685943726",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "237113419572",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 4500,
+      "sold_at": "2026-10-11",
+      "title": "PSA 10 GEM MINT Umbreon VMAX 215/203 Alt Art Evolving Skies Pokemon -  Moonbreon",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.74,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/237113419572",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287622542112",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3650,
+      "sold_at": "2026-10-11",
+      "title": "Pokemon Umbreon Vmax Evolving Skies 215/203 Secret Rare Full Alt Art PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 9.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287622542112",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377548851982",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3800,
+      "sold_at": "2026-10-11",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX Secret Rare #215/203 PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377548851982",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128109514854",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-10-11",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT (99)",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128109514854",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128109514937",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-10-11",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT (79)",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128109514937",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287624037839",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3100,
+      "sold_at": "2026-10-11",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287624037839",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287622537784",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3150,
+      "sold_at": "2026-10-11",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 9.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287622537784",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "168761860354",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3000,
+      "sold_at": "2026-10-11",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 9.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/168761860354",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "189042519747",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 2951,
+      "sold_at": "2026-10-11",
+      "title": "GIRATINA V PSA 10 2022 POKEMON SWORD & SHIELD SWSH LOST ORIGIN #186/196 4245",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 19.95,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/189042519747",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377548851992",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3000,
+      "sold_at": "2026-10-11",
+      "title": "2022 Pokemon SWSH Lost Origin Giratina V Ultra Rare #186/196 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377548851992",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "327383526025",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3104,
+      "sold_at": "2026-10-11",
+      "title": "Pokemon 2022 SWSH Lost Origin Giratina V 186/196 Alt Art Holo PSA 10 GEM English",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/327383526025",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "407266771280",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3050,
+      "sold_at": "2026-10-11",
+      "title": "Pokemon 2022 Giratina V 186/196 Alt Art UR Lost Origin GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 19.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/407266771280",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "407266934243",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3089,
+      "sold_at": "2026-10-11",
+      "title": "Pokemon 2022 Giratina V 186/196 Alt Art Lost Origin GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 19.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/407266934243",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377544526684",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3850,
+      "sold_at": "2026-10-09",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377544526684",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377544532135",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3550,
+      "sold_at": "2026-10-09",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377544532135",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "178335449622",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 4099,
+      "sold_at": "2026-10-09",
+      "title": "Pokemon 2021 Umbreon VMAX 215/203 Alt Art SR Evolving Skies GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/178335449622",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "407276435177",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3800,
+      "sold_at": "2026-10-09",
+      "title": "Pokemon 2022 Giratina V 186/196 Alt Art Lost Origin GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 20,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/407276435177",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128115183372",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3250,
+      "sold_at": "2026-10-09",
+      "title": "2022 Pokemon SWSH Lost Origin Giratina V #186/196 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128115183372",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "407221864325",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3999.99,
+      "sold_at": "2026-10-08",
+      "title": "Pokemon 2021 Umbreon VMAX 215/203 Alt Art SR Evolving Skies GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 19.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/407221864325",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "820218213699",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 1150,
+      "sold_at": "2026-10-08",
+      "title": "2022 Pokemon SWSH Lost Origin Giratina V Alternate Art #186/196 Tag 9-PSA 10 CO?",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 6.33,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/820218213699",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287321092407",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3780.55,
+      "sold_at": "2026-10-07",
+      "title": "PSA 10 Umbreon VMAX - 215/203 - Evolving Skies - Pokemon - Read Description",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 114.13,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287321092407",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128110981540",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3802,
+      "sold_at": "2026-10-07",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX Secret Rare #215/203 PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128110981540",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "398449342162",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3699,
+      "sold_at": "2026-10-07",
+      "title": "Pokemon 2022 Giratina V 186/196 Alt Art UR Lost Origin GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 6.82,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/398449342162",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "257785821579",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 4150,
+      "sold_at": "2026-10-06",
+      "title": "Umbreon VMAX 215/203 Evolving Skies Alt Art Secret Rare Holo PSA 10 2021",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 0,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/257785821579",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "128105117376",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3808,
+      "sold_at": "2026-10-06",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/128105117376",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "377536490972",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3850,
+      "sold_at": "2026-10-06",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 10 GEM MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 4.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/377536490972",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "960005001416",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-10-06",
+      "title": "Lost Origin Giratina V 186/196 Full Art Holo PSA 10 English 2022",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 12.11,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/960005001416",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "206591463063",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 4000,
+      "sold_at": "2026-10-06",
+      "title": "Pokemon Giratina V Alt Full Art Holo Ultra Rare 186/196 Lost Origin PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 12,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/206591463063",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "257771596361",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 4050,
+      "sold_at": "2026-10-05",
+      "title": "POKEMON EVOLVING SKIES SECRET FULL ART UMBREON VMAX PSA 10 MOONBREON 215/203",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6.82,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/257771596361",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "189043026884",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3900,
+      "sold_at": "2026-10-05",
+      "title": "PSA 10 Umbreon VMAX 215/203 Evolving Skies Secret Rare Alt Art Holo",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.63,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/189043026884",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "820200933060",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3800,
+      "sold_at": "2026-10-05",
+      "title": "Pokemon TCG Umbreon VMAX 215/203 PSA 10 Evolving Skies",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 7.08,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/820200933060",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "800693080464",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 4567.04,
+      "sold_at": "2026-10-04",
+      "title": "Evolving Skies Umbreon VMAX 215/203 PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 13.14,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/800693080464",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287620785290",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 4050,
+      "sold_at": "2026-10-04",
+      "title": "Pokemon Umbreon VMAX 215/203 Evolving Skies Alt Art Secret Rare Holo PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 6.82,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287620785290",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287610505852",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3933,
+      "sold_at": "2026-10-04",
+      "title": "Pokemon Umbreon Vmax Evolving Skies 215/203 Secret Rare Full Alt Art PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287610505852",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287610505881",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3800,
+      "sold_at": "2026-10-04",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287610505881",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "206577916077",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 1700,
+      "sold_at": "2026-09-30",
+      "title": "2021 Pokemon SWSH Evolving Skies Umbreon VMAX #215/203 PSA 8 NEAR MINT",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 1.36,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/206577916077",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "umbreon-vmax-215-203-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "evolving-skies-215-english",
+          "variant_id_hint": "evolving-skies-215-203-alt-art-secret-holo-english",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "206593781342",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 749.99,
+      "sold_at": "2026-09-30",
+      "title": "Pokemon Giratina V 186/196 Alt Art Lost Origin English NM Near Mint Pack Fresh",
+      "condition_label": "Pre-Owned",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 9.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/206593781342",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "267799041981",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3750,
+      "sold_at": "2026-09-29",
+      "title": "Pokemon 2022 Giratina V 186/196 Alt Art UR Lost Origin GEM MINT PSA 10",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 5.8,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/267799041981",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "307201380958",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3940.46,
+      "sold_at": "2026-09-27",
+      "title": "Giratina V 186/196 PSA 10 Lost Origin Pokemon Card Game",
+      "condition_label": "New (Other)",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 188.33,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/307201380958",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287596124895",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3450,
+      "sold_at": "2026-09-27",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 9.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287596124895",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "168695823948",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3600,
+      "sold_at": "2026-09-27",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 9.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/168695823948",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "287594629348",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 3950,
+      "sold_at": "2026-09-27",
+      "title": "Pokemon Giratina V Lost Origin Full Alt Art 186/196 PSA 10 Gem Mint",
+      "condition_label": "New (Other)",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 9.99,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/287594629348",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "target_grade_hint": "PSA10",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "158210012034",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 714.99,
+      "sold_at": "2026-09-12",
+      "title": "Giratina V 186/196 Alt Art Lost Origin Pokémon TCG Near Mint NM 2022",
+      "condition_label": "Pre-Owned",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6.82,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/158210012034",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "117406493645",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 730,
+      "sold_at": "2026-09-10",
+      "title": "Giratina V 186/196 Alt Art Lost Origin Pokémon TCG Near Mint NM 2022",
+      "condition_label": "Pre-Owned",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 5.64,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/117406493645",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "407161954932",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 750,
+      "sold_at": "2026-09-01",
+      "title": "Pokemon Card - Near Mint - Giratina - Alternate Art V - Lost Origin - 186/196",
+      "condition_label": "Pre-Owned",
+      "buying_format": "fixed_price",
+      "best_offer_accepted": true,
+      "best_offer_price_known": false,
+      "shipping": {
+        "value": 5.64,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/407161954932",
+      "flags": [],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    },
+    {
+      "item_id": "800479555813",
+      "source": "eBay via SoldComps",
+      "evidence_type": "DIRECT_TRANSACTION_CANDIDATE",
+      "marketplace": "eBay",
+      "currency": "USD",
+      "sold_price": 1225,
+      "sold_at": "2026-08-15",
+      "title": "Near Mint Giratina V Alt Full Art‼️ 186/196 Lost Origin Holo Eng",
+      "condition_label": "Pre-Owned",
+      "buying_format": "auction",
+      "best_offer_accepted": false,
+      "best_offer_price_known": true,
+      "shipping": {
+        "value": 6.82,
+        "currency": "USD"
+      },
+      "url": "https://www.ebay.com/itm/800479555813",
+      "flags": [
+        "outlier"
+      ],
+      "matched_profiles": [
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "target_grade_hint": "RAW",
+          "card_id_hint": "lost-origin-186-english",
+          "variant_id_hint": "lost-origin-186-196-alt-art-holo-english",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "collected_at": "2026-11-06T20:26:29.891Z"
+        }
+      ],
+      "first_seen_at": "2026-11-06T20:26:29.891Z",
+      "last_seen_at": "2026-11-06T20:26:29.891Z",
+      "review_status": "PENDING",
+      "review_note": "Confirm exact English printing, card number, grade/raw NM, individual-card sale and accepted price manually."
+    }
+  ],
+  "runs": [
+    {
+      "run_at": "2026-11-06T20:26:29.891Z",
+      "month": "2026-11",
+      "site": "EBAY_US",
+      "limit_per_search": 50,
+      "status": "completed",
+      "searches": [
+        {
+          "profile_id": "umbreon-vmax-215-203-psa10",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"PSA 10\" -lot -proxy",
+          "count": 166,
+          "returned": 50,
+          "credits_charged": 70,
+          "credits_remaining_reported": 630,
+          "stats": {
+            "median": 3902,
+            "p25": 3771.5,
+            "p75": 4199.5,
+            "min": 3102.93,
+            "max": 4851.7,
+            "excluded": 23,
+            "currency": "USD"
+          },
+          "status": "success"
+        },
+        {
+          "profile_id": "umbreon-vmax-215-203-raw-nm",
+          "query": "Umbreon VMAX 215/203 Evolving Skies \"Near Mint\" -lot -proxy",
+          "count": 2,
+          "returned": 2,
+          "credits_charged": 22,
+          "credits_remaining_reported": 608,
+          "stats": {
+            "median": 1775,
+            "p25": 1737.5,
+            "p75": 1812.5,
+            "min": 1700,
+            "max": 1850,
+            "excluded": 0,
+            "currency": "USD"
+          },
+          "status": "success"
+        },
+        {
+          "profile_id": "giratina-v-186-196-psa10",
+          "query": "Giratina V 186/196 Lost Origin \"PSA 10\" -lot -proxy",
+          "count": 111,
+          "returned": 50,
+          "credits_charged": 70,
+          "credits_remaining_reported": 538,
+          "stats": {
+            "median": 3366.58,
+            "p25": 3103,
+            "p75": 3712.5,
+            "min": 2936,
+            "max": 4300,
+            "excluded": 27,
+            "currency": "USD"
+          },
+          "status": "success"
+        },
+        {
+          "profile_id": "giratina-v-186-196-raw-nm",
+          "query": "Giratina V 186/196 Lost Origin \"Near Mint\" -lot -proxy",
+          "count": 11,
+          "returned": 11,
+          "credits_charged": 31,
+          "credits_remaining_reported": 507,
+          "stats": {
+            "median": 840.15,
+            "p25": 743.82,
+            "p75": 853.52,
+            "min": 710,
+            "max": 909.99,
+            "excluded": 5,
+            "currency": "USD"
+          },
+          "status": "success"
+        }
+      ],
+      "credits_charged": 193,
+      "note": "Search matches only; all entries require manual review before import."
+    }
+  ],
   "policy": "Search matches are pending manual review. Never use as accepted market observations until exact identity, grade, condition, price and sale validity are confirmed."
 }

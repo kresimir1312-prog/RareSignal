@@ -1,10 +1,8 @@
 {
-  "month": "",
-  "automation_charged": 0,
-  "runs": 0,
-  "searches": 0,
-  "monthly_automation_cap": 560,
-  "free_monthly_allowance": 700,
-  "reserved_credits": 140,
-  "max_runs_per_month": 2
+  "month": "2026-11",
+  "automation_charged": 193,
+  "runs": 1,
+  "searches": 4,
+  "last_run_at": "2026-11-06T20:26:29.891Z",
+  "last_reported_free_remaining": 507
 }
